@@ -86,6 +86,27 @@ function Yoga() {
       </Section>
 
       <Section tone="sand">
+        <div className="grid gap-10 md:grid-cols-[1fr_1.2fr]">
+          <div>
+            <p className="eyebrow">Sanación meditativa</p>
+            <h2 className="mt-3 text-3xl md:text-4xl">Sat Nam Rasayan</h2>
+          </div>
+          <div className="space-y-5 leading-relaxed text-muted-foreground">
+            <p>
+              Una práctica de sanación a través de la meditación y la conciencia. Desde el estado
+              meditativo, entro en conexión con la persona y permito que aquello que necesita ser
+              observado pueda manifestarse y encontrar su espacio, favoreciendo un proceso de toma
+              de conciencia y transformación.
+            </p>
+            <p>
+              Puede realizarse a distancia, en un espacio de calma y receptividad, donde lo
+              importante es permitir que lo que necesita ser visto aparezca por sí mismo.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
         <Quote>Practicar no es rendir. Es volver a habitarte.</Quote>
       </Section>
 
