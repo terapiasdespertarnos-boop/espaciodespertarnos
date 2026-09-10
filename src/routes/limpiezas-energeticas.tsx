@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
+import { Sparkles, EnergyWaves } from "@/components/site/Ornaments";
+import pendulo from "@/assets/pendulo.jpg";
 
 export const Route = createFileRoute("/limpiezas-energeticas")({
   head: () => ({
@@ -47,12 +49,37 @@ function Limpiezas() {
           title="También hay espacios que necesitan ser renovados."
           intro="A veces no es solo la persona: es la casa, el local o el ambiente en el que pasamos muchas horas."
         />
+        <div className="mt-14 grid items-center gap-12 md:grid-cols-2">
+          <div className="relative">
+            <img
+              src={pendulo}
+              alt="Péndulo de latón sobre lino crudo, junto a hojas de salvia y flores secas"
+              loading="lazy"
+              width={1200}
+              height={912}
+              className="rounded-3xl object-cover shadow-[var(--shadow-glow)]"
+            />
+            <Sparkles count={6} />
+          </div>
+          <div>
+            <p className="eyebrow">Péndulo y radiestesia</p>
+            <h3 className="font-display mt-4 text-2xl leading-snug md:text-3xl">
+              Limpiar, liberar, renovar y devolver cada cosa a su lugar.
+            </h3>
+            <p className="text-muted-foreground mt-5 leading-relaxed">
+              El péndulo es una de las herramientas que utilizo para afinar y comprobar durante
+              determinadas limpiezas. No es un adorno: me ayuda a escuchar la información que un
+              espacio o una persona no dicen con palabras.
+            </p>
+            <EnergyWaves className="text-gold/70 mt-8 h-16" />
+          </div>
+        </div>
       </Section>
 
       <Section>
         <div className="grid gap-5 md:grid-cols-3">
           {servicios.map(([t, d]) => (
-            <article key={t} className="soft-card p-8">
+            <article key={t} className="gold-card p-8">
               <h2 className="text-xl leading-snug">{t}</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{d}</p>
             </article>

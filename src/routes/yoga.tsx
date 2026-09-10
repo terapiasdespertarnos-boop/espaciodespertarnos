@@ -58,7 +58,7 @@ function Yoga() {
             ["Movimiento consciente", "Moverse desde dentro, sin exigencia ni competición."],
             ["Trabajo corporal y energético", "Cuerpo y energía como parte del mismo proceso."],
           ].map(([t, d]) => (
-            <article key={t} className="soft-card p-7">
+            <article key={t} className="gold-card p-7">
               <h3 className="text-lg">{t}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
             </article>

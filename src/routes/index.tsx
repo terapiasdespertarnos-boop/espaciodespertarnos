@@ -2,9 +2,20 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
-import hero from "@/assets/hero.jpg";
+import heroBotanico from "@/assets/hero-botanico.jpg";
+import frecuencias from "@/assets/frecuencias.jpg";
 import naturaleza from "@/assets/naturaleza.jpg";
-import calma from "@/assets/calma.jpg";
+import luzCamino from "@/assets/luz-camino.jpg";
+import pendulo from "@/assets/pendulo.jpg";
+import {
+  LightOrbs,
+  Sparkles,
+  SacredGeometry,
+  PendulumMark,
+  BotanicalBranch,
+  EnergyWaves,
+} from "@/components/site/Ornaments";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -114,19 +125,27 @@ function Index() {
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <img
-          src={hero}
-          alt="Habitación luminosa y serena con luz natural, tonos crema y verde salvia"
-          width={1600}
-          height={1104}
-          className="absolute inset-0 -z-10 size-full object-cover"
+          src={heroBotanico}
+          alt="Flores silvestres y hojas bañadas por una luz dorada y cálida"
+          width={1920}
+          height={1200}
+          className="absolute inset-0 -z-20 size-full object-cover"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/95 via-background/85 to-background/40" />
-        <div className="container-prose px-6 py-28 md:py-44">
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/96 via-background/80 to-transparent" />
+        <div className="from-background/70 absolute inset-0 -z-10 bg-gradient-to-t via-transparent to-transparent" />
+        <LightOrbs />
+        <Sparkles count={10} />
+        <SacredGeometry className="absolute -right-10 bottom-6 hidden w-72 md:block" />
+        <PendulumMark className="absolute top-0 right-[22%] hidden h-44 opacity-70 lg:block" />
+        <BotanicalBranch className="absolute bottom-0 left-[-2rem] hidden h-72 lg:block" />
+
+        <div className="container-prose relative px-6 py-28 md:py-44">
           <div className="max-w-2xl fade-up">
             <p className="eyebrow">Espacio Despertar-Nos</p>
             <h1 className="mt-6 font-display text-4xl leading-[1.1] md:text-6xl">
               Hay momentos en los que seguir tirando ya no es la solución.
             </h1>
+            <span className="rule-line mt-6" />
             <p className="mt-7 text-lg leading-relaxed text-earth md:text-xl">
               Un espacio para parar, escucharte, comprender lo que estás viviendo y empezar a
               soltar lo que ya no necesitas cargar.
@@ -141,23 +160,36 @@ function Index() {
                 href={whatsappUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+                className="rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase shadow-[var(--shadow-glow)] transition-opacity hover:opacity-90"
               >
                 Quiero hablar con Rosa
               </a>
               <Link
                 to="/como-puedo-ayudarte"
-                className="rounded-full border border-earth/30 px-7 py-3.5 text-xs tracking-[0.14em] uppercase transition-colors hover:bg-sand"
+                className="border-gold/60 hover:bg-cream rounded-full border px-7 py-3.5 text-xs tracking-[0.14em] uppercase transition-colors"
               >
                 Descubrir cómo puedo ayudarte
               </Link>
             </div>
           </div>
         </div>
+        <div className="relative">
+          <img
+            src={frecuencias}
+            alt=""
+            aria-hidden
+            loading="lazy"
+            width={1600}
+            height={704}
+            className="h-16 w-full object-cover opacity-70 mix-blend-multiply md:h-24"
+          />
+        </div>
       </section>
 
+
       {/* MENSAJE CENTRAL */}
-      <Section tone="cream">
+      <Section tone="cream" glow>
+
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
           <p className="font-display text-3xl leading-snug md:text-5xl">
             No necesitas saber qué terapia necesitas. Solo necesitas contarme qué estás viviendo.
@@ -180,8 +212,9 @@ function Index() {
           {frases.map((f) => (
             <li
               key={f}
-              className="soft-card px-6 py-5 text-[0.95rem] leading-relaxed text-earth italic"
+              className="gold-card text-earth px-6 py-5 text-[0.95rem] leading-relaxed italic"
             >
+
               «{f}»
             </li>
           ))}
@@ -310,8 +343,9 @@ function Index() {
             <Link
               key={h.t}
               to={h.to}
-              className="soft-card group block p-7 transition-colors hover:bg-sand"
+              className="gold-card hover:bg-sand/60 group block p-7 transition-colors"
             >
+
               <h3 className="text-xl">{h.t}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{h.d}</p>
               <span className="mt-5 inline-block text-[0.7rem] tracking-[0.18em] text-clay uppercase">
@@ -322,17 +356,56 @@ function Index() {
         </div>
       </Section>
 
+      {/* PÉNDULO · RADIESTESIA Y FRECUENCIAS */}
+      <Section glow>
+        <div className="grid items-center gap-12 md:grid-cols-2">
+          <div className="relative">
+            <img
+              src={pendulo}
+              alt="Péndulo de latón sobre lino crudo, junto a hojas de salvia y flores secas"
+              loading="lazy"
+              width={1200}
+              height={912}
+              className="rounded-3xl object-cover shadow-[var(--shadow-glow)]"
+            />
+            <Sparkles count={6} />
+          </div>
+          <div>
+            <SectionHeading
+              eyebrow="Péndulo y frecuencias"
+              title="Escuchar también la información que no se dice con palabras."
+              intro="El péndulo forma parte de mi trabajo energético y de determinadas limpiezas. Me ayuda a afinar, a comprobar y a devolver cada cosa a su lugar."
+            />
+            <p className="text-muted-foreground mt-8 leading-relaxed">
+              Trabajo también con frecuencias de color: matices, tonos y vibraciones que acompañan
+              el proceso de cada persona de una manera suave y respetuosa.
+            </p>
+            <EnergyWaves className="text-gold/70 mt-8 h-16" />
+            <Link
+              to="/limpiezas-energeticas"
+              className="border-gold/60 hover:bg-cream mt-6 inline-flex rounded-full border px-7 py-3.5 text-xs tracking-[0.14em] uppercase transition-colors"
+            >
+              Ver las limpiezas energéticas
+            </Link>
+          </div>
+        </div>
+      </Section>
+
       {/* MEDIUMNIDAD BREVE */}
-      <Section>
+      <Section tone="cream">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
-          <img
-            src={calma}
-            alt="Una vela encendida en un cuenco de barro junto a una ventana"
-            loading="lazy"
-            width={1200}
-            height={900}
-            className="rounded-2xl object-cover"
-          />
+          <div className="relative">
+            <img
+              src={luzCamino}
+              alt="Camino de piedra entre flores al amanecer, con luz dorada y bruma"
+              loading="lazy"
+              width={1408}
+              height={912}
+              className="rounded-3xl object-cover"
+            />
+            <Sparkles count={7} />
+          </div>
+
           <div>
             <SectionHeading
               eyebrow="Mediumnidad y presencias"

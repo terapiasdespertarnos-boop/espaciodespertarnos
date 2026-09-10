@@ -39,10 +39,17 @@
   --color-ring-offset-background: var(--background);
   --color-sand: var(--sand);
   --color-cream: var(--cream);
+  --color-ivory: var(--ivory);
   --color-clay: var(--clay);
   --color-sage: var(--sage);
   --color-sage-deep: var(--sage-deep);
+  --color-leaf: var(--leaf);
   --color-earth: var(--earth);
+  --color-gold: var(--gold);
+  --color-honey: var(--honey);
+  --color-blush: var(--blush);
+  --color-aqua: var(--aqua);
+
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -61,15 +68,16 @@
 }
 
 :root {
-  --radius: 0.25rem;
+  --radius: 0.9rem;
 
   /* Neutros cálidos */
-  --background: oklch(0.982 0.008 85);
-  --foreground: oklch(0.29 0.018 60);
-  --card: oklch(0.995 0.005 90);
-  --card-foreground: oklch(0.29 0.018 60);
-  --popover: oklch(0.995 0.005 90);
-  --popover-foreground: oklch(0.29 0.018 60);
+  --background: oklch(0.978 0.016 87);
+  --foreground: oklch(0.28 0.02 60);
+  --card: oklch(0.992 0.011 90);
+  --card-foreground: oklch(0.28 0.02 60);
+  --popover: oklch(0.992 0.011 90);
+  --popover-foreground: oklch(0.28 0.02 60);
+
 
   /* Verde salvia como color principal */
   --primary: oklch(0.52 0.038 150);
@@ -93,15 +101,31 @@
   --ring: oklch(0.66 0.04 150);
 
   /* Tokens de marca */
-  --cream: oklch(0.972 0.014 88);
-  --sand: oklch(0.93 0.022 80);
-  --clay: oklch(0.72 0.062 45);
-  --sage: oklch(0.78 0.036 150);
-  --sage-deep: oklch(0.42 0.034 152);
-  --earth: oklch(0.38 0.028 62);
+  --ivory: oklch(0.985 0.012 90);
+  --cream: oklch(0.965 0.021 87);
+  --sand: oklch(0.925 0.031 80);
+  --clay: oklch(0.72 0.072 45);
+  --sage: oklch(0.78 0.042 150);
+  --leaf: oklch(0.6 0.058 148);
+  --sage-deep: oklch(0.38 0.038 152);
+  --earth: oklch(0.38 0.03 62);
+  --gold: oklch(0.76 0.098 82);
+  --honey: oklch(0.84 0.078 80);
+  --blush: oklch(0.86 0.038 28);
+  --aqua: oklch(0.88 0.038 200);
 
   --shadow-soft: 0 1px 2px oklch(0.38 0.028 62 / 0.04), 0 12px 40px oklch(0.38 0.028 62 / 0.06);
+  --shadow-glow: 0 24px 70px -30px oklch(0.72 0.09 82 / 0.5);
   --gradient-warm: linear-gradient(180deg, var(--cream), var(--background));
+  --gradient-gold: linear-gradient(90deg, transparent, var(--gold), transparent);
+  --gradient-frecuencias: linear-gradient(
+    100deg,
+    color-mix(in oklab, var(--leaf) 45%, transparent),
+    color-mix(in oklab, var(--honey) 55%, transparent),
+    color-mix(in oklab, var(--blush) 45%, transparent),
+    color-mix(in oklab, var(--aqua) 45%, transparent)
+  );
+
 
   --chart-1: var(--primary);
   --chart-2: var(--accent);
@@ -182,34 +206,158 @@
   font-size: 0.72rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted-foreground);
+  color: color-mix(in oklab, var(--gold) 75%, var(--earth));
 }
 
 @utility soft-card {
   background-color: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in oklab, var(--gold) 22%, var(--border));
   border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-soft);
+}
+
+@utility gold-card {
+  position: relative;
+  background-image: linear-gradient(
+    170deg,
+    color-mix(in oklab, var(--ivory) 92%, transparent),
+    color-mix(in oklab, var(--cream) 88%, transparent)
+  );
+  border: 1px solid color-mix(in oklab, var(--gold) 34%, transparent);
+  border-radius: var(--radius-3xl);
   box-shadow: var(--shadow-soft);
 }
 
 @utility rule-line {
   display: block;
-  width: 3rem;
+  width: 4.5rem;
   height: 1px;
-  background-color: var(--clay);
+  background-image: linear-gradient(90deg, var(--gold), transparent);
+}
+
+@utility gold-divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-image: var(--gradient-gold);
+  opacity: 0.55;
+}
+
+/* Halo de luz cálido para fondos */
+@utility glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Velo de frecuencias de color */
+@utility energy-veil {
+  position: absolute;
+  inset-inline: 0;
+  height: 10rem;
+  background-image: var(--gradient-frecuencias);
+  filter: blur(42px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@utility grain-warm {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(
+      circle at 20% 15%,
+      color-mix(in oklab, var(--honey) 26%, transparent),
+      transparent 55%
+    );
+  }
 }
 
 @utility fade-up {
-  animation: fade-up 0.8s ease-out both;
+  animation: fade-up 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@utility sway-slow {
+  animation: sway 14s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@utility float-slow {
+  animation: float-soft 18s ease-in-out infinite;
+}
+
+@utility twinkle {
+  animation: twinkle 6s ease-in-out infinite;
+}
+
+@utility pendulum {
+  animation: pendulum 9s ease-in-out infinite;
+  transform-origin: top center;
 }
 
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-1.6deg);
+  }
+  50% {
+    transform: rotate(1.6deg);
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+@keyframes pendulum {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sway-slow,
+  .float-slow,
+  .twinkle,
+  .pendulum,
+  .fade-up {
+    animation: none !important;
   }
 }

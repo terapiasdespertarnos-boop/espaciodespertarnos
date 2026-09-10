@@ -1,10 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { navItems, site, whatsappUrl } from "@/lib/site";
+import { BotanicalBranch } from "./Ornaments";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-cream">
-      <div className="section-shell container-prose !py-16">
+    <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
+      <div className="section-shell container-prose relative !py-16">
+        <BotanicalBranch className="pointer-events-none absolute -top-6 right-0 hidden h-64 opacity-60 md:block" />
         <div className="max-w-3xl">
           <p className="font-display text-2xl leading-snug md:text-4xl">
             «Quizá no puedas cambiar todo lo que has vivido. Pero sí puedes empezar a relacionarte

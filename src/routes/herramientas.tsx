@@ -134,7 +134,7 @@ function Herramientas() {
               "¿Por qué no consigo avanzar?",
               "¿Qué no es mío?",
             ].map((q) => (
-              <li key={q} className="soft-card px-6 py-5 font-display text-xl">
+              <li key={q} className="gold-card px-6 py-5 font-display text-xl">
                 {q}
               </li>
             ))}
