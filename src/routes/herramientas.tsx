@@ -88,12 +88,20 @@ function Herramientas() {
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              El LNT es una herramienta de acompañamiento energético y transformación personal que
-              utilizo cuando siento que puede aportar algo a tu proceso.
+              La Nueva Terapia (LNT) es una terapia energética cuántica que, desde este enfoque,
+              trabaja sobre los diferentes niveles de la persona: físico, emocional y espiritual.
+              Puede ser presencial o realizarse a distancia.
             </p>
             <p>
-              Puede formar parte de un proceso personalizado, combinado con otras herramientas,
-              según las necesidades de cada persona y el momento en el que se encuentra.
+              Si sientes que estás bloqueado/a en algún aspecto de tu vida y que eso te impide
+              avanzar, disfrutar o sentirte en equilibrio, podemos explorar qué está ocurriendo y
+              valorar este tipo de trabajo. La sesión se adapta a cada persona y se realiza
+              mediante testaje energético, determinando la frecuencia y duración del trabajo según
+              lo que se observe en cada caso.
+            </p>
+            <p className="text-sm">
+              La Nueva Terapia no sustituye tratamientos médicos ni psicológicos. Es un
+              acompañamiento complementario de bienestar y desarrollo personal.
             </p>
           </div>
         </div>
@@ -121,6 +129,11 @@ function Herramientas() {
             <p>
               El objetivo no es buscar culpables ni dramatizar el pasado, sino mirar, comprender y
               devolver simbólicamente a cada persona lo que le corresponde.
+            </p>
+            <p>
+              Las sesiones son grupales. Puedes constelar un tema personal o participar como
+              representante en el proceso de otra persona. Es una experiencia que, más que entender
+              solamente con la cabeza, invita a mirar, sentir y tomar conciencia.
             </p>
             <p className="text-sm">
               Se ofrecen como herramienta de acompañamiento y autoconocimiento. No sustituyen la
@@ -151,8 +164,16 @@ function Herramientas() {
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              Una herramienta para revisar la manera en que interpretamos nuestra realidad, nuestras
-              conversaciones, decisiones, límites y posibilidades.
+              Hay momentos en los que sabemos que queremos cambiar algo, pero no encontramos la
+              manera de hacerlo. En el coaching trabajamos desde la conversación y la reflexión
+              para observar aquello que estás viviendo desde otra perspectiva. Puede ser presencial
+              u online.
+            </p>
+            <p>
+              A través de preguntas y nuevas formas de mirar una situación, puedes descubrir
+              posibilidades que antes no estabas viendo y decidir qué acciones quieres llevar a
+              cabo. Porque cuando cambia nuestra manera de observar, también pueden cambiar
+              nuestras posibilidades de actuar.
             </p>
             <ul className="flex flex-wrap gap-2">
               {[

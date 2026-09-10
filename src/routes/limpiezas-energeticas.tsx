@@ -28,15 +28,15 @@ export const Route = createFileRoute("/limpiezas-energeticas")({
 const servicios: [string, string][] = [
   [
     "Limpieza energética de personas",
-    "Para situaciones en las que la persona siente pesadez, agotamiento, bloqueo o necesidad de renovación energética.",
+    "Desde mi forma de entender el trabajo energético, las personas pueden acumular diferentes tipos de cargas o influencias que afectan a nuestra sensación de bienestar, vitalidad y equilibrio. A través del testaje energético exploro qué puede estar influyendo, trabajo sobre ello mediante la limpieza y vuelvo a testar para comprobar cómo se encuentra el campo energético. El trabajo puede orientarse a diferentes tipos de carga, como las relacionadas con personas, espacios, situaciones vividas, pensamientos, emociones o aquello que pueda estar influyendo en tu energía. También testo la vitalidad física y psíquica y, cuando lo considero necesario, realizo un acompañamiento energético para favorecer su equilibrio.",
   ],
   [
     "Limpieza energética de hogares",
-    "Para viviendas en las que se percibe un ambiente cargado, incómodo o extraño después de determinadas experiencias.",
+    "Realizo un testaje de las diferentes estancias para observar el grado de carga o contaminación energética que presenta el espacio y posteriormente realizo la limpieza. En ocasiones, los espacios conservan la huella de situaciones vividas en ellos: conflictos, rupturas, momentos de tensión, cambios importantes o circunstancias que pueden hacer que sintamos el lugar pesado o poco agradable. El objetivo es limpiar y armonizar el espacio, favoreciendo una sensación de mayor ligereza y bienestar.",
   ],
   [
     "Limpieza energética de negocios y locales",
-    "Para espacios de trabajo o negocios en los que se desea renovar el ambiente y comenzar una nueva etapa.",
+    "Para espacios de trabajo o negocios en los que se desea renovar el ambiente y comenzar una nueva etapa. El proceso es el mismo: testar, limpiar y armonizar para devolver al lugar una sensación de claridad y equilibrio.",
   ],
 ];
 
@@ -46,8 +46,8 @@ function Limpiezas() {
       <Section tone="cream" glow>
         <SectionHeading
           eyebrow="Limpiezas energéticas"
-          title="También hay espacios que necesitan ser renovados."
-          intro="A veces no es solo la persona: es la casa, el local o el ambiente en el que pasamos muchas horas."
+          title="Limpiar, liberar, renovar y devolver cada cosa a su lugar."
+          intro="Un espacio para parar, escucharte y trabajar aquello que hoy sientes que necesitas transformar. Las personas y los espacios pueden acumular diferentes cargas o influencias que afectan a nuestra sensación de bienestar, vitalidad y equilibrio. A través del testaje energético exploro qué puede estar influyendo, trabajo sobre ello mediante la limpieza y vuelvo a testar para comprobar cómo se encuentra el campo energético."
         />
         <div className="mt-14 grid items-center gap-12 md:grid-cols-2">
           <div className="relative">
