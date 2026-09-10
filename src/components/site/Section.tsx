@@ -1,16 +1,19 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { LightOrbs } from "./Ornaments";
 
 export function Section({
   children,
   className,
   tone = "default",
   id,
+  glow = false,
 }: {
   children: ReactNode;
   className?: string;
   tone?: "default" | "cream" | "sand" | "deep";
   id?: string;
+  glow?: boolean;
 }) {
   const tones = {
     default: "bg-background text-foreground",
@@ -20,11 +23,16 @@ export function Section({
   } as const;
 
   return (
-    <section id={id} className={cn("section-shell", tones[tone], className)}>
-      <div className="container-prose">{children}</div>
+    <section
+      id={id}
+      className={cn("section-shell relative isolate overflow-hidden", tones[tone], className)}
+    >
+      {glow ? <LightOrbs /> : null}
+      <div className="container-prose relative">{children}</div>
     </section>
   );
 }
+
 
 export function SectionHeading({
   eyebrow,
