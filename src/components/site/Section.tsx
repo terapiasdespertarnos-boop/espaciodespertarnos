@@ -90,11 +90,13 @@ export function Quote({ children, invert = false }: { children: ReactNode; inver
   return (
     <blockquote
       className={cn(
-        "border-l-2 border-accent pl-6 text-2xl leading-snug italic md:text-3xl",
+        "border-gold/70 pl-6 text-2xl leading-snug italic md:text-3xl",
+        "border-l-2",
         invert ? "text-primary-foreground" : "text-earth",
       )}
     >
       {children}
     </blockquote>
+
   );
 }
