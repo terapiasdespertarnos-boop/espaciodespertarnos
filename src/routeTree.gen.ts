@@ -10,22 +10,36 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ComoPuedoAyudarteRouteImport } from './routes/como-puedo-ayudarte'
+import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as HerramientasRouteImport } from './routes/herramientas'
 import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-energeticas'
 import { Route as MediumnidadRouteImport } from './routes/mediumnidad'
 import { Route as RetirosRouteImport } from './routes/retiros'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as YogaRouteImport } from './routes/yoga'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ComoPuedoAyudarteRoute = ComoPuedoAyudarteRouteImport.update({
   id: '/como-puedo-ayudarte',
   path: '/como-puedo-ayudarte',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HerramientasRoute = HerramientasRouteImport.update({
@@ -58,74 +72,108 @@ const YogaRoute = YogaRouteImport.update({
   path: '/yoga',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/blog': typeof BlogRouteWithChildren
   '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/blog': typeof BlogRouteWithChildren
   '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/blog'
     | '/como-puedo-ayudarte'
+    | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
+    | '/blog/$slug'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/como-puedo-ayudarte'
+    | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
+    | '/blog/$slug'
+    | '/blog'
   id:
     | '__root__'
     | '/'
+    | '/blog'
     | '/como-puedo-ayudarte'
+    | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
+    | '/blog/$slug'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BlogRoute: typeof BlogRouteWithChildren
   ComoPuedoAyudarteRoute: typeof ComoPuedoAyudarteRoute
+  ContactoRoute: typeof ContactoRoute
   HerramientasRoute: typeof HerramientasRoute
   LimpiezasEnergeticasRoute: typeof LimpiezasEnergeticasRoute
   MediumnidadRoute: typeof MediumnidadRoute
@@ -143,11 +191,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/como-puedo-ayudarte': {
       id: '/como-puedo-ayudarte'
       path: '/como-puedo-ayudarte'
       fullPath: '/como-puedo-ayudarte'
       preLoaderRoute: typeof ComoPuedoAyudarteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/herramientas': {
@@ -192,12 +254,40 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof YogaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof BlogRoute
+    }
   }
 }
 
+interface BlogRouteChildren {
+  BlogSlugRoute: typeof BlogSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogSlugRoute: BlogSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BlogRoute: BlogRouteWithChildren,
   ComoPuedoAyudarteRoute: ComoPuedoAyudarteRoute,
+  ContactoRoute: ContactoRoute,
   HerramientasRoute: HerramientasRoute,
   LimpiezasEnergeticasRoute: LimpiezasEnergeticasRoute,
   MediumnidadRoute: MediumnidadRoute,
