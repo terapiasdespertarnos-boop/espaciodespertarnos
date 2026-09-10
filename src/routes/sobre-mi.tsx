@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
-import naturaleza from "@/assets/naturaleza.jpg";
+import rosaCuenco from "@/assets/rosa-cuenco.jpeg.asset.json";
 
 export const Route = createFileRoute("/sobre-mi")({
   head: () => ({
@@ -54,12 +54,12 @@ function SobreMi() {
             </div>
           </div>
           <img
-            src={naturaleza}
-            alt="Hojas de salvia sobre una pared clara"
+            src={rosaCuenco.url}
+            alt="Rosa trabajando con un cuenco en su espacio"
             loading="lazy"
-            width={1200}
-            height={800}
-            className="rounded-2xl object-cover"
+            width={768}
+            height={852}
+            className="aspect-[4/5] rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
           />
         </div>
       </Section>

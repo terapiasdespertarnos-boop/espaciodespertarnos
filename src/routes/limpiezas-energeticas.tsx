@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { Sparkles, EnergyWaves } from "@/components/site/Ornaments";
-import pendulo from "@/assets/pendulo.jpg";
+import altarLuz from "@/assets/altar-luz.jpeg.asset.json";
 
 export const Route = createFileRoute("/limpiezas-energeticas")({
   head: () => ({
@@ -52,12 +52,12 @@ function Limpiezas() {
         <div className="mt-14 grid items-center gap-12 md:grid-cols-2">
           <div className="relative">
             <img
-              src={pendulo}
-              alt="Péndulo de latón sobre lino crudo, junto a hojas de salvia y flores secas"
+              src={altarLuz.url}
+              alt="Altar de cuarzo rosa iluminado por haces de luz en el espacio de Rosa"
               loading="lazy"
-              width={1200}
-              height={912}
-              className="rounded-3xl object-cover shadow-[var(--shadow-glow)]"
+              width={768}
+              height={1024}
+              className="aspect-[4/5] rounded-3xl object-cover shadow-[var(--shadow-glow)]"
             />
             <Sparkles count={6} />
           </div>
