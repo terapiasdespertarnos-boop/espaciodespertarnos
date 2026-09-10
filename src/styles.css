@@ -206,34 +206,160 @@
   font-size: 0.72rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted-foreground);
+  color: color-mix(in oklab, var(--gold) 75%, var(--earth));
 }
 
 @utility soft-card {
   background-color: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in oklab, var(--gold) 22%, var(--border));
   border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-soft);
+}
+
+@utility gold-card {
+  position: relative;
+  background-image: linear-gradient(
+    170deg,
+    color-mix(in oklab, var(--ivory) 92%, transparent),
+    color-mix(in oklab, var(--cream) 88%, transparent)
+  );
+  border: 1px solid color-mix(in oklab, var(--gold) 34%, transparent);
+  border-radius: var(--radius-3xl);
   box-shadow: var(--shadow-soft);
 }
 
 @utility rule-line {
   display: block;
-  width: 3rem;
+  width: 4.5rem;
   height: 1px;
-  background-color: var(--clay);
+  background-image: linear-gradient(90deg, var(--gold), transparent);
+}
+
+@utility gold-divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-image: var(--gradient-gold);
+  opacity: 0.55;
+}
+
+/* Halo de luz cálido para fondos */
+@utility glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Velo de frecuencias de color */
+@utility energy-veil {
+  position: absolute;
+  inset-inline: 0;
+  height: 10rem;
+  background-image: var(--gradient-frecuencias);
+  filter: blur(42px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@utility grain-warm {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(
+      circle at 20% 15%,
+      color-mix(in oklab, var(--honey) 26%, transparent),
+      transparent 55%
+    );
+  }
 }
 
 @utility fade-up {
-  animation: fade-up 0.8s ease-out both;
+  animation: fade-up 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@utility sway-slow {
+  animation: sway 14s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@utility float-slow {
+  animation: float-soft 18s ease-in-out infinite;
+}
+
+@utility twinkle {
+  animation: twinkle 6s ease-in-out infinite;
+}
+
+@utility pendulum {
+  animation: pendulum 9s ease-in-out infinite;
+  transform-origin: top center;
 }
 
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
     transform: none;
   }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-1.6deg);
+  }
+  50% {
+    transform: rotate(1.6deg);
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+@keyframes pendulum {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sway-slow,
+  .float-slow,
+  .twinkle,
+  .pendulum,
+  .fade-up {
+    animation: none !important;
+  }
+}
+
 }
