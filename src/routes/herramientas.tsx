@@ -159,8 +159,16 @@ function Herramientas() {
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              Una herramienta para revisar la manera en que interpretamos nuestra realidad, nuestras
-              conversaciones, decisiones, límites y posibilidades.
+              Hay momentos en los que sabemos que queremos cambiar algo, pero no encontramos la
+              manera de hacerlo. En el coaching trabajamos desde la conversación y la reflexión
+              para observar aquello que estás viviendo desde otra perspectiva. Puede ser presencial
+              u online.
+            </p>
+            <p>
+              A través de preguntas y nuevas formas de mirar una situación, puedes descubrir
+              posibilidades que antes no estabas viendo y decidir qué acciones quieres llevar a
+              cabo. Porque cuando cambia nuestra manera de observar, también pueden cambiar
+              nuestras posibilidades de actuar.
             </p>
             <ul className="flex flex-wrap gap-2">
               {[
