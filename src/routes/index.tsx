@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
-import heroBotanico from "@/assets/hero-botanico.jpg";
+import heroRosa from "@/assets/rosa-yoga-sala.jpeg.asset.json";
 import frecuencias from "@/assets/frecuencias.jpg";
 import naturaleza from "@/assets/naturaleza.jpg";
 import luzCamino from "@/assets/luz-camino.jpg";
@@ -125,13 +125,13 @@ function Index() {
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <img
-          src={heroBotanico}
-          alt="Flores silvestres y hojas bañadas por una luz dorada y cálida"
+          src={heroRosa.url}
+          alt="Rosa practicando Yoga Kundalini en su espacio de acompañamiento"
           width={1920}
           height={1200}
-          className="absolute inset-0 -z-20 size-full object-cover"
+          className="absolute inset-0 -z-20 size-full object-cover object-center"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/96 via-background/80 to-transparent" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/98 via-background/90 to-background/10" />
         <div className="from-background/70 absolute inset-0 -z-10 bg-gradient-to-t via-transparent to-transparent" />
         <LightOrbs />
         <Sparkles count={10} />
