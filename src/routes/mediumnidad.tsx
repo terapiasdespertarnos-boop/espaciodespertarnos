@@ -27,7 +27,7 @@ export const Route = createFileRoute("/mediumnidad")({
 function Mediumnidad() {
   return (
     <>
-      <Section tone="cream">
+      <Section tone="cream" glow>
         <div className="grid gap-12 md:grid-cols-[1.15fr_1fr] md:items-center">
           <div>
             <SectionHeading

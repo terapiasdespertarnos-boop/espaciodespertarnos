@@ -43,7 +43,7 @@ const servicios: [string, string][] = [
 function Limpiezas() {
   return (
     <>
-      <Section tone="cream">
+      <Section tone="cream" glow>
         <SectionHeading
           eyebrow="Limpiezas energéticas"
           title="También hay espacios que necesitan ser renovados."

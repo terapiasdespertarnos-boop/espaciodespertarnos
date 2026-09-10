@@ -14,6 +14,7 @@ import {
   PendulumMark,
   BotanicalBranch,
   EnergyWaves,
+  FrequencyVeil,
 } from "@/components/site/Ornaments";
 
 
@@ -134,6 +135,7 @@ function Index() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/98 via-background/90 to-background/10" />
         <div className="from-background/70 absolute inset-0 -z-10 bg-gradient-to-t via-transparent to-transparent" />
         <LightOrbs />
+        <FrequencyVeil className="-z-10 opacity-80" />
         <Sparkles count={10} />
         <SacredGeometry className="absolute -right-10 bottom-6 hidden w-72 md:block" />
         <PendulumMark className="absolute top-0 right-[22%] hidden h-44 opacity-70 lg:block" />
@@ -227,7 +229,7 @@ function Index() {
       </Section>
 
       {/* MI FORMA DE ACOMPAÑAR */}
-      <Section tone="sand">
+      <Section tone="sand" glow>
         <SectionHeading
           eyebrow="Mi forma de acompañar"
           title="No necesitas saber qué herramienta necesitas."
@@ -333,7 +335,7 @@ function Index() {
       </Section>
 
       {/* HERRAMIENTAS RESUMEN */}
-      <Section tone="cream">
+      <Section tone="cream" glow>
         <SectionHeading
           eyebrow="Mis herramientas"
           title="Diferentes herramientas. Una misma intención: ayudarte a volver a ti."

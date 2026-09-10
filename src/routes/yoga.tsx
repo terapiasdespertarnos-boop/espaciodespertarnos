@@ -28,7 +28,7 @@ export const Route = createFileRoute("/yoga")({
 function Yoga() {
   return (
     <>
-      <Section tone="cream">
+      <Section tone="cream" glow>
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div>
             <SectionHeading

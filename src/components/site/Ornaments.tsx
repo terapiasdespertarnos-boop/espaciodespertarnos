@@ -17,9 +17,25 @@ export function LightOrbs({ className }: { className?: string }) {
   );
 }
 
-/** Franja muy suave de frecuencias de color. */
+/** Velos y ondas cromáticas inspirados en las frecuencias, siempre detrás del contenido. */
 export function FrequencyVeil({ className }: { className?: string }) {
-  return <span aria-hidden className={cn("energy-veil", className)} />;
+  return (
+    <div aria-hidden className={cn("pointer-events-none absolute inset-0 overflow-hidden", className)}>
+      <span className="energy-veil top-[12%]" />
+      <span className="frequency-ribbon bottom-[8%]" />
+      <svg
+        viewBox="0 0 1200 180"
+        preserveAspectRatio="none"
+        className="absolute bottom-[10%] left-0 h-32 w-full opacity-35"
+        fill="none"
+      >
+        <path d="M-40 110 C 180 8, 360 170, 610 78 S 1010 18, 1240 105" className="text-aqua" stroke="currentColor" strokeWidth="2" />
+        <path d="M-40 128 C 190 30, 390 176, 620 95 S 1015 38, 1240 122" className="text-leaf" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M-40 146 C 210 52, 410 182, 650 110 S 1040 58, 1240 140" className="text-honey" stroke="currentColor" strokeWidth="2" />
+        <path d="M-40 160 C 220 75, 430 185, 680 126 S 1060 78, 1240 156" className="text-blush" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    </div>
+  );
 }
 
 /** Pequeños destellos de luz. */
