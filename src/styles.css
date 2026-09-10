@@ -39,10 +39,17 @@
   --color-ring-offset-background: var(--background);
   --color-sand: var(--sand);
   --color-cream: var(--cream);
+  --color-ivory: var(--ivory);
   --color-clay: var(--clay);
   --color-sage: var(--sage);
   --color-sage-deep: var(--sage-deep);
+  --color-leaf: var(--leaf);
   --color-earth: var(--earth);
+  --color-gold: var(--gold);
+  --color-honey: var(--honey);
+  --color-blush: var(--blush);
+  --color-aqua: var(--aqua);
+
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
