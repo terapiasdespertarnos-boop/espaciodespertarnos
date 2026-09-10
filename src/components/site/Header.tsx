@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { navItems, whatsappUrl } from "@/lib/site";
+import logoAsset from "@/assets/logo-espacio-despertarnos.jpeg.asset.json";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -9,12 +10,26 @@ export function Header() {
   return (
     <header className="border-gold/25 bg-background/80 sticky top-0 z-50 border-b backdrop-blur-md">
       <div className="container-prose flex items-center justify-between gap-4 px-6 py-4">
-        <Link to="/" className="leading-tight" onClick={() => setOpen(false)}>
-          <span className="block font-display text-lg tracking-[0.14em] uppercase">
-            Espacio Despertar-Nos
-          </span>
-          <span className="text-gold block text-[0.68rem] tracking-[0.18em] uppercase">
-            Rosa · acompañamiento integral
+        <Link
+          to="/"
+          className="flex min-w-0 items-center gap-3 leading-tight"
+          onClick={() => setOpen(false)}
+          aria-label="Espacio Despertar-Nos · Inicio"
+        >
+          <img
+            src={logoAsset.url}
+            alt=""
+            width={56}
+            height={56}
+            className="size-12 shrink-0 rounded-full object-cover md:size-14"
+          />
+          <span className="min-w-0">
+            <span className="block font-display text-base tracking-[0.12em] uppercase md:text-lg">
+              Espacio Despertar-Nos
+            </span>
+            <span className="text-gold block text-[0.62rem] tracking-[0.14em] uppercase md:text-[0.68rem] md:tracking-[0.18em]">
+              Rosa · acompañamiento integral
+            </span>
           </span>
         </Link>
 
