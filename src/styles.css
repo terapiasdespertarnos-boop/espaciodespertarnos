@@ -68,15 +68,16 @@
 }
 
 :root {
-  --radius: 0.25rem;
+  --radius: 0.9rem;
 
   /* Neutros cálidos */
-  --background: oklch(0.982 0.008 85);
-  --foreground: oklch(0.29 0.018 60);
-  --card: oklch(0.995 0.005 90);
-  --card-foreground: oklch(0.29 0.018 60);
-  --popover: oklch(0.995 0.005 90);
-  --popover-foreground: oklch(0.29 0.018 60);
+  --background: oklch(0.978 0.016 87);
+  --foreground: oklch(0.28 0.02 60);
+  --card: oklch(0.992 0.011 90);
+  --card-foreground: oklch(0.28 0.02 60);
+  --popover: oklch(0.992 0.011 90);
+  --popover-foreground: oklch(0.28 0.02 60);
+
 
   /* Verde salvia como color principal */
   --primary: oklch(0.52 0.038 150);
