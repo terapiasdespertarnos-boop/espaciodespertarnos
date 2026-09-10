@@ -47,9 +47,9 @@ function ComoPuedoAyudarte() {
     <>
       <Section tone="cream">
         <SectionHeading
-          eyebrow="Cómo puedo ayudarte"
-          title="Una mirada. Muchas herramientas. Un acompañamiento personalizado."
-          intro="No hace falta que llegues con un diagnóstico ni con un nombre para lo que te ocurre. Basta con que me cuentes qué estás viviendo."
+          eyebrow="Terapias holísticas sanadoras"
+          title="Un espacio para parar, escucharte y trabajar aquello que hoy sientes que necesitas transformar."
+          intro="Cada persona es diferente y no siempre necesita la misma herramienta. Por eso, antes de decidir cómo trabajar, podemos hablar sobre lo que estás viviendo y valorar qué puede acompañarte mejor en este momento. No hace falta que llegues con un diagnóstico ni con un nombre para lo que te ocurre: basta con que me cuentes qué estás viviendo."
         />
       </Section>
 
