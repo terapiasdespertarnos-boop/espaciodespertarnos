@@ -27,7 +27,7 @@ export const Route = createFileRoute("/sobre-mi")({
 function SobreMi() {
   return (
     <>
-      <Section tone="cream">
+      <Section tone="cream" glow>
         <div className="grid gap-12 md:grid-cols-[1.1fr_1fr] md:items-center">
           <div>
             <SectionHeading eyebrow="Sobre mí" title="Soy Rosa." />

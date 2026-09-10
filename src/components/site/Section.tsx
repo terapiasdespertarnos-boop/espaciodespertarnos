@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import { LightOrbs } from "./Ornaments";
+import { FrequencyVeil, LightOrbs } from "./Ornaments";
 
 export function Section({
   children,
@@ -28,6 +28,7 @@ export function Section({
       className={cn("section-shell relative isolate overflow-hidden", tones[tone], className)}
     >
       {glow ? <LightOrbs /> : null}
+      {glow ? <FrequencyVeil /> : null}
       <div className="container-prose relative">{children}</div>
     </section>
   );
