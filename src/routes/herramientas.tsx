@@ -130,6 +130,11 @@ function Herramientas() {
               El objetivo no es buscar culpables ni dramatizar el pasado, sino mirar, comprender y
               devolver simbólicamente a cada persona lo que le corresponde.
             </p>
+            <p>
+              Las sesiones son grupales. Puedes constelar un tema personal o participar como
+              representante en el proceso de otra persona. Es una experiencia que, más que entender
+              solamente con la cabeza, invita a mirar, sentir y tomar conciencia.
+            </p>
             <p className="text-sm">
               Se ofrecen como herramienta de acompañamiento y autoconocimiento. No sustituyen la
               atención psicológica ni médica.
