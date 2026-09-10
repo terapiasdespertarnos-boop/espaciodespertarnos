@@ -88,12 +88,20 @@ function Herramientas() {
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              El LNT es una herramienta de acompañamiento energético y transformación personal que
-              utilizo cuando siento que puede aportar algo a tu proceso.
+              La Nueva Terapia (LNT) es una terapia energética cuántica que, desde este enfoque,
+              trabaja sobre los diferentes niveles de la persona: físico, emocional y espiritual.
+              Puede ser presencial o realizarse a distancia.
             </p>
             <p>
-              Puede formar parte de un proceso personalizado, combinado con otras herramientas,
-              según las necesidades de cada persona y el momento en el que se encuentra.
+              Si sientes que estás bloqueado/a en algún aspecto de tu vida y que eso te impide
+              avanzar, disfrutar o sentirte en equilibrio, podemos explorar qué está ocurriendo y
+              valorar este tipo de trabajo. La sesión se adapta a cada persona y se realiza
+              mediante testaje energético, determinando la frecuencia y duración del trabajo según
+              lo que se observe en cada caso.
+            </p>
+            <p className="text-sm">
+              La Nueva Terapia no sustituye tratamientos médicos ni psicológicos. Es un
+              acompañamiento complementario de bienestar y desarrollo personal.
             </p>
           </div>
         </div>
