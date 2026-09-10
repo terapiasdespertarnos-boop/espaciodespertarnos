@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ComoPuedoAyudarteRouteImport } from './routes/como-puedo-ayudarte'
+import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ComoPuedoAyudarteRoute = ComoPuedoAyudarteRouteImport.update({
+  id: '/como-puedo-ayudarte',
+  path: '/como-puedo-ayudarte',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobreMiRoute = SobreMiRouteImport.update({
+  id: '/sobre-mi',
+  path: '/sobre-mi',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/sobre-mi': typeof SobreMiRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/sobre-mi': typeof SobreMiRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/sobre-mi': typeof SobreMiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/como-puedo-ayudarte' | '/sobre-mi'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/como-puedo-ayudarte' | '/sobre-mi'
+  id: '__root__' | '/' | '/como-puedo-ayudarte' | '/sobre-mi'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ComoPuedoAyudarteRoute: typeof ComoPuedoAyudarteRoute
+  SobreMiRoute: typeof SobreMiRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/como-puedo-ayudarte': {
+      id: '/como-puedo-ayudarte'
+      path: '/como-puedo-ayudarte'
+      fullPath: '/como-puedo-ayudarte'
+      preLoaderRoute: typeof ComoPuedoAyudarteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobre-mi': {
+      id: '/sobre-mi'
+      path: '/sobre-mi'
+      fullPath: '/sobre-mi'
+      preLoaderRoute: typeof SobreMiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ComoPuedoAyudarteRoute: ComoPuedoAyudarteRoute,
+  SobreMiRoute: SobreMiRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
