@@ -11,7 +11,12 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ComoPuedoAyudarteRouteImport } from './routes/como-puedo-ayudarte'
+import { Route as HerramientasRouteImport } from './routes/herramientas'
+import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-energeticas'
+import { Route as MediumnidadRouteImport } from './routes/mediumnidad'
+import { Route as RetirosRouteImport } from './routes/retiros'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
+import { Route as YogaRouteImport } from './routes/yoga'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,40 +28,110 @@ const ComoPuedoAyudarteRoute = ComoPuedoAyudarteRouteImport.update({
   path: '/como-puedo-ayudarte',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HerramientasRoute = HerramientasRouteImport.update({
+  id: '/herramientas',
+  path: '/herramientas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LimpiezasEnergeticasRoute = LimpiezasEnergeticasRouteImport.update({
+  id: '/limpiezas-energeticas',
+  path: '/limpiezas-energeticas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediumnidadRoute = MediumnidadRouteImport.update({
+  id: '/mediumnidad',
+  path: '/mediumnidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RetirosRoute = RetirosRouteImport.update({
+  id: '/retiros',
+  path: '/retiros',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SobreMiRoute = SobreMiRouteImport.update({
   id: '/sobre-mi',
   path: '/sobre-mi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const YogaRoute = YogaRouteImport.update({
+  id: '/yoga',
+  path: '/yoga',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/herramientas': typeof HerramientasRoute
+  '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
+  '/mediumnidad': typeof MediumnidadRoute
+  '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
+  '/yoga': typeof YogaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/herramientas': typeof HerramientasRoute
+  '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
+  '/mediumnidad': typeof MediumnidadRoute
+  '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
+  '/yoga': typeof YogaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/herramientas': typeof HerramientasRoute
+  '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
+  '/mediumnidad': typeof MediumnidadRoute
+  '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
+  '/yoga': typeof YogaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/como-puedo-ayudarte' | '/sobre-mi'
+  fullPaths:
+    | '/'
+    | '/como-puedo-ayudarte'
+    | '/herramientas'
+    | '/limpiezas-energeticas'
+    | '/mediumnidad'
+    | '/retiros'
+    | '/sobre-mi'
+    | '/yoga'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/como-puedo-ayudarte' | '/sobre-mi'
-  id: '__root__' | '/' | '/como-puedo-ayudarte' | '/sobre-mi'
+  to:
+    | '/'
+    | '/como-puedo-ayudarte'
+    | '/herramientas'
+    | '/limpiezas-energeticas'
+    | '/mediumnidad'
+    | '/retiros'
+    | '/sobre-mi'
+    | '/yoga'
+  id:
+    | '__root__'
+    | '/'
+    | '/como-puedo-ayudarte'
+    | '/herramientas'
+    | '/limpiezas-energeticas'
+    | '/mediumnidad'
+    | '/retiros'
+    | '/sobre-mi'
+    | '/yoga'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ComoPuedoAyudarteRoute: typeof ComoPuedoAyudarteRoute
+  HerramientasRoute: typeof HerramientasRoute
+  LimpiezasEnergeticasRoute: typeof LimpiezasEnergeticasRoute
+  MediumnidadRoute: typeof MediumnidadRoute
+  RetirosRoute: typeof RetirosRoute
   SobreMiRoute: typeof SobreMiRoute
+  YogaRoute: typeof YogaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,11 +150,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ComoPuedoAyudarteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/herramientas': {
+      id: '/herramientas'
+      path: '/herramientas'
+      fullPath: '/herramientas'
+      preLoaderRoute: typeof HerramientasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/limpiezas-energeticas': {
+      id: '/limpiezas-energeticas'
+      path: '/limpiezas-energeticas'
+      fullPath: '/limpiezas-energeticas'
+      preLoaderRoute: typeof LimpiezasEnergeticasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mediumnidad': {
+      id: '/mediumnidad'
+      path: '/mediumnidad'
+      fullPath: '/mediumnidad'
+      preLoaderRoute: typeof MediumnidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/retiros': {
+      id: '/retiros'
+      path: '/retiros'
+      fullPath: '/retiros'
+      preLoaderRoute: typeof RetirosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sobre-mi': {
       id: '/sobre-mi'
       path: '/sobre-mi'
       fullPath: '/sobre-mi'
       preLoaderRoute: typeof SobreMiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/yoga': {
+      id: '/yoga'
+      path: '/yoga'
+      fullPath: '/yoga'
+      preLoaderRoute: typeof YogaRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -88,7 +198,12 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ComoPuedoAyudarteRoute: ComoPuedoAyudarteRoute,
+  HerramientasRoute: HerramientasRoute,
+  LimpiezasEnergeticasRoute: LimpiezasEnergeticasRoute,
+  MediumnidadRoute: MediumnidadRoute,
+  RetirosRoute: RetirosRoute,
   SobreMiRoute: SobreMiRoute,
+  YogaRoute: YogaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
