@@ -353,25 +353,6 @@ function Index() {
         </div>
       </Section>
 
-      {/* TESTIMONIOS */}
-      <Section tone="sand">
-        <SectionHeading
-          eyebrow="Testimonios"
-          title="Lo que dicen las personas que han compartido este camino conmigo."
-          intro="Este espacio está reservado para testimonios reales de personas acompañadas. Se irán publicando con su permiso."
-        />
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {[1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className="rounded-2xl border border-dashed border-earth/25 p-8 text-sm text-muted-foreground"
-            >
-              Espacio preparado para un testimonio real.
-            </div>
-          ))}
-        </div>
-      </Section>
-
       <CtaBand />
     </>
   );
