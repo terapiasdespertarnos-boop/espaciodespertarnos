@@ -2,9 +2,20 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
-import hero from "@/assets/hero.jpg";
+import heroBotanico from "@/assets/hero-botanico.jpg";
+import frecuencias from "@/assets/frecuencias.jpg";
 import naturaleza from "@/assets/naturaleza.jpg";
-import calma from "@/assets/calma.jpg";
+import luzCamino from "@/assets/luz-camino.jpg";
+import pendulo from "@/assets/pendulo.jpg";
+import {
+  LightOrbs,
+  Sparkles,
+  SacredGeometry,
+  PendulumMark,
+  BotanicalBranch,
+  EnergyWaves,
+} from "@/components/site/Ornaments";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
