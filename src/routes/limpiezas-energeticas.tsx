@@ -52,7 +52,7 @@ function Limpiezas() {
       <Section>
         <div className="grid gap-5 md:grid-cols-3">
           {servicios.map(([t, d]) => (
-            <article key={t} className="soft-card p-8">
+            <article key={t} className="gold-card p-8">
               <h2 className="text-xl leading-snug">{t}</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{d}</p>
             </article>

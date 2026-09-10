@@ -56,7 +56,7 @@ function ComoPuedoAyudarte() {
       <Section>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {tarjetas.map(([t, d]) => (
-            <article key={t} className="soft-card p-7">
+            <article key={t} className="gold-card p-7">
               <h2 className="text-lg">{t}</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
             </article>

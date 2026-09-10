@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
-import calma from "@/assets/calma.jpg";
+import luzCamino from "@/assets/luz-camino.jpg";
 
 export const Route = createFileRoute("/mediumnidad")({
   head: () => ({
@@ -48,7 +48,7 @@ function Mediumnidad() {
             </div>
           </div>
           <img
-            src={calma}
+            src={luzCamino}
             alt="Vela encendida junto a una ventana, ambiente sereno"
             loading="lazy"
             width={1200}

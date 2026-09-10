@@ -42,7 +42,7 @@ function BlogIndex() {
               key={p.slug}
               to="/blog/$slug"
               params={{ slug: p.slug }}
-              className="soft-card block p-8 transition-colors hover:bg-cream"
+              className="gold-card block p-8 transition-colors hover:bg-cream"
             >
               <p className="eyebrow">
                 {formatDate(p.date)} · {p.readingTime}

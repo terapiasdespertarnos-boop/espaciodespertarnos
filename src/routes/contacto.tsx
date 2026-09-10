@@ -96,7 +96,7 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
 
       <Section>
         <div className="grid gap-12 md:grid-cols-[1.1fr_0.9fr]">
-          <form onSubmit={onSubmit} className="soft-card grid gap-5 p-8">
+          <form onSubmit={onSubmit} className="gold-card grid gap-5 p-8">
             <div className="grid gap-2">
               <label htmlFor="nombre" className="text-xs tracking-[0.14em] uppercase">
                 Nombre
