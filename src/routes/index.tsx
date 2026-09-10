@@ -277,41 +277,14 @@ function Index() {
           title="Diferentes herramientas. Una misma intención: ayudarte a volver a ti."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {[
-            ["Yoga Kundalini", "Conciencia, respiración, presencia y trabajo corporal.", "/yoga"],
-            [
-              "Constelaciones familiares",
-              "Mirar patrones y dinámicas familiares desde otra perspectiva.",
-              "/herramientas",
-            ],
-            [
-              "Coaching ontológico",
-              "Revisar cómo interpretamos, decidimos y ponemos límites.",
-              "/herramientas",
-            ],
-            [
-              "Regresiones",
-              "Explorar experiencias que sientes que necesitan ser comprendidas.",
-              "/herramientas",
-            ],
-            [
-              "LNT y técnicas energéticas",
-              "Acompañamiento energético dentro de un proceso personalizado.",
-              "/herramientas",
-            ],
-            [
-              "Limpiezas energéticas",
-              "Personas, hogares y negocios que necesitan renovarse.",
-              "/limpiezas-energeticas",
-            ],
-          ].map(([t, d, to]) => (
+          {herramientas.map((h) => (
             <Link
-              key={t}
-              to={to}
+              key={h.t}
+              to={h.to}
               className="soft-card group block p-7 transition-colors hover:bg-sand"
             >
-              <h3 className="text-xl">{t}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
+              <h3 className="text-xl">{h.t}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{h.d}</p>
               <span className="mt-5 inline-block text-[0.7rem] tracking-[0.18em] text-clay uppercase">
                 Saber más
               </span>
