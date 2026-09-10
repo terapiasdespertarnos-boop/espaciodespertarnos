@@ -79,6 +79,35 @@ const dimensiones = [
   "Conciencia personal",
 ];
 
+const herramientas = [
+  { t: "Yoga Kundalini", d: "Conciencia, respiración, presencia y trabajo corporal.", to: "/yoga" },
+  {
+    t: "Constelaciones familiares",
+    d: "Mirar patrones y dinámicas familiares desde otra perspectiva.",
+    to: "/herramientas",
+  },
+  {
+    t: "Coaching ontológico",
+    d: "Revisar cómo interpretamos, decidimos y ponemos límites.",
+    to: "/herramientas",
+  },
+  {
+    t: "Regresiones",
+    d: "Explorar experiencias que sientes que necesitan ser comprendidas.",
+    to: "/herramientas",
+  },
+  {
+    t: "LNT y técnicas energéticas",
+    d: "Acompañamiento energético dentro de un proceso personalizado.",
+    to: "/herramientas",
+  },
+  {
+    t: "Limpiezas energéticas",
+    d: "Personas, hogares y negocios que necesitan renovarse.",
+    to: "/limpiezas-energeticas",
+  },
+] as const;
+
 function Index() {
   return (
     <>
