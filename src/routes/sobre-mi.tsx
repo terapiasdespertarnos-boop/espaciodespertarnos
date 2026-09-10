@@ -3,6 +3,9 @@ import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
 import rosaCuenco from "@/assets/rosa-cuenco.jpeg.asset.json";
+import rosaMeditacion from "@/assets/rosa-meditacion.jpeg.asset.json";
+import rosaYogaSala from "@/assets/rosa-yoga-sala.jpeg.asset.json";
+import altarLuz from "@/assets/altar-luz.jpeg.asset.json";
 
 export const Route = createFileRoute("/sobre-mi")({
   head: () => ({
@@ -11,7 +14,7 @@ export const Route = createFileRoute("/sobre-mi")({
       {
         name: "description",
         content:
-          "Soy Rosa y acompaño a mujeres que sienten que cargan con demasiado. Un espacio real para parar, soltar y volver a escucharte.",
+          "La historia real de Rosa: aprender a soltar el miedo, escuchar el corazón y crear Espacio Despertar-Nos desde su propio camino.",
       },
       { property: "og:title", content: "Soy Rosa · Espacio Despertar-Nos" },
       {
@@ -19,6 +22,8 @@ export const Route = createFileRoute("/sobre-mi")({
         content:
           "A veces no necesitamos encontrar el camino. Necesitamos atrevernos a caminarlo.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/sobre-mi" },
     ],
     links: [{ rel: "canonical", href: "/sobre-mi" }],
@@ -110,58 +115,231 @@ function SobreMi() {
         </div>
       </Section>
 
-      {/* MI PROPIO CAMINO */}
+      {/* MI HISTORIA */}
       <Section tone="cream" glow id="mi-historia">
-        <div className="grid gap-12 md:grid-cols-[1fr_1.1fr] md:items-center">
-          <div>
-            <SectionHeading
-              eyebrow="Mi propio camino"
-              title="Tuve que aprender a soltar para volver a encontrarme"
-            />
-            <div className="mt-8 space-y-5 leading-relaxed text-muted-foreground">
+        <SectionHeading
+          eyebrow="Mi historia"
+          title="Yo también tuve que aprender a soltar"
+          intro="Yo sabía quién era y hacia dónde quería dirigirme. Lo que tuve que aprender fue a soltar aquello que me impedía caminar hacia donde mi corazón me llamaba."
+        />
+
+        <div className="mt-16 space-y-20 md:mt-24 md:space-y-28">
+          <article className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-16">
+            <div className="relative">
+              <img
+                src={rosaMeditacion.url}
+                alt="Rosa en un momento de meditación y escucha interior"
+                width={768}
+                height={852}
+                className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
+                loading="lazy"
+              />
+              <span className="frequency-ribbon -bottom-8" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="eyebrow">01 · La separación y el miedo</p>
+              <div className="mt-6 space-y-5 leading-relaxed text-muted-foreground">
+                <p>
+                  Cuando me separé del padre de mi hijo, yo sabía quién era y sabía hacia dónde
+                  quería dirigirme.
+                </p>
+                <Quote>“No estaba perdida. Pero tenía miedo.”</Quote>
+                <p>
+                  Miedo a criar a mi hijo sola, a cerrar una etapa como familia, concepto que había
+                  sido tan importante para mí.
+                </p>
+                <p>
+                  Fue uno de esos momentos en los que, aunque por fuera sigues adelante, por dentro
+                  sientes que algo se ha roto y te invade una profunda soledad.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article className="grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-16">
+            <div className="md:order-2">
+              <img
+                src={rosaYogaSala.url}
+                alt="Rosa practicando Yoga Kundalini en su sala luminosa"
+                width={768}
+                height={852}
+                className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:order-1">
+              <p className="eyebrow">02 · Parar y escucharme</p>
+              <div className="mt-6 space-y-5 leading-relaxed text-muted-foreground">
+                <p>
+                  Llegó un momento en el que tuve que parar para empezar a escuchar lo que estaba
+                  pasando dentro de mí.
+                </p>
+                <p>
+                  El Yoga Kundalini, el trabajo interior y todas las formaciones que fui realizando
+                  y rescatando del baúl de los recuerdos se convirtieron entonces en mucho más que
+                  herramientas: fueron mi refugio y, poco a poco, mi camino de regreso.
+                </p>
+                <p>
+                  Empecé a reconstruirme, a reconocer mi valor, a recuperar mi confianza, a aprender
+                  a ponerme en mi lugar, a soltar cargas que no me correspondían, a entender muchas
+                  cosas de mi historia y de mi familia y, sobre todo, a volver a escucharme.
+                </p>
+                <p className="text-foreground">
+                  Con el tiempo comprendí algo que hoy forma parte de mi manera de acompañar: a veces
+                  necesitamos atravesar una etapa de ruptura para descubrir que también podemos
+                  volver a elegirnos.
+                </p>
+                <p>No fue un camino rápido ni perfecto. Fue un camino real.</p>
+              </div>
+            </div>
+          </article>
+
+          <article className="mx-auto max-w-4xl border-y border-gold/40 py-12 text-center md:py-16">
+            <p className="eyebrow">03 · La pregunta que cambió el rumbo</p>
+            <p className="mt-7 font-display text-3xl leading-tight text-earth italic md:text-5xl">
+              “¿Qué pasaría si me atreviera a caminar hacia aquello que realmente sentía mi
+              corazón?”
+            </p>
+            <div className="mx-auto mt-9 max-w-2xl space-y-5 leading-relaxed text-muted-foreground">
+              <p>Tras esta dura etapa apareció esa pregunta.</p>
+              <p>Decidí dejar mi negocio de más de treinta años. Qué loca, ¿no?</p>
               <p>
-                Yo también pasé por ahí. Cuando me separé del padre de mi hijo, sabía hacia dónde
-                quería dirigir mi vida, pero tenía miedo a criar sola, a cerrar una etapa familiar
-                tan importante. Paré. Y a través del yoga kundalini, el trabajo interior y mis
-                propios procesos, entendí que el verdadero viaje no estaba fuera, sino dentro.
+                Había sido una parte fundamental de mi vida. Había construido mucho, había trabajado,
+                había sostenido responsabilidades desde muy jovencita y había aprendido a salir
+                adelante. Pero sentía que ya había cumplido su propósito.
               </p>
+              <p>Mi negación a escuchar a mi alma me hacía sentir enferma.</p>
               <p>
-                Años después, tomé otra gran decisión: cerrar un negocio de más de treinta años que
-                había sido fundamental en mi vida. No fue fácil. Implicó soltar el control, el qué
-                dirán y una forma de vida que conocía a la perfección para atreverme a caminar hacia
-                lo que sentía en mi corazón.
-              </p>
-              <Quote>“Emprender desde el corazón no significa tener todas las respuestas, sino estar dispuesta a confiar en el camino.”</Quote>
-              <p className="text-foreground">
-                Hoy acompaño desde ese mismo lugar real y sin atajos. Porque sé lo que es sostenerlo
-                todo y sé lo que se siente al soltar la carga para volver a ser tú misma.
+                Los futuros inciertos con un hijo dan mucho vértigo. Pero mi hijo también fue una
+                inspiración para mí. Quería transmitirle, con mi propia vida, que lo más importante
+                en esta vida es amarse y ser fiel a uno mismo. Y ese deseo me dio las fuerzas
+                necesarias para hacerlo.
               </p>
             </div>
-          </div>
-          <div className="gold-card space-y-6 p-8 md:p-10">
-            <h3 className="font-display text-2xl">Lo que me define</h3>
-            <ul className="space-y-4 text-muted-foreground">
-              <li className="flex gap-3">
-                <span className="text-gold">✦</span>
-                <span>Más de 17 años como profesora de Yoga Kundalini.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-gold">✦</span>
-                <span>28 años como autónoma y mujer de negocio.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-gold">✦</span>
-                <span>
-                  Formación en constelaciones familiares, coaching ontológico, regresiones,
-                  digitopuntura craneal, técnicas energéticas y LNT.
-                </span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-gold">✦</span>
-                <span>Una manera de acompañar sin prisas, sin etiquetas y sin interpretaciones impuestas.</span>
-              </li>
-            </ul>
-          </div>
+          </article>
+
+          <article className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-16">
+            <div className="relative">
+              <img
+                src={altarLuz.url}
+                alt="Altar de Espacio Despertar-Nos entre plantas y luz natural"
+                width={768}
+                height={852}
+                className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <p className="eyebrow">04 · Soltar el negocio y las viejas creencias</p>
+              <h3 className="mt-5 font-display text-4xl leading-tight text-earth md:text-6xl">
+                Había que soltar.
+              </h3>
+              <div className="mt-7 space-y-5 leading-relaxed text-muted-foreground">
+                <p>Soltar miedos. Soltar viejas creencias.</p>
+                <p>
+                  Soltar la necesidad de tenerlo todo bajo control. Soltar una forma de vida que
+                  conocía muy bien.
+                </p>
+                <p>
+                  Y soltar una mochila que durante mucho tiempo había llevado conmigo y que ya no me
+                  correspondía seguir cargando.
+                </p>
+                <p>
+                  Escucharme con claridad y armarme de valor me ayudaron en mi propósito y, sobre
+                  todo, a confiar. A reconocer mis capacidades. A conectar de nuevo con esa parte de
+                  mí que siempre había sabido que había algo más.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article className="relative overflow-hidden rounded-2xl bg-sage-deep px-7 py-14 text-primary-foreground shadow-[var(--shadow-glow)] md:px-16 md:py-20">
+            <span className="frequency-ribbon top-8 opacity-40" aria-hidden="true" />
+            <div className="relative mx-auto max-w-3xl">
+              <p className="eyebrow text-primary-foreground/70">05 · Emprender desde el corazón</p>
+              <h3 className="mt-6 font-display text-4xl leading-tight md:text-6xl">Desde el corazón.</h3>
+              <div className="mt-8 space-y-5 text-base leading-relaxed text-primary-foreground/80 md:text-lg">
+                <p>Y llegó el momento de cerrar mi negocio y emprender desde otro lugar.</p>
+                <p>
+                  No porque tuviera todas las respuestas, sino porque por fin estaba dispuesta a
+                  confiar en el camino.
+                </p>
+                <p className="font-display text-3xl text-primary-foreground italic">¡Qué liberación!</p>
+              </div>
+            </div>
+          </article>
+
+          <article className="grid gap-10 md:grid-cols-[0.75fr_1.25fr] md:gap-16">
+            <div>
+              <p className="eyebrow">06 · Lo que hoy sé</p>
+              <h3 className="mt-5 font-display text-3xl leading-tight text-earth md:text-5xl">
+                Hoy sé que soltar no significa renunciar a lo que has sido.
+              </h3>
+              <p className="mt-6 text-lg leading-relaxed text-foreground">
+                Significa agradecer lo vivido y permitirte caminar hacia lo que ahora eres.
+              </p>
+            </div>
+            <div className="space-y-5 leading-relaxed text-muted-foreground">
+              <p>Y eso es algo que también forma parte de mi manera de acompañar a otras personas.</p>
+              <Quote>
+                “Necesitamos dejar de cargar con aquello que ya no nos corresponde para poder ser
+                quienes realmente somos.”
+              </Quote>
+              <p>
+                No fue la separación en sí lo que me hizo encontrar mi camino. Fue lo que vino
+                después: soltar miedo, creencias y una identidad profesional construida durante
+                muchos años.
+              </p>
+              <p>
+                Mi propio camino me enseñó que cuando soltamos el miedo, las creencias y las cargas
+                que hemos llevado durante demasiado tiempo, aparece espacio para algo nuevo.
+              </p>
+              <p>
+                Y precisamente por haberlo vivido, sé que cuando una persona llega a mí sintiendo que
+                ha perdido el rumbo, que carga demasiado o que ya no sabe cómo salir de un patrón, no
+                necesita que alguien le diga simplemente: “tienes que ser fuerte”.
+              </p>
+              <p>Necesita un espacio donde pueda parar, sentirse escuchada y empezar a mirar.</p>
+              <p>
+                Quizá por eso hoy acompaño de una manera tan diferente. Porque sé lo que significa
+                estar al otro lado. Sé lo que significa sentir que tienes que poder con todo.
+              </p>
+              <p className="text-foreground">
+                Y también sé que, incluso cuando parece que hemos perdido el camino, podemos volver a
+                encontrarnos.
+              </p>
+            </div>
+          </article>
+
+          <article className="mx-auto max-w-4xl text-center">
+            <p className="eyebrow">07 · El nacimiento de Espacio Despertar-Nos</p>
+            <div className="mt-8 space-y-3 font-display text-3xl leading-tight text-earth md:text-5xl">
+              <p>Volver a escuchar nuestra propia voz.</p>
+              <p>Volver a conectar con nuestra alma.</p>
+              <p>Volver a caminar la vida desde el corazón.</p>
+            </div>
+            <p className="mt-9 text-lg leading-relaxed text-muted-foreground">Ese fue mi camino.</p>
+            <p className="mt-3 text-lg leading-relaxed text-muted-foreground">Y desde ahí nace hoy:</p>
+            <h3 className="mt-7 font-display text-4xl leading-tight md:text-6xl">
+              Espacio Despertar-Nos
+            </h3>
+            <span className="rule-line mx-auto mt-7" />
+            <p className="mx-auto mt-10 max-w-3xl font-display text-2xl leading-snug text-earth italic md:text-3xl">
+              “Quizá por eso hoy no te pido que seas fuerte. Te ofrezco un espacio donde puedas
+              parar, mirar, soltar y volver a escucharte.”
+            </p>
+            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-foreground">
+              No necesitas saber qué terapia necesitas. Solo necesitas contarme qué estás viviendo.
+            </p>
+            <a
+              href={whatsappUrl("Hola Rosa, quiero contarte qué estoy viviendo.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-9 inline-flex rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase shadow-[var(--shadow-glow)] transition-opacity hover:opacity-90"
+            >
+              Hablar con Rosa
+            </a>
+          </article>
         </div>
       </Section>
 
