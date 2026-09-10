@@ -7,13 +7,13 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur">
+    <header className="border-gold/25 bg-background/80 sticky top-0 z-50 border-b backdrop-blur-md">
       <div className="container-prose flex items-center justify-between gap-4 px-6 py-4">
         <Link to="/" className="leading-tight" onClick={() => setOpen(false)}>
           <span className="block font-display text-lg tracking-[0.14em] uppercase">
             Espacio Despertar-Nos
           </span>
-          <span className="block text-[0.68rem] tracking-[0.18em] text-muted-foreground uppercase">
+          <span className="text-gold block text-[0.68rem] tracking-[0.18em] uppercase">
             Rosa · acompañamiento integral
           </span>
         </Link>
