@@ -49,11 +49,11 @@ function Mediumnidad() {
           </div>
           <img
             src={luzCamino}
-            alt="Vela encendida junto a una ventana, ambiente sereno"
+            alt="Camino de piedra entre flores al amanecer, con luz dorada y bruma"
             loading="lazy"
-            width={1200}
-            height={900}
-            className="rounded-2xl object-cover"
+            width={1408}
+            height={912}
+            className="rounded-3xl object-cover shadow-[var(--shadow-glow)]"
           />
         </div>
       </Section>
