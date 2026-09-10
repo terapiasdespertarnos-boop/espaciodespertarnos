@@ -6,10 +6,10 @@ export const site = {
   name: "Espacio Despertar-Nos",
   tagline: "Un lugar para parar, mirar, soltar y volver a ti.",
   // Número en formato internacional, sin espacios ni signos.
-  whatsappNumber: "34600000000",
-  email: "hola@espaciodespertar-nos.com",
-  instagram: "https://instagram.com/",
-  facebook: "https://facebook.com/",
+  whatsappNumber: "34660257072",
+  email: "terapias.despertar.nos@gmail.com",
+  instagram: "https://instagram.com/espacio.despertar_nos",
+  facebook: "https://facebook.com/espacio.despertar_nos",
 };
 
 export const whatsappUrl = (
