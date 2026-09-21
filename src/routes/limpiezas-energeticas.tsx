@@ -94,8 +94,8 @@ function Limpiezas() {
           </p>
           <p>
             Cuando percibo que hay algo más —una presencia, una energía vinculada al lugar o a la
-            persona— lo acompaño desde la serenidad, sin miedo y sin dramatizar. Nunca intervengo
-            si no considero que sea necesario.
+            persona— lo acompaño desde la serenidad, sin miedo y sin dramatizar. Intervengo según
+            la necesidad.
           </p>
         </div>
       </Section>
