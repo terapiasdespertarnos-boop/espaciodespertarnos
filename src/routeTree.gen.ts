@@ -17,6 +17,7 @@ import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as HerramientasRouteImport } from './routes/herramientas'
 import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-energeticas'
 import { Route as MediumnidadRouteImport } from './routes/mediumnidad'
+import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
 import { Route as PoliticaDePrivacidadRouteImport } from './routes/politica-de-privacidad'
 import { Route as RetirosRouteImport } from './routes/retiros'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
@@ -64,6 +65,11 @@ const MediumnidadRoute = MediumnidadRouteImport.update({
   path: '/mediumnidad',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PoliticaDeCookiesRoute = PoliticaDeCookiesRouteImport.update({
+  id: '/politica-de-cookies',
+  path: '/politica-de-cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PoliticaDePrivacidadRoute = PoliticaDePrivacidadRouteImport.update({
   id: '/politica-de-privacidad',
   path: '/politica-de-privacidad',
@@ -104,6 +110,7 @@ export interface FileRoutesByFullPath {
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -119,6 +126,7 @@ export interface FileRoutesByTo {
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -136,6 +144,7 @@ export interface FileRoutesById {
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -154,6 +163,7 @@ export interface FileRouteTypes {
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-cookies'
     | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
@@ -169,6 +179,7 @@ export interface FileRouteTypes {
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-cookies'
     | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
@@ -185,6 +196,7 @@ export interface FileRouteTypes {
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-cookies'
     | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
@@ -202,6 +214,7 @@ export interface RootRouteChildren {
   HerramientasRoute: typeof HerramientasRoute
   LimpiezasEnergeticasRoute: typeof LimpiezasEnergeticasRoute
   MediumnidadRoute: typeof MediumnidadRoute
+  PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
   PoliticaDePrivacidadRoute: typeof PoliticaDePrivacidadRoute
   RetirosRoute: typeof RetirosRoute
   SobreMiRoute: typeof SobreMiRoute
@@ -264,6 +277,13 @@ declare module '@tanstack/react-router' {
       path: '/mediumnidad'
       fullPath: '/mediumnidad'
       preLoaderRoute: typeof MediumnidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-de-cookies': {
+      id: '/politica-de-cookies'
+      path: '/politica-de-cookies'
+      fullPath: '/politica-de-cookies'
+      preLoaderRoute: typeof PoliticaDeCookiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/politica-de-privacidad': {
@@ -332,6 +352,7 @@ const rootRouteChildren: RootRouteChildren = {
   HerramientasRoute: HerramientasRoute,
   LimpiezasEnergeticasRoute: LimpiezasEnergeticasRoute,
   MediumnidadRoute: MediumnidadRoute,
+  PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
   PoliticaDePrivacidadRoute: PoliticaDePrivacidadRoute,
   RetirosRoute: RetirosRoute,
   SobreMiRoute: SobreMiRoute,

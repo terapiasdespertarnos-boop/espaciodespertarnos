@@ -69,9 +69,29 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-10 text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Espacio Despertar-Nos · Rosa
-        </p>
+        <div className="mt-10 flex flex-col gap-3 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
+          <p>© {new Date().getFullYear()} Espacio Despertar-Nos · Rosa</p>
+          <ul className="flex flex-wrap gap-x-5 gap-y-2">
+            <li>
+              <Link to="/aviso-legal" className="transition-colors hover:text-foreground">
+                Aviso legal
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/politica-de-privacidad"
+                className="transition-colors hover:text-foreground"
+              >
+                Política de privacidad
+              </Link>
+            </li>
+            <li>
+              <Link to="/politica-de-cookies" className="transition-colors hover:text-foreground">
+                Política de cookies
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
