@@ -16,6 +16,7 @@ import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as HerramientasRouteImport } from './routes/herramientas'
 import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-energeticas'
 import { Route as MediumnidadRouteImport } from './routes/mediumnidad'
+import { Route as PoliticaDePrivacidadRouteImport } from './routes/politica-de-privacidad'
 import { Route as RetirosRouteImport } from './routes/retiros'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as YogaRouteImport } from './routes/yoga'
@@ -57,6 +58,11 @@ const MediumnidadRoute = MediumnidadRouteImport.update({
   path: '/mediumnidad',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PoliticaDePrivacidadRoute = PoliticaDePrivacidadRouteImport.update({
+  id: '/politica-de-privacidad',
+  path: '/politica-de-privacidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RetirosRoute = RetirosRouteImport.update({
   id: '/retiros',
   path: '/retiros',
@@ -91,6 +97,7 @@ export interface FileRoutesByFullPath {
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
@@ -104,6 +111,7 @@ export interface FileRoutesByTo {
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
@@ -119,6 +127,7 @@ export interface FileRoutesById {
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
@@ -135,6 +144,7 @@ export interface FileRouteTypes {
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
@@ -148,6 +158,7 @@ export interface FileRouteTypes {
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
@@ -162,6 +173,7 @@ export interface FileRouteTypes {
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
@@ -177,6 +189,7 @@ export interface RootRouteChildren {
   HerramientasRoute: typeof HerramientasRoute
   LimpiezasEnergeticasRoute: typeof LimpiezasEnergeticasRoute
   MediumnidadRoute: typeof MediumnidadRoute
+  PoliticaDePrivacidadRoute: typeof PoliticaDePrivacidadRoute
   RetirosRoute: typeof RetirosRoute
   SobreMiRoute: typeof SobreMiRoute
   YogaRoute: typeof YogaRoute
@@ -231,6 +244,13 @@ declare module '@tanstack/react-router' {
       path: '/mediumnidad'
       fullPath: '/mediumnidad'
       preLoaderRoute: typeof MediumnidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-de-privacidad': {
+      id: '/politica-de-privacidad'
+      path: '/politica-de-privacidad'
+      fullPath: '/politica-de-privacidad'
+      preLoaderRoute: typeof PoliticaDePrivacidadRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/retiros': {
@@ -291,6 +311,7 @@ const rootRouteChildren: RootRouteChildren = {
   HerramientasRoute: HerramientasRoute,
   LimpiezasEnergeticasRoute: LimpiezasEnergeticasRoute,
   MediumnidadRoute: MediumnidadRoute,
+  PoliticaDePrivacidadRoute: PoliticaDePrivacidadRoute,
   RetirosRoute: RetirosRoute,
   SobreMiRoute: SobreMiRoute,
   YogaRoute: YogaRoute,
