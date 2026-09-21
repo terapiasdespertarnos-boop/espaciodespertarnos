@@ -48,7 +48,7 @@ function Limpiezas() {
         <SectionHeading
           eyebrow="Limpiezas energéticas"
           title="Limpiar, liberar, renovar y devolver cada cosa a su lugar."
-          intro="Un espacio para parar, escucharte y trabajar aquello que hoy sientes que necesitas transformar. Las personas y los espacios pueden acumular diferentes cargas o influencias que afectan a nuestra sensación de bienestar, vitalidad y equilibrio. A través del testaje energético exploro qué puede estar influyendo, trabajo sobre ello mediante la limpieza y vuelvo a testar para comprobar cómo se encuentra el campo energético."
+          intro="Las personas y los espacios pueden acumular diferentes cargas o influencias que afectan a nuestra sensación de bienestar, vitalidad y equilibrio. A través del testaje energético exploro qué puede estar influyendo, trabajo sobre ello mediante la limpieza y vuelvo a testar para comprobar cómo se encuentra el campo energético."
         />
         <div className="mt-14 grid items-center gap-12 md:grid-cols-2">
           <div className="relative">
