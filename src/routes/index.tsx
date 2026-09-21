@@ -232,7 +232,7 @@ function Index() {
       <Section tone="sand" glow>
         <SectionHeading
           eyebrow="Mi forma de acompañar"
-          title="No necesitas saber qué herramienta necesitas."
+          title="Tranquila, no es necesario que sepas qué herramienta elegir."
           intro="Puedes venir con una preocupación, un bloqueo, una relación que se repite, una sensación que no sabes explicar, un cansancio emocional o simplemente con la sensación de que necesitas cambiar algo en tu vida."
         />
         <p className="mt-8 max-w-3xl leading-relaxed text-muted-foreground">
