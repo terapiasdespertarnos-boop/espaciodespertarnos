@@ -21,7 +21,7 @@ export const Route = createFileRoute("/contacto")({
       { property: "og:title", content: "Empezar también puede ser simplemente hablar." },
       {
         property: "og:description",
-        content: "Cuéntame qué estás viviendo y vemos juntas o juntos qué puede acompañarte.",
+        content: "Cuéntame qué estás viviendo y vemos juntas/os qué puede acompañarte.",
       },
       { property: "og:url", content: "/contacto" },
     ],
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/contacto")({
 const faqs: [string, string][] = [
   [
     "¿Tengo que saber qué terapia necesito?",
-    "No. Puedes contarme qué estás viviendo y juntas o juntos veremos qué herramienta puede ser más adecuada.",
+    "No. Puedes contarme qué estás viviendo y juntas/os veremos qué herramienta puede ser más adecuada.",
   ],
   [
     "¿Tengo que creer en todo esto para venir?",

@@ -48,7 +48,7 @@ const frases = [
   "Me cuesta poner límites.",
   "Siempre termino repitiendo las mismas historias.",
   "Siento que algo me bloquea.",
-  "Estoy cansada de entenderlo todo con la cabeza.",
+  "Estoy cansada/o de entenderlo todo con la cabeza.",
   "Quiero dejar de sentirme responsable de todo.",
   "Necesito saber qué es mío y qué no.",
   "Quiero sentirme más ligera.",
@@ -232,7 +232,7 @@ function Index() {
       <Section tone="sand" glow>
         <SectionHeading
           eyebrow="Mi forma de acompañar"
-          title="Tranquila, no es necesario que sepas qué herramienta elegir."
+          title="Tranquila/o, no es necesario que sepas qué herramienta elegir."
           intro="Puedes venir con una preocupación, un bloqueo, una relación que se repite, una sensación que no sabes explicar, un cansancio emocional o simplemente con la sensación de que necesitas cambiar algo en tu vida."
         />
         <p className="mt-8 max-w-3xl leading-relaxed text-muted-foreground">

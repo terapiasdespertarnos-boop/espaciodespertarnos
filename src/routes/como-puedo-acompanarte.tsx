@@ -69,7 +69,7 @@ function ComoPuedoAcompanarte() {
       </Section>
 
       <Section tone="sand">
-        <Quote>Te escucho. Te miro. Percibo. Y juntas o juntos buscamos qué necesitas.</Quote>
+        <Quote>Te escucho. Te miro. Percibo. Y juntas/os buscamos qué necesitas.</Quote>
       </Section>
 
       <CtaBand />
