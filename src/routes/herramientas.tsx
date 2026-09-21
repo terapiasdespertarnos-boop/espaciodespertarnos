@@ -76,7 +76,7 @@ function Herramientas() {
               ))}
             </ul>
             <Link to="/yoga" className="inline-block text-xs tracking-[0.16em] text-clay uppercase">
-              Ver la sección de yoga
+              Ver la sección de yoga kundalini
             </Link>
           </div>
         </div>
