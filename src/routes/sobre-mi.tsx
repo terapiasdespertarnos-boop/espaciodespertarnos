@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
@@ -53,7 +53,7 @@ function SobreMi() {
       <section className="relative isolate overflow-hidden bg-cream">
         <div className="container-prose relative grid items-center gap-10 px-6 py-24 md:grid-cols-2 md:py-32">
           <div className="max-w-xl fade-up">
-            <p className="eyebrow">Mi historia</p>
+            <p className="eyebrow">Soy Rosa</p>
             <h1 className="mt-6 font-display text-4xl leading-[1.1] md:text-5xl lg:text-6xl">
               Yo también tuve que aprender a soltar
             </h1>
@@ -62,22 +62,9 @@ function SobreMi() {
               Cuando me separé del padre de mi hijo, yo sabía quién era y sabía hacia dónde quería
               dirigirme. No estaba perdida. Pero tenía miedo.
             </p>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <a
-                href={whatsappUrl("Hola Rosa, me gustaría iniciar mi proceso. ¿Podemos hablar?")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase shadow-[var(--shadow-glow)] transition-opacity hover:opacity-90"
-              >
-                Iniciar mi proceso
-              </a>
-              <a
-                href="#mi-historia"
-                className="border-gold/60 hover:bg-sand rounded-full border px-7 py-3.5 text-xs tracking-[0.14em] uppercase transition-colors"
-              >
-                Leer mi historia
-              </a>
-            </div>
+            <p className="mt-8 font-display text-2xl leading-snug text-earth italic md:text-3xl">
+              Esta es mi historia, contada desde lo vivido.
+            </p>
           </div>
           <div className="relative">
             <img
