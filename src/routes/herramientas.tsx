@@ -32,7 +32,7 @@ const energeticas = [
   "Sendero Solar",
   "Frecuencias de Colores",
   "Sat Nam Rasayan",
-  "LNT",
+  "Radiestesia",
 ];
 
 function Herramientas() {
