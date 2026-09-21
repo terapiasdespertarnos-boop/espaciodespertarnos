@@ -139,7 +139,7 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
               <input
                 id="ayuda"
                 name="ayuda"
-                placeholder="Por ejemplo: me siento bloqueada, quiero una limpieza en casa…"
+                placeholder="Por ejemplo: me siento bloqueada/o, quiero una limpieza en casa…"
                 className="rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
               />
             </div>
