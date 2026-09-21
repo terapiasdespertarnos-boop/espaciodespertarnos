@@ -42,7 +42,7 @@ function Herramientas() {
         <SectionHeading
           eyebrow="Mis herramientas"
           title="Diferentes herramientas. Una misma intención: ayudarte a volver a ti."
-          intro="No presento cada técnica como algo independiente. Las utilizo, combino o dejo de lado según lo que percibo que necesita cada persona."
+          intro="Trabajo sin encasillar las técnicas de forma independiente. Las utilizo, fusiono, adapto o aparto según lo que percibo que necesita cada persona."
         />
       </Section>
 
