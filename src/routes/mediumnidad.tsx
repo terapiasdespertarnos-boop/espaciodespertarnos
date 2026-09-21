@@ -70,8 +70,8 @@ function Mediumnidad() {
             que les corresponde y continuar su camino.
           </p>
           <p>
-            Cuando percibo que es necesario, realizo este acompañamiento desde la serenidad, sin
-            miedo y sin dramatizar.
+            Cuando percibo que es necesario, realizo este acompañamiento desde el amor, con el más
+            absoluto respeto, desde la serenidad y el servicio.
           </p>
         </div>
       </Section>
