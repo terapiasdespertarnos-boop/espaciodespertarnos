@@ -82,7 +82,7 @@ function Mediumnidad() {
         </Quote>
         <p className="mt-10 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           Comparto esto desde mi experiencia personal: no necesitas creer en nada para que podamos
-          trabajar juntas o juntos.
+          trabajar juntas/os.
         </p>
       </Section>
 

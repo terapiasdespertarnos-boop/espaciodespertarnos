@@ -259,7 +259,7 @@ function SobreMi() {
               </p>
               <p>Cuando soltamos aquello que ya no necesitamos, aparece espacio.</p>
               <p>Y en ese espacio podemos volver a escuchar nuestra propia voz.</p>
-              <p>Podemos reconectar con nosotros mismos.</p>
+              <p>Podemos reconectar con nosotros/as mismos/as.</p>
               <p>
                 Podemos recordar quiénes somos y caminar la vida desde un lugar más auténtico.
               </p>
@@ -305,7 +305,7 @@ function SobreMi() {
       <Section>
         <div className="max-w-3xl">
           <h2 className="font-display text-3xl leading-tight md:text-5xl">
-            ¿Y si empezamos a caminar juntas?
+            ¿Y si empezamos a caminar juntas/os?
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             No necesitas convertirte en alguien diferente. Solo necesitas dejar de cargar con aquello

@@ -32,7 +32,7 @@ const tarjetas: [string, string][] = [
   ["Límites", "Aprender a decir no sin sentir que fallas a nadie."],
   ["Cambios vitales", "Etapas que se cierran y otras que aún no tienen forma."],
   ["Sensación de estancamiento", "Sabes lo que quieres, pero no consigues moverte."],
-  ["Cansancio emocional", "Llevas demasiado tiempo sosteniendo a todos."],
+  ["Cansancio emocional", "Llevas demasiado tiempo sosteniendo a todo el mundo."],
   ["Limpieza energética personal", "Cuando sientes pesadez o necesidad de renovación."],
   ["Limpieza energética de hogares", "Ambientes cargados, incómodos o extraños."],
   ["Limpieza energética de negocios", "Renovar el ambiente y empezar una nueva etapa."],
@@ -69,7 +69,7 @@ function ComoPuedoAcompanarte() {
       </Section>
 
       <Section tone="sand">
-        <Quote>Te escucho. Te miro. Percibo. Y juntas o juntos buscamos qué necesitas.</Quote>
+        <Quote>Te escucho. Te miro. Percibo. Y juntas/os buscamos qué necesitas.</Quote>
       </Section>
 
       <CtaBand />
