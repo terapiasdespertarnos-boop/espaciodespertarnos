@@ -3,7 +3,6 @@ import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import calma from "@/assets/calma.jpg";
 import lntRosaTerapeuta from "@/assets/lnt-rosa-terapeuta.png";
-import constelaciones from "@/assets/constelaciones-v1.png";
 
 export const Route = createFileRoute("/herramientas")({
   head: () => ({
@@ -188,16 +187,6 @@ function Herramientas() {
             ))}
           </ul>
         </div>
-        <figure className="mt-12 flex justify-center">
-          <img
-            src={constelaciones}
-            alt="Figuras luminosas unidas por hilos dorados, ilustración de constelaciones familiares"
-            width={960}
-            height={1200}
-            loading="lazy"
-            className="w-full max-w-md rounded-2xl shadow-[var(--shadow-soft)]"
-          />
-        </figure>
       </Section>
 
       {/* COACHING */}
