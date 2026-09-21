@@ -51,7 +51,7 @@ const frases = [
   "Estoy cansada/o de entenderlo todo con la cabeza.",
   "Quiero dejar de sentirme responsable de todo.",
   "Necesito saber qué es mío y qué no.",
-  "Quiero sentirme más ligera.",
+  "Quiero sentirme más ligera/o.",
   "Quiero volver a disfrutar de mi vida.",
 ];
 

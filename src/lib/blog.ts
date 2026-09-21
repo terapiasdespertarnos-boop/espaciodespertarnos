@@ -30,7 +30,7 @@ export const posts: Post[] = [
     date: "2026-02-24",
     readingTime: "4 min",
     paragraphs: [
-      "Hay un cansancio que no se quita con vacaciones. Es el de quien lleva años pendiente de todos: de los padres, de los hijos, de la pareja, del trabajo, del ambiente familiar.",
+      "Hay un cansancio que no se quita con vacaciones. Es el de quien lleva años pendiente de todo el mundo: de los padres, de los hijos, de la pareja, del trabajo, del ambiente familiar.",
       "Muchas veces empezó pronto, en una casa donde alguien tenía que ocuparse. Y ese lugar, con el tiempo, se convirtió en identidad: yo soy la que puede, la que aguanta, la que resuelve.",
       "La pregunta que suele abrir algo no es «cómo descanso más», sino «qué de todo esto me corresponde realmente». Distinguir entre amor y responsabilidad cambia el peso de la mochila.",
       "Soltar no es abandonar a nadie. Es devolver a cada persona lo que le pertenece y quedarte con lo tuyo, que ya es suficiente.",
@@ -97,7 +97,7 @@ export const posts: Post[] = [
     readingTime: "3 min",
     paragraphs: [
       "«Suelta» es una de esas palabras que se han dicho tantas veces que ya casi no significan nada. Y para quien está dentro del dolor, suena incluso a reproche.",
-      "Soltar no es olvidar ni obligarte a perdonar. Es dejar de sostener algo que ya no te corresponde sostener, y hacerlo cuando estás preparada, no cuando alguien te lo pide.",
+      "Soltar no es olvidar ni obligarte a perdonar. Es dejar de sostener algo que ya no te corresponde sostener, y hacerlo cuando estás preparada/o, no cuando alguien te lo pide.",
       "Por eso el proceso empieza mirando: qué estás cargando, desde cuándo y para quién. Después, soltar ocurre casi solo.",
     ],
   },
