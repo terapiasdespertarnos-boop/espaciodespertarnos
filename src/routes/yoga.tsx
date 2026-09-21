@@ -35,6 +35,7 @@ function Yoga() {
               eyebrow="Yoga Kundalini · Con más de 18 años de experiencia"
               title="El cuerpo también sabe. Y muchas veces habla antes que la cabeza."
               intro="Utilizo el yoga como una herramienta de conciencia, equilibrio, presencia y conexión con uno mismo."
+              className="text-4xl md:text-6xl"
             />
           </div>
           <img
@@ -78,7 +79,47 @@ function Yoga() {
             </article>
           ))}
         </div>
-        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+        <div className="mt-16">
+          <SectionHeading
+            eyebrow="Beneficios"
+            title="Lo que la práctica te aporta"
+            align="center"
+          />
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              [
+                "Calma y menos estrés",
+                "La respiración consciente ayuda a bajar revoluciones y a soltar la tensión acumulada.",
+              ],
+              [
+                "Más energía y vitalidad",
+                "Practicar de forma regular despierta una energía que se nota en el día a día.",
+              ],
+              [
+                "Sueño más reparador",
+                "Un sistema nervioso más sereno se traduce en un descanso más profundo.",
+              ],
+              [
+                "Equilibrio emocional",
+                "Espacio para reconocer lo que sientes sin quedarte atrapada en ello.",
+              ],
+              [
+                "Claridad mental",
+                "La meditación ordena el ruido interior y hace más fácil decidir y estar presente.",
+              ],
+              [
+                "Conexión contigo",
+                "Vuelves a escucharte, a habitarte y a reconocer lo que de verdad necesitas.",
+              ],
+            ].map(([t, d]) => (
+              <article key={t} className="gold-card p-7">
+                <h3 className="text-lg">{t}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+        <p className="mt-12 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           No necesitas experiencia previa ni una flexibilidad concreta. Si tienes alguna condición
           de salud, coméntamelo antes para adaptar la práctica; el yoga acompaña, no sustituye
           ningún tratamiento médico.
