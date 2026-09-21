@@ -32,11 +32,19 @@ function Yoga() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div>
             <SectionHeading
-              eyebrow="Yoga Kundalini · Con más de 18 años de experiencia"
-              title="A veces solo necesitamos un espacio donde poder escucharnos de verdad."
-              intro="Utilizo el yoga como una herramienta de conciencia, equilibrio, presencia y conexión con uno mismo."
-              className="text-4xl md:text-6xl"
+              title="Yoga Kundalini"
+              className="text-5xl md:text-7xl"
             />
+            <p className="mt-5 text-sm font-medium uppercase tracking-[0.25em] text-[var(--sage-deep)] md:text-base">
+              Con más de 18 años de experiencia
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground md:text-xl">
+              A veces solo necesitamos un espacio donde poder escucharnos de verdad.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Utilizo el yoga como una herramienta de conciencia, equilibrio, presencia y conexión
+              con uno mismo.
+            </p>
           </div>
           <img
             src={rosaYoga.url}
