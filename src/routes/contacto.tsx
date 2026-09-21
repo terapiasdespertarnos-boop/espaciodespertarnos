@@ -12,7 +12,7 @@ import { site, whatsappUrl } from "@/lib/site";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto · Hablar con Rosa · Espacio Despertar-Nos" },
+      { title: "Contacto · Compartir con Rosa · Espacio Despertar-Nos" },
       {
         name: "description",
         content:
@@ -83,7 +83,7 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
             rel="noopener noreferrer"
             className="rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase"
           >
-            Hablar con Rosa
+            Compartir con Rosa
           </a>
           <a
             href={`mailto:${site.email}`}

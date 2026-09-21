@@ -164,7 +164,7 @@ function Index() {
                 rel="noopener noreferrer"
                 className="rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase shadow-[var(--shadow-glow)] transition-opacity hover:opacity-90"
               >
-                Quiero hablar con Rosa
+                Quiero compartir con Rosa
               </a>
               <Link
                 to="/como-puedo-acompanarte"
