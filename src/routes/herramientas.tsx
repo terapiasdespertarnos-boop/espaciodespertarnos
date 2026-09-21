@@ -272,12 +272,13 @@ function Herramientas() {
       <Section tone="sand">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div>
-            <SectionHeading
-              title="Limpiezas energéticas y mediumnidad"
-              intro="A lo largo de mi formación y experiencia he trabajado con diferentes técnicas y enfoques energéticos."
-            />
+            <SectionHeading title="Limpiezas energéticas y mediumnidad" />
             <p className="mt-4 max-w-2xl font-display text-lg leading-snug text-[var(--sage-deep)] md:text-xl">
               Cuando necesitamos abordar aspectos sutiles, que no siempre se ven pero se sienten.
+            </p>
+            <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
+              A lo largo de mi formación y experiencia he trabajado con diferentes técnicas y
+              enfoques energéticos.
             </p>
             <ul className="mt-8 flex flex-wrap gap-2">
               {energeticas.map((e) => (
