@@ -53,14 +53,14 @@ function SobreMi() {
       <section className="relative isolate overflow-hidden bg-cream">
         <div className="container-prose relative grid items-center gap-10 px-6 py-24 md:grid-cols-2 md:py-32">
           <div className="max-w-xl fade-up">
-            <p className="eyebrow">Espacio Despertar-Nos</p>
+            <p className="eyebrow">Mi historia</p>
             <h1 className="mt-6 font-display text-4xl leading-[1.1] md:text-5xl lg:text-6xl">
-              A veces no necesitamos encontrar el camino. Necesitamos atrevernos a caminarlo.
+              Yo también tuve que aprender a soltar
             </h1>
             <span className="rule-line mt-6" />
             <p className="mt-7 text-lg leading-relaxed text-earth md:text-xl">
-              Un espacio seguro para parar, soltar la mochila que ya no te corresponde y volver a
-              escucharte. No estás perdida; tienes miedo, y estás a tiempo de elegirte de nuevo.
+              Cuando me separé del padre de mi hijo, yo sabía quién era y sabía hacia dónde quería
+              dirigirme. No estaba perdida. Pero tenía miedo.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
@@ -75,7 +75,7 @@ function SobreMi() {
                 href="#mi-historia"
                 className="border-gold/60 hover:bg-sand rounded-full border px-7 py-3.5 text-xs tracking-[0.14em] uppercase transition-colors"
               >
-                Conoce mi historia
+                Leer mi historia
               </a>
             </div>
           </div>
@@ -91,33 +91,9 @@ function SobreMi() {
         </div>
       </section>
 
-      {/* ¿TE SUENA FAMILIAR? */}
-      <Section>
-        <SectionHeading
-          eyebrow="¿Te suena familiar?"
-          title="Cuando sientes que tienes que poder con todo"
-        />
-        <div className="mt-8 max-w-3xl space-y-5 leading-relaxed text-muted-foreground">
-          <p>
-            Llegas a un punto en el que por fuera sigues adelante, sosteniendo responsabilidades,
-            tirando del carro... pero por dentro sientes que algo se ha roto. Te invade una profunda
-            soledad o el peso de una etapa que se cierra (una separación, un cambio vital, un
-            agotamiento silencioso).
-          </p>
-          <Quote>“No estaba perdida. Tenía miedo.”</Quote>
-          <p>
-            El problema no es que no sepas hacia dónde ir. El verdadero desgaste viene de intentar
-            avanzar cargando con una mochila llena de expectativas, viejas creencias y cargas que
-            nunca te correspondieron llevar. Lo que necesitas no es que alguien te diga que "tienes
-            que ser fuerte", sino un espacio donde puedas parar, ser escuchada sin juicios y empezar
-            a mirar hacia dentro.
-          </p>
-        </div>
-      </Section>
-
       {/* MI HISTORIA */}
       <Section tone="cream" glow id="mi-historia">
-        <SectionHeading eyebrow="Mi historia" title="Yo también tuve que aprender a soltar" />
+        <SectionHeading eyebrow="Mi camino" title="Una historia de escucha, valor y transformación" />
 
         <div className="mt-16 space-y-20 md:mt-24 md:space-y-28">
           <article className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-16">
