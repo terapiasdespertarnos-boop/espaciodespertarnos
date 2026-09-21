@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
-import luzCamino from "@/assets/luz-camino.jpg";
+import almitaTunel from "@/assets/almita-tunel-v1.png";
 
 export const Route = createFileRoute("/mediumnidad")({
   head: () => ({
