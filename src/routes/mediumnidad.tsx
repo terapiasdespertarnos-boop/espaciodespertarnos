@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Section, SectionHeading, Quote } from "@/components/site/Section";
+import { Section, SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import luzCamino from "@/assets/luz-camino.jpg";
 
