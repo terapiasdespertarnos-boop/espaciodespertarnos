@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
+import rosaPuerta from "@/assets/rosa-puerta-sin-texto.png";
 import rosaCuenco from "@/assets/rosa-cuenco.jpeg.asset.json";
 import rosaMeditacion from "@/assets/rosa-meditacion.jpeg.asset.json";
 import rosaYogaSala from "@/assets/rosa-yoga-sala.jpeg.asset.json";
@@ -55,9 +56,12 @@ function SobreMi() {
           <div className="max-w-xl fade-up">
             <p className="eyebrow">Soy Rosa</p>
             <h1 className="mt-6 font-display text-4xl leading-[1.1] md:text-5xl lg:text-6xl">
-              Yo también tuve que aprender a soltar
+              El renacer comienza cuando te miras con amor
             </h1>
             <span className="rule-line mt-6" />
+            <p className="mt-6 font-display text-2xl leading-snug text-earth italic md:text-3xl">
+              Yo también tuve que aprender a soltar
+            </p>
             <p className="mt-7 text-lg leading-relaxed text-earth md:text-xl">
               Cuando me separé del padre de mi hijo, yo sabía quién era y sabía hacia dónde quería
               dirigirme. No estaba perdida. Pero tenía miedo.
@@ -68,11 +72,11 @@ function SobreMi() {
           </div>
           <div className="relative">
             <img
-              src={rosaCuenco.url}
-              alt="Rosa trabajando con un cuenco en su espacio"
+              src={rosaPuerta}
+              alt="Rosa en la entrada de su espacio"
               width={768}
-              height={852}
-              className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
+              height={1024}
+              className="aspect-[3/4] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
             />
           </div>
         </div>
