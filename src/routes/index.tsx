@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "No necesitas saber qué terapia necesitas. Solo necesitas contarme qué estás viviendo.",
+          "Descansa de tener que averiguar qué terapia necesitas. Solo cuéntame qué estás transitando en este momento.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -194,7 +194,7 @@ function Index() {
 
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
           <p className="font-display text-3xl leading-snug md:text-5xl">
-            No necesitas saber qué terapia necesitas. Solo necesitas contarme qué estás viviendo.
+            Descansa de tener que averiguar qué terapia necesitas. Solo cuéntame qué estás transitando en este momento.
           </p>
           <p className="text-base leading-relaxed text-muted-foreground">
             No trabajo con una técnica. Trabajo contigo. Tengo diferentes herramientas y, desde mi
