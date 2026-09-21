@@ -32,21 +32,6 @@ export const Route = createFileRoute("/sobre-mi")({
   component: SobreMi,
 });
 
-const pilares = [
-  {
-    t: "Espacio para parar",
-    d: "El primer paso para sanar es detener el piloto automático y darte permiso para sentir lo que te pasa.",
-  },
-  {
-    t: "Soltar la mochila",
-    d: "Identificamos y liberamos lealtades invisibles, creencias limitantes y cargas familiares que ya no te pertenecen.",
-  },
-  {
-    t: "Alinearte con tu alma",
-    d: "Conectamos con tu verdad profunda para que dejes de encajar y empieces a habitar tu propia vida con confianza.",
-  },
-];
-
 function SobreMi() {
   return (
     <>
@@ -313,23 +298,6 @@ function SobreMi() {
               </p>
             </div>
           </article>
-        </div>
-      </Section>
-
-      {/* MI FORMA DE ACOMPAÑAR */}
-      <Section tone="sand" glow>
-        <SectionHeading
-          eyebrow="Mi forma de acompañar"
-          title="Un enfoque real, humano y profundo"
-          intro="No creo en fórmulas mágicas ni en gurús que te dicen qué hacer. Mi acompañamiento une la experiencia vital, la escucha profunda y herramientas como las constelaciones familiares, integrando la intuición y la energía con total naturalidad y madurez."
-        />
-        <div className="mt-14 grid gap-5 md:grid-cols-3">
-          {pilares.map((p) => (
-            <div key={p.t} className="gold-card p-7">
-              <h3 className="font-display text-xl">{p.t}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.d}</p>
-            </div>
-          ))}
         </div>
       </Section>
 
