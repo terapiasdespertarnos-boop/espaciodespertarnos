@@ -166,6 +166,8 @@ function Herramientas() {
               "¿Por qué siempre me pasa lo mismo?",
               "¿Por qué siento que tengo que ocuparme de todo?",
               "¿Por qué no consigo avanzar?",
+              "¿Por qué repito patrones en mis relaciones de pareja?",
+              "¿Por qué vibro siempre en escasez?",
               "¿Qué no es mío?",
             ].map((q) => (
               <li key={q} className="gold-card px-6 py-5 font-display text-xl">
