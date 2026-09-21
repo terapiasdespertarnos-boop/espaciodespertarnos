@@ -100,6 +100,87 @@ function Limpiezas() {
       </Section>
 
       <Section tone="sand">
+        <SectionHeading
+          eyebrow="Limpiezas energéticas"
+          title="¿Qué es la contaminación energética?"
+          intro="Todos estamos expuestos a lo que llamamos contaminación energética. Esta puede provenir de diferentes fuentes: desencarnados, memorias de casas o terrenos, mal de ojo, envidias o pensamientos negativos de otras personas, polución electromagnética, parásitos astrales (energías de baja vibración), magia negra, entre otros."
+        />
+        <p className="text-muted-foreground mt-8 max-w-3xl leading-relaxed">
+          Todo ello puede afectarnos a nivel físico, mental y emocional, generando: cansancio,
+          pensamientos repetitivos, apatía, falta de motivación, insatisfacción o malestar general.
+        </p>
+      </Section>
+
+      <Section>
+        <div className="grid gap-8 md:grid-cols-2">
+          <article className="gold-card p-8 md:p-10">
+            <p className="eyebrow">Limpieza personal</p>
+            <h2 className="font-display mt-3 text-2xl leading-snug md:text-3xl">
+              Limpiezas energéticas personales
+            </h2>
+            <p className="text-muted-foreground mt-5 leading-relaxed">
+              Un proceso de acompañamiento continuado, con dos limpiezas a la semana durante cuatro
+              semanas.
+            </p>
+            <div className="mt-6">
+              <p className="text-foreground text-sm font-medium uppercase tracking-[0.18em]">
+                En este proceso
+              </p>
+              <ul className="text-muted-foreground mt-4 space-y-3 text-sm leading-relaxed">
+                <li>Testo la polución energética</li>
+                <li>Identifico su origen</li>
+                <li>Realizo la limpieza</li>
+                <li>Impulso tu vitalidad física y psíquica</li>
+              </ul>
+            </div>
+            <p className="text-muted-foreground mt-6 leading-relaxed">
+              Incluye seguimiento personalizado durante cuatro semanas.
+            </p>
+          </article>
+
+          <article className="gold-card p-8 md:p-10">
+            <p className="eyebrow">Hogares y locales</p>
+            <h2 className="font-display mt-3 text-2xl leading-snug md:text-3xl">
+              Limpieza de casas y locales
+            </h2>
+            <p className="text-muted-foreground mt-5 leading-relaxed">
+              Las energías de conflictos, relaciones pasadas, fallecidos o situaciones negativas
+              pueden quedar impregnadas en los espacios.
+            </p>
+            <div className="mt-6">
+              <p className="text-foreground text-sm font-medium uppercase tracking-[0.18em]">
+                Esto puede influir en
+              </p>
+              <ul className="text-muted-foreground mt-4 space-y-3 text-sm leading-relaxed">
+                <li>Estado emocional</li>
+                <li>Cansancio o apatía</li>
+                <li>Insomnio</li>
+                <li>Economía</li>
+                <li>Salud general</li>
+              </ul>
+            </div>
+            <div className="mt-6">
+              <p className="text-foreground text-sm font-medium uppercase tracking-[0.18em]">
+                Se realiza
+              </p>
+              <ul className="text-muted-foreground mt-4 space-y-3 text-sm leading-relaxed">
+                <li>Testaje energético de todas las estancias</li>
+                <li>Limpieza completa del espacio</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div className="mt-12 max-w-3xl leading-relaxed text-muted-foreground">
+          <p>
+            💫 En casos de polución por desencarnados, mi condición de médium me permite canalizar
+            mensajes de seres queridos que puedan estar atrapados en este plano y acompañarlos a
+            elevarse hacia la luz.
+          </p>
+        </div>
+      </Section>
+
+      <Section tone="sand">
         <Quote>
           No se trata de tener miedo a lo que no vemos. Se trata de acompañar con respeto aquello
           que percibimos.
