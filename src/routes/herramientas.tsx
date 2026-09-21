@@ -3,7 +3,6 @@ import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import calma from "@/assets/calma.jpg";
 import lntRosaTerapeuta from "@/assets/lnt-rosa-terapeuta.png";
-import constelaciones from "@/assets/constelaciones-v1.png";
 
 export const Route = createFileRoute("/herramientas")({
   head: () => ({
