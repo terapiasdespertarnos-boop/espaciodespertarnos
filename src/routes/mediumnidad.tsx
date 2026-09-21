@@ -73,11 +73,6 @@ function Mediumnidad() {
             Cuando percibo que es necesario, realizo este acompañamiento desde la serenidad, sin
             miedo y sin dramatizar.
           </p>
-          <p>
-            No busco generar temor ni interpretar todo lo que ocurre desde esta perspectiva.
-            Primero observo, escucho y siento. Y solo intervengo cuando considero que puede ser
-            necesario.
-          </p>
         </div>
       </Section>
 
