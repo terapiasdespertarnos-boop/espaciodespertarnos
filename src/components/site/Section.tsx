@@ -41,12 +41,14 @@ export function SectionHeading({
   intro,
   align = "left",
   invert = false,
+  className,
 }: {
   eyebrow?: string;
   title: string;
   intro?: string;
   align?: "left" | "center";
   invert?: boolean;
+  className?: string;
 }) {
   return (
     <header
@@ -62,6 +64,7 @@ export function SectionHeading({
         className={cn(
           "mt-4 text-3xl leading-[1.15] md:text-5xl",
           invert && "text-primary-foreground",
+          className,
         )}
       >
         {title}
