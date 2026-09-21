@@ -42,7 +42,7 @@ function Yoga() {
               A veces solo necesitamos un espacio donde poder escucharnos de verdad.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Utilizo el yoga como una herramienta de conciencia, equilibrio, presencia y conexión
+              Utilizo el yoga kundalini como una herramienta de conciencia, equilibrio, presencia y conexión
               con uno mismo.
             </p>
           </div>
@@ -177,7 +177,7 @@ function Yoga() {
         </div>
         <p className="mt-12 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           No necesitas experiencia previa ni una flexibilidad concreta. Si tienes alguna condición
-          de salud, coméntamelo antes para adaptar la práctica; el yoga acompaña, no sustituye
+          de salud, coméntamelo antes para adaptar la práctica; el yoga kundalini acompaña, no sustituye
           ningún tratamiento médico.
         </p>
       </Section>

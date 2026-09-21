@@ -47,7 +47,7 @@ const faqs: [string, string][] = [
     "¿Qué ocurre si durante una limpieza percibes una presencia?",
     "Te lo cuento con calma y sin dramatizar, y valoro contigo si tiene sentido acompañar ese proceso. Hablo desde mi experiencia personal, no como un hecho científicamente demostrado, y nunca busco generar miedo.",
   ],
-  ["¿Puedo hacer yoga aunque nunca haya practicado?", "Sí. La práctica se adapta a cada persona."],
+  ["¿Puedo hacer yoga kundalini aunque nunca haya practicado?", "Sí. La práctica se adapta a cada persona."],
   [
     "¿Puedo acudir aunque no sepa exactamente qué me pasa?",
     "Sí. De hecho, muchas personas llegan precisamente porque saben que algo no está bien pero no saben ponerle nombre.",

@@ -23,7 +23,7 @@ export const navItems = [
   { to: "/herramientas", label: "Herramientas" },
   { to: "/limpiezas-energeticas", label: "Limpiezas energéticas" },
   { to: "/mediumnidad", label: "Mediumnidad" },
-  { to: "/yoga", label: "Yoga" },
+  { to: "/yoga", label: "Yoga Kundalini" },
   { to: "/retiros", label: "Retiros" },
   { to: "/blog", label: "Blog" },
   { to: "/contacto", label: "Contacto" },

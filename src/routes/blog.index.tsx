@@ -10,7 +10,7 @@ export const Route = createFileRoute("/blog/")({
       {
         name: "description",
         content:
-          "Artículos sobre patrones repetitivos, límites, cargas familiares, cansancio emocional, yoga y limpieza energética de espacios.",
+          "Artículos sobre patrones repetitivos, límites, cargas familiares, cansancio emocional, yoga kundalini y limpieza energética de espacios.",
       },
       { property: "og:title", content: "Volver a ti · Blog de Espacio Despertar-Nos" },
       {

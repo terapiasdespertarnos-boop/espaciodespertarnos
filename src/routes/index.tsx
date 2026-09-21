@@ -153,7 +153,7 @@ function Index() {
               soltar lo que ya no necesitas cargar.
             </p>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground md:text-base">
-              Acompañamiento integral a través del yoga, coaching, constelaciones familiares,
+              Acompañamiento integral a través del yoga kundalini, coaching, constelaciones familiares,
               regresiones, técnicas energéticas, limpiezas de personas y espacios, LNT y otras
               herramientas de sanación y transformación.
             </p>
