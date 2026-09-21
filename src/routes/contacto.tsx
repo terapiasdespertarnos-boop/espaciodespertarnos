@@ -156,8 +156,13 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
             </div>
             <label className="flex items-start gap-3 text-xs leading-relaxed text-muted-foreground">
               <input type="checkbox" required className="mt-0.5 size-4 accent-[var(--primary)]" />
-              He leído y acepto la política de privacidad. Mis datos se usarán únicamente para
-              responder a esta consulta.
+              <span>
+                He leído y acepto la{" "}
+                <Link to="/politica-de-privacidad" className="underline underline-offset-2">
+                  política de privacidad
+                </Link>
+                . Mis datos se usarán únicamente para responder a esta consulta.
+              </span>
             </label>
             <button
               type="submit"
