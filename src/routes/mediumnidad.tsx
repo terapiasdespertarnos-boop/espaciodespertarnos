@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
-import luzCamino from "@/assets/luz-camino.jpg";
+import almitaTunel from "@/assets/almita-tunel-v1.png";
 
 export const Route = createFileRoute("/mediumnidad")({
   head: () => ({
@@ -48,10 +48,10 @@ function Mediumnidad() {
             </div>
           </div>
           <img
-            src={luzCamino}
-            alt="Camino de piedra entre flores al amanecer, con luz dorada y bruma"
+            src={almitaTunel}
+            alt="Almita de luz ascendiendo hacia un túnel luminoso, donde una figura la recibe con las manos abiertas"
             loading="lazy"
-            width={1408}
+            width={1200}
             height={912}
             className="rounded-3xl object-cover shadow-[var(--shadow-glow)]"
           />
