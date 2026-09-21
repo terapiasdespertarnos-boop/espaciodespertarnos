@@ -58,7 +58,7 @@ function Herramientas() {
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              Soy profesora de Yoga Kundalini con más de 18 años de experiencia. Utilizo el yoga
+              Soy profesora de Yoga Kundalini con más de 18 años de experiencia. Utilizo el yoga kundalini
               como una herramienta de conciencia, equilibrio, presencia y conexión con uno mismo.
             </p>
             <ul className="grid gap-2 text-sm">
@@ -76,7 +76,7 @@ function Herramientas() {
               ))}
             </ul>
             <Link to="/yoga" className="inline-block text-xs tracking-[0.16em] text-clay uppercase">
-              Ver la sección de yoga
+              Ver la sección de yoga kundalini
             </Link>
           </div>
         </div>

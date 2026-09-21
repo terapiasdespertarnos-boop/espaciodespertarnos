@@ -65,7 +65,7 @@ export const posts: Post[] = [
   },
   {
     slug: "yoga-y-presencia",
-    title: "Yoga y presencia: cuando el cuerpo entra en la conversación",
+    title: "Yoga Kundalini y presencia: cuando el cuerpo entra en la conversación",
     description:
       "Después de años de análisis, a veces lo que falta es una vivencia.",
     date: "2026-04-06",
