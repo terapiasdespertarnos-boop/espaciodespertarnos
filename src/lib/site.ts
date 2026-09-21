@@ -9,7 +9,7 @@ export const site = {
   whatsappNumber: "34660257072",
   email: "terapias.despertar.nos@gmail.com",
   instagram: "https://instagram.com/espacio.despertar_nos",
-  facebook: "https://facebook.com/espacio.despertar_nos",
+  facebook: "https://facebook.com/rosa.f.sab",
 };
 
 export const whatsappUrl = (
