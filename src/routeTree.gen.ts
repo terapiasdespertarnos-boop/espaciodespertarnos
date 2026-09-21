@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ComoPuedoAcompanarteRouteImport } from './routes/como-puedo-acompanarte'
-import { Route as ComoPuedoAyudarteRouteImport } from './routes/como-puedo-ayudarte'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as HerramientasRouteImport } from './routes/herramientas'
 import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-energeticas'
@@ -36,11 +35,6 @@ const BlogRoute = BlogRouteImport.update({
 const ComoPuedoAcompanarteRoute = ComoPuedoAcompanarteRouteImport.update({
   id: '/como-puedo-acompanarte',
   path: '/como-puedo-acompanarte',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ComoPuedoAyudarteRoute = ComoPuedoAyudarteRouteImport.update({
-  id: '/como-puedo-ayudarte',
-  path: '/como-puedo-ayudarte',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactoRoute = ContactoRouteImport.update({
@@ -93,7 +87,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
-  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
@@ -107,7 +100,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
-  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
@@ -123,7 +115,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
-  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
@@ -140,7 +131,6 @@ export interface FileRouteTypes {
     | '/'
     | '/blog'
     | '/como-puedo-acompanarte'
-    | '/como-puedo-ayudarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
@@ -154,7 +144,6 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/como-puedo-acompanarte'
-    | '/como-puedo-ayudarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
@@ -169,7 +158,6 @@ export interface FileRouteTypes {
     | '/'
     | '/blog'
     | '/como-puedo-acompanarte'
-    | '/como-puedo-ayudarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
@@ -185,7 +173,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BlogRoute: typeof BlogRouteWithChildren
   ComoPuedoAcompanarteRoute: typeof ComoPuedoAcompanarteRoute
-  ComoPuedoAyudarteRoute: typeof ComoPuedoAyudarteRoute
   ContactoRoute: typeof ContactoRoute
   HerramientasRoute: typeof HerramientasRoute
   LimpiezasEnergeticasRoute: typeof LimpiezasEnergeticasRoute
@@ -216,13 +203,6 @@ declare module '@tanstack/react-router' {
       path: '/como-puedo-acompanarte'
       fullPath: '/como-puedo-acompanarte'
       preLoaderRoute: typeof ComoPuedoAcompanarteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/como-puedo-ayudarte': {
-      id: '/como-puedo-ayudarte'
-      path: '/como-puedo-ayudarte'
-      fullPath: '/como-puedo-ayudarte'
-      preLoaderRoute: typeof ComoPuedoAyudarteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contacto': {
@@ -307,7 +287,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BlogRoute: BlogRouteWithChildren,
   ComoPuedoAcompanarteRoute: ComoPuedoAcompanarteRoute,
-  ComoPuedoAyudarteRoute: ComoPuedoAyudarteRoute,
   ContactoRoute: ContactoRoute,
   HerramientasRoute: HerramientasRoute,
   LimpiezasEnergeticasRoute: LimpiezasEnergeticasRoute,
