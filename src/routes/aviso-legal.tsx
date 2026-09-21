@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading } from "@/components/site/Section";
-import { LegalBlock, LegalNote } from "@/components/site/Legal";
+import { LegalBlock } from "@/components/site/Legal";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/aviso-legal")({
@@ -38,16 +38,18 @@ function AvisoLegal() {
       <div className="mt-12 space-y-10">
         <LegalBlock title="Titular de la web">
           <p>
-            Titular: Rosa — Espacio Despertar-Nos (terapias holísticas y acompañamiento personal).
+            Titular: Rosa María Fernández Sabio (Espacio Despertar-Nos — terapias holísticas y
+            acompañamiento personal).
+            <br />
+            NIF: 52972414X
             <br />
             Correo electrónico: <a href={`mailto:${site.email}`}>{site.email}</a>
             <br />
             Teléfono / WhatsApp: +34 660 25 70 72
+            <br />
+            Domicilio profesional: variable — las sesiones y actividades se imparten en distintos
+            espacios según el servicio; el lugar concreto se indica al reservar.
           </p>
-          <LegalNote>
-            Nombre y apellidos completos, NIF y domicilio profesional pendientes de completar por la
-            titular para cumplir con la información exigida por la Ley 34/2002 (LSSI-CE).
-          </LegalNote>
         </LegalBlock>
 
         <LegalBlock title="Objeto de la web">

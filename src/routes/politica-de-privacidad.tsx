@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading } from "@/components/site/Section";
-import { LegalBlock, LegalNote } from "@/components/site/Legal";
+import { LegalBlock } from "@/components/site/Legal";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/politica-de-privacidad")({
@@ -38,16 +38,17 @@ function PoliticaPrivacidad() {
       <div className="mt-12 space-y-10">
         <LegalBlock title="Quién trata tus datos">
           <p>
-            Responsable: Rosa (Espacio Despertar-Nos).
+            Responsable: Rosa María Fernández Sabio (Espacio Despertar-Nos).
+            <br />
+            NIF: 52972414X
             <br />
             Correo electrónico: <a href={`mailto:${site.email}`}>{site.email}</a>
             <br />
             Teléfono / WhatsApp: +34 660 25 70 72
+            <br />
+            Domicilio profesional: variable — las sesiones y actividades se imparten en distintos
+            espacios según el servicio; el lugar concreto se indica al reservar.
           </p>
-          <LegalNote>
-            Datos identificativos fiscales (nombre y apellidos completos, NIF y domicilio) pendientes
-            de completar por la titular.
-          </LegalNote>
         </LegalBlock>
 
         <LegalBlock title="Qué datos recojo">
