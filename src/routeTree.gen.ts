@@ -11,7 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogRouteImport } from './routes/blog'
-import { Route as ComoPuedoAyudarteRouteImport } from './routes/como-puedo-ayudarte'
+import { Route as ComoPuedoAcompanarteRouteImport } from './routes/como-puedo-acompanarte'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as HerramientasRouteImport } from './routes/herramientas'
 import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-energeticas'
@@ -32,9 +32,9 @@ const BlogRoute = BlogRouteImport.update({
   path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ComoPuedoAyudarteRoute = ComoPuedoAyudarteRouteImport.update({
-  id: '/como-puedo-ayudarte',
-  path: '/como-puedo-ayudarte',
+const ComoPuedoAcompanarteRoute = ComoPuedoAcompanarteRouteImport.update({
+  id: '/como-puedo-acompanarte',
+  path: '/como-puedo-acompanarte',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactoRoute = ContactoRouteImport.update({
@@ -86,7 +86,7 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
-  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
@@ -99,7 +99,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
@@ -114,7 +114,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
-  '/como-puedo-ayudarte': typeof ComoPuedoAyudarteRoute
+  '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
@@ -130,7 +130,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/blog'
-    | '/como-puedo-ayudarte'
+    | '/como-puedo-acompanarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
@@ -143,7 +143,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/como-puedo-ayudarte'
+    | '/como-puedo-acompanarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
@@ -157,7 +157,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/blog'
-    | '/como-puedo-ayudarte'
+    | '/como-puedo-acompanarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
@@ -172,7 +172,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BlogRoute: typeof BlogRouteWithChildren
-  ComoPuedoAyudarteRoute: typeof ComoPuedoAyudarteRoute
+  ComoPuedoAcompanarteRoute: typeof ComoPuedoAcompanarteRoute
   ContactoRoute: typeof ContactoRoute
   HerramientasRoute: typeof HerramientasRoute
   LimpiezasEnergeticasRoute: typeof LimpiezasEnergeticasRoute
@@ -198,11 +198,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/como-puedo-ayudarte': {
-      id: '/como-puedo-ayudarte'
-      path: '/como-puedo-ayudarte'
-      fullPath: '/como-puedo-ayudarte'
-      preLoaderRoute: typeof ComoPuedoAyudarteRouteImport
+    '/como-puedo-acompanarte': {
+      id: '/como-puedo-acompanarte'
+      path: '/como-puedo-acompanarte'
+      fullPath: '/como-puedo-acompanarte'
+      preLoaderRoute: typeof ComoPuedoAcompanarteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contacto': {
@@ -286,7 +286,7 @@ const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BlogRoute: BlogRouteWithChildren,
-  ComoPuedoAyudarteRoute: ComoPuedoAyudarteRoute,
+  ComoPuedoAcompanarteRoute: ComoPuedoAcompanarteRoute,
   ContactoRoute: ContactoRoute,
   HerramientasRoute: HerramientasRoute,
   LimpiezasEnergeticasRoute: LimpiezasEnergeticasRoute,

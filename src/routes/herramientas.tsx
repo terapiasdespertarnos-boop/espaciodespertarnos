@@ -17,7 +17,7 @@ export const Route = createFileRoute("/herramientas")({
       { property: "og:type", content: "website" },
       {
         property: "og:description",
-        content: "Diferentes herramientas. Una misma intención: ayudarte a volver a ti.",
+        content: "Diferentes herramientas. Una misma intención: acompañarte a volver a ti.",
       },
       { property: "og:url", content: "/herramientas" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -44,7 +44,7 @@ function Herramientas() {
       <Section tone="cream">
         <SectionHeading
           eyebrow="Mis herramientas"
-          title="Diferentes herramientas. Una misma intención: ayudarte a volver a ti."
+          title="Diferentes herramientas. Una misma intención: acompañarte a volver a ti."
           intro="Trabajo sin encasillar las técnicas de forma independiente. Las utilizo, fusiono, adapto o aparto según lo que percibo que necesita cada persona."
         />
       </Section>
@@ -100,7 +100,7 @@ function Herramientas() {
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
               Si sientes bloqueos a nivel físico, emocional o espiritual, esta terapia puede
-              ayudarte a recuperar el equilibrio.
+              acompañarte a recuperar el equilibrio.
             </p>
             <p>
               Trabaja sobre los tres cuerpos: físico, emocional y espiritual, con más de 30 años de

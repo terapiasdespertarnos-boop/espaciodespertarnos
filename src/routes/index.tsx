@@ -167,10 +167,10 @@ function Index() {
                 Quiero hablar con Rosa
               </a>
               <Link
-                to="/como-puedo-ayudarte"
+                to="/como-puedo-acompanarte"
                 className="border-gold/60 hover:bg-cream rounded-full border px-7 py-3.5 text-xs tracking-[0.14em] uppercase transition-colors"
               >
-                Descubrir cómo puedo ayudarte
+                Descubrir cómo puedo acompañarte
               </Link>
             </div>
           </div>
@@ -319,7 +319,8 @@ function Index() {
           </div>
           <div className="space-y-6 leading-relaxed text-primary-foreground/85">
             <p>
-              Parte de mi trabajo consiste precisamente en ayudarte a mirar qué estás cargando, de
+              Parte de mi trabajo consiste precisamente en acompañarte a mirar qué estás
+              cargando, de
               dónde puede venir y qué puedes empezar a soltar.
             </p>
             <a
@@ -338,7 +339,7 @@ function Index() {
       <Section tone="cream" glow>
         <SectionHeading
           eyebrow="Mis herramientas"
-          title="Diferentes herramientas. Una misma intención: ayudarte a volver a ti."
+          title="Diferentes herramientas. Una misma intención: acompañarte a volver a ti."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {herramientas.map((h) => (

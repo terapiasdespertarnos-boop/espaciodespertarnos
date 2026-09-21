@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 
-export const Route = createFileRoute("/como-puedo-ayudarte")({
+export const Route = createFileRoute("/como-puedo-acompanarte")({
   head: () => ({
     meta: [
       { title: "Cómo puedo acompañarte · Espacio Despertar-Nos" },
@@ -16,11 +16,11 @@ export const Route = createFileRoute("/como-puedo-ayudarte")({
         property: "og:description",
         content: "Una mirada. Muchas herramientas. Un acompañamiento personalizado.",
       },
-      { property: "og:url", content: "/como-puedo-ayudarte" },
+      { property: "og:url", content: "/como-puedo-acompanarte" },
     ],
-    links: [{ rel: "canonical", href: "/como-puedo-ayudarte" }],
+    links: [{ rel: "canonical", href: "/como-puedo-acompanarte" }],
   }),
-  component: ComoPuedoAyudarte,
+  component: ComoPuedoAcompanarte,
 });
 
 const tarjetas: [string, string][] = [
@@ -42,7 +42,7 @@ const tarjetas: [string, string][] = [
   ["Mediumnidad y presencias", "Acompañar con respeto aquello que se percibe."],
 ];
 
-function ComoPuedoAyudarte() {
+function ComoPuedoAcompanarte() {
   return (
     <>
       <Section tone="cream">

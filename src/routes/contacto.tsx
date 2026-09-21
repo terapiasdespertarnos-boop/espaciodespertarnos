@@ -21,7 +21,7 @@ export const Route = createFileRoute("/contacto")({
       { property: "og:title", content: "Empezar también puede ser simplemente hablar." },
       {
         property: "og:description",
-        content: "Cuéntame qué estás viviendo y vemos juntas o juntos qué puede ayudarte.",
+        content: "Cuéntame qué estás viviendo y vemos juntas o juntos qué puede acompañarte.",
       },
       { property: "og:url", content: "/contacto" },
     ],
@@ -134,7 +134,7 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
             </div>
             <div className="grid gap-2">
               <label htmlFor="ayuda" className="text-xs tracking-[0.14em] uppercase">
-                ¿En qué puedo ayudarte?
+                ¿En qué puedo acompañarte?
               </label>
               <input
                 id="ayuda"
