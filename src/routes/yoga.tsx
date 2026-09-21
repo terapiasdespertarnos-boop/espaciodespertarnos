@@ -118,6 +118,50 @@ function Yoga() {
               </article>
             ))}
           </div>
+          <p className="mt-10 text-center text-sm font-medium uppercase tracking-[0.2em] text-[var(--sage-deep)]">
+            En lo físico
+          </p>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              [
+                "Fortalece tu cuerpo",
+                "La práctica sostenida tonifica y reafirma el cuerpo de dentro hacia fuera.",
+              ],
+              [
+                "Amplía tu capacidad pulmonar",
+                "Los ejercicios de respiración enseñan al pulmón a respirar mejor y más hondo.",
+              ],
+              [
+                "Limpia la sangre",
+                "Respirar y mover el cuerpo favorece que la sangre se renueve y circule mejor.",
+              ],
+              [
+                "Fortalece el corazón",
+                "El ritmo de la práctica trabaja el corazón de forma suave y constante.",
+              ],
+              [
+                "Fortalece el sistema inmunológico",
+                "Un cuerpo oxigenado y menos tenso defiende mejor de lo que viene de fuera.",
+              ],
+              [
+                "Fortalece la musculatura",
+                "Cada kriya trabaja grupos musculares concretos sin forzar ni lesionar.",
+              ],
+              [
+                "Flexibilidad en el cuerpo",
+                "El estiramiento y el movimiento devuelven movilidad y soltura al cuerpo.",
+              ],
+              [
+                "Flexibilidad en la mente",
+                "Lo que el cuerpo aprende a soltar, la mente también lo aprende.",
+              ],
+            ].map(([t, d]) => (
+              <article key={t} className="gold-card p-7">
+                <h3 className="text-lg">{t}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
+              </article>
+            ))}
+          </div>
         </div>
         <p className="mt-12 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           No necesitas experiencia previa ni una flexibilidad concreta. Si tienes alguna condición
