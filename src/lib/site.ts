@@ -19,7 +19,7 @@ export const whatsappUrl = (
 export const navItems = [
   { to: "/", label: "Inicio" },
   { to: "/sobre-mi", label: "Sobre mí" },
-  { to: "/como-puedo-ayudarte", label: "Cómo puedo ayudarte" },
+  { to: "/como-puedo-acompanarte", label: "Cómo puedo acompañarte" },
   { to: "/herramientas", label: "Herramientas" },
   { to: "/limpiezas-energeticas", label: "Limpiezas energéticas" },
   { to: "/mediumnidad", label: "Mediumnidad" },
