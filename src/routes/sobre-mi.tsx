@@ -329,7 +329,7 @@ function SobreMi() {
               parar, mirar, soltar y volver a escucharte.”
             </p>
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-foreground">
-              No necesitas saber qué terapia necesitas. Solo necesitas contarme qué estás viviendo.
+              Descansa de tener que averiguar qué terapia necesitas. Solo cuéntame qué estás transitando en este momento.
             </p>
             <a
               href={whatsappUrl("Hola Rosa, quiero contarte qué estoy viviendo.")}
