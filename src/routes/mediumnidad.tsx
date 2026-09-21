@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Section, SectionHeading, Quote } from "@/components/site/Section";
+import { Section, SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import luzCamino from "@/assets/luz-camino.jpg";
 
@@ -75,16 +75,6 @@ function Mediumnidad() {
         </div>
       </Section>
 
-      <Section tone="sand">
-        <Quote>
-          No se trata de tener miedo a lo que no vemos. Se trata de acompañar con respeto aquello
-          que percibimos.
-        </Quote>
-        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-          Comparto esto desde mi experiencia personal: no necesitas creer en nada para que podamos
-          trabajar juntas/os.
-        </p>
-      </Section>
 
       <CtaBand
         title="Si estás percibiendo algo y no sabes cómo nombrarlo"
