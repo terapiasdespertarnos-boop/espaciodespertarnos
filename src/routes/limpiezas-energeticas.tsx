@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { Sparkles, EnergyWaves } from "@/components/site/Ornaments";
-import altarLuz from "@/assets/altar-luz.jpeg.asset.json";
+import penduloTesteo from "@/assets/pendulo-testeo.jpg";
 import elevandoAlmita from "@/assets/elevando-almita.jpg.asset.json";
 
 export const Route = createFileRoute("/limpiezas-energeticas")({
@@ -53,11 +53,11 @@ function Limpiezas() {
         <div className="mt-14 grid items-center gap-12 md:grid-cols-2">
           <div className="relative">
             <img
-              src={altarLuz.url}
-              alt="Altar de cuarzo rosa iluminado por haces de luz en el espacio de Rosa"
+              src={penduloTesteo}
+              alt="Manos testando con un péndulo sobre una plantilla de radiestesia"
               loading="lazy"
-              width={768}
-              height={1024}
+              width={848}
+              height={1264}
               className="aspect-[4/5] rounded-3xl object-cover shadow-[var(--shadow-glow)]"
             />
             <Sparkles count={6} />
