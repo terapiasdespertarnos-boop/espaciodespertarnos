@@ -11,7 +11,7 @@ export const Route = createFileRoute("/yoga")({
       {
         name: "description",
         content:
-          "Yoga Kundalini como herramienta de conciencia, equilibrio y presencia: respiración, meditación, mantras y movimiento consciente. Más de 17 años de experiencia.",
+          "Yoga Kundalini como herramienta de conciencia, equilibrio y presencia: respiración, meditación, mantras y movimiento consciente. Más de 18 años de experiencia.",
       },
       { property: "og:title", content: "Yoga Kundalini · Espacio Despertar-Nos" },
       {
@@ -32,9 +32,9 @@ function Yoga() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div>
             <SectionHeading
-              eyebrow="Yoga Kundalini"
+              eyebrow="Yoga Kundalini · Con más de 18 años de experiencia"
               title="El cuerpo también sabe. Y muchas veces habla antes que la cabeza."
-              intro="Soy profesora de Yoga Kundalini con más de 17 años de experiencia. Utilizo el yoga como una herramienta de conciencia, equilibrio, presencia y conexión con uno mismo."
+              intro="Utilizo el yoga como una herramienta de conciencia, equilibrio, presencia y conexión con uno mismo."
             />
           </div>
           <img
@@ -86,7 +86,7 @@ function Yoga() {
       </Section>
 
       <Section>
-        <Quote>Practicar no es rendir. Es volver a habitarte.</Quote>
+        <Quote>Vuelve a tu centro y apaga el ruido exterior.</Quote>
       </Section>
 
       <CtaBand
