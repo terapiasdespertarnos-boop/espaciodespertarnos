@@ -10,12 +10,15 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AvisoLegalRouteImport } from './routes/aviso-legal'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ComoPuedoAcompanarteRouteImport } from './routes/como-puedo-acompanarte'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as HerramientasRouteImport } from './routes/herramientas'
 import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-energeticas'
 import { Route as MediumnidadRouteImport } from './routes/mediumnidad'
+import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
+import { Route as PoliticaDePrivacidadRouteImport } from './routes/politica-de-privacidad'
 import { Route as RetirosRouteImport } from './routes/retiros'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as YogaRouteImport } from './routes/yoga'
@@ -25,6 +28,11 @@ import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AvisoLegalRoute = AvisoLegalRouteImport.update({
+  id: '/aviso-legal',
+  path: '/aviso-legal',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogRoute = BlogRouteImport.update({
@@ -57,6 +65,16 @@ const MediumnidadRoute = MediumnidadRouteImport.update({
   path: '/mediumnidad',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PoliticaDeCookiesRoute = PoliticaDeCookiesRouteImport.update({
+  id: '/politica-de-cookies',
+  path: '/politica-de-cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliticaDePrivacidadRoute = PoliticaDePrivacidadRouteImport.update({
+  id: '/politica-de-privacidad',
+  path: '/politica-de-privacidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RetirosRoute = RetirosRouteImport.update({
   id: '/retiros',
   path: '/retiros',
@@ -85,12 +103,15 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aviso-legal': typeof AvisoLegalRoute
   '/blog': typeof BlogRouteWithChildren
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
+  '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
@@ -99,11 +120,14 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aviso-legal': typeof AvisoLegalRoute
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
+  '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
@@ -113,12 +137,15 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aviso-legal': typeof AvisoLegalRoute
   '/blog': typeof BlogRouteWithChildren
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
   '/mediumnidad': typeof MediumnidadRoute
+  '/politica-de-cookies': typeof PoliticaDeCookiesRoute
+  '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
@@ -129,12 +156,15 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/aviso-legal'
     | '/blog'
     | '/como-puedo-acompanarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-cookies'
+    | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
@@ -143,11 +173,14 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/aviso-legal'
     | '/como-puedo-acompanarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-cookies'
+    | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
@@ -156,12 +189,15 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/aviso-legal'
     | '/blog'
     | '/como-puedo-acompanarte'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
     | '/mediumnidad'
+    | '/politica-de-cookies'
+    | '/politica-de-privacidad'
     | '/retiros'
     | '/sobre-mi'
     | '/yoga'
@@ -171,12 +207,15 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AvisoLegalRoute: typeof AvisoLegalRoute
   BlogRoute: typeof BlogRouteWithChildren
   ComoPuedoAcompanarteRoute: typeof ComoPuedoAcompanarteRoute
   ContactoRoute: typeof ContactoRoute
   HerramientasRoute: typeof HerramientasRoute
   LimpiezasEnergeticasRoute: typeof LimpiezasEnergeticasRoute
   MediumnidadRoute: typeof MediumnidadRoute
+  PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
+  PoliticaDePrivacidadRoute: typeof PoliticaDePrivacidadRoute
   RetirosRoute: typeof RetirosRoute
   SobreMiRoute: typeof SobreMiRoute
   YogaRoute: typeof YogaRoute
@@ -189,6 +228,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/aviso-legal': {
+      id: '/aviso-legal'
+      path: '/aviso-legal'
+      fullPath: '/aviso-legal'
+      preLoaderRoute: typeof AvisoLegalRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog': {
@@ -231,6 +277,20 @@ declare module '@tanstack/react-router' {
       path: '/mediumnidad'
       fullPath: '/mediumnidad'
       preLoaderRoute: typeof MediumnidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-de-cookies': {
+      id: '/politica-de-cookies'
+      path: '/politica-de-cookies'
+      fullPath: '/politica-de-cookies'
+      preLoaderRoute: typeof PoliticaDeCookiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-de-privacidad': {
+      id: '/politica-de-privacidad'
+      path: '/politica-de-privacidad'
+      fullPath: '/politica-de-privacidad'
+      preLoaderRoute: typeof PoliticaDePrivacidadRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/retiros': {
@@ -285,12 +345,15 @@ const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AvisoLegalRoute: AvisoLegalRoute,
   BlogRoute: BlogRouteWithChildren,
   ComoPuedoAcompanarteRoute: ComoPuedoAcompanarteRoute,
   ContactoRoute: ContactoRoute,
   HerramientasRoute: HerramientasRoute,
   LimpiezasEnergeticasRoute: LimpiezasEnergeticasRoute,
   MediumnidadRoute: MediumnidadRoute,
+  PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
+  PoliticaDePrivacidadRoute: PoliticaDePrivacidadRoute,
   RetirosRoute: RetirosRoute,
   SobreMiRoute: SobreMiRoute,
   YogaRoute: YogaRoute,
