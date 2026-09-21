@@ -155,6 +155,10 @@ function Yoga() {
                 "Flexibilidad en la mente",
                 "Lo que el cuerpo aprende a soltar, la mente también lo aprende.",
               ],
+              [
+                "Estimula el sistema glandular",
+                "La práctica activa y equilibra las glándulas, que regulan tanta parte de cómo te sientes.",
+              ],
             ].map(([t, d]) => (
               <article key={t} className="gold-card p-7">
                 <h3 className="text-lg">{t}</h3>
