@@ -103,8 +103,8 @@ function Limpiezas() {
       <Section tone="sand">
         <SectionHeading
           eyebrow="Limpiezas energéticas"
-          title="¿Qué es la contaminación energética?"
-          intro="Todos estamos expuestos a lo que llamamos contaminación energética. Esta puede provenir de diferentes fuentes: desencarnados, memorias de casas o terrenos, mal de ojo, envidias o pensamientos negativos de otras personas, polución electromagnética, parásitos astrales (energías de baja vibración), magia negra, entre otros."
+          title="¿Qué es la polución energética?"
+          intro="Todos estamos expuestos a lo que llamamos polución energética. Esta puede provenir de diferentes fuentes: desencarnados, memorias de casas o terrenos, mal de ojo, envidias o pensamientos negativos de otras personas, polución electromagnética, parásitos astrales (energías de baja vibración), magia negra, entre otros."
         />
         <p className="text-muted-foreground mt-8 max-w-3xl leading-relaxed">
           Todo ello puede afectarnos a nivel físico, mental y emocional, generando: cansancio,
