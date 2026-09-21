@@ -118,8 +118,10 @@ function Herramientas() {
               A distancia, el tratamiento se determina mediante radiestesia, que indica tanto el
               número de semanas necesarias como la frecuencia adecuada para cada caso.
             </p>
-            <p className="font-display text-xl text-foreground">
+            <p className="font-display text-2xl md:text-3xl leading-snug text-[var(--sage-deep)]">
+              <span className="mr-1 align-top text-3xl md:text-4xl text-[var(--gold)]">«</span>
               Los resultados no paran de sorprenderme, es fascinante.
+              <span className="ml-1 align-bottom text-3xl md:text-4xl text-[var(--gold)]">»</span>
             </p>
           </div>
         </div>
