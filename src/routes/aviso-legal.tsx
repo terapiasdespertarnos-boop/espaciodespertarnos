@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading } from "@/components/site/Section";
-import { LegalBlock, LegalNote } from "@/components/site/Legal";
+import { LegalBlock } from "@/components/site/Legal";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/aviso-legal")({
