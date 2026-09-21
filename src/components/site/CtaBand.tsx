@@ -3,7 +3,7 @@ import { whatsappUrl } from "@/lib/site";
 import { Section } from "./Section";
 
 export function CtaBand({
-  title = "Empezar también puede ser simplemente hablar.",
+  title = "Sé que da respeto empezar, pero créeme, dar el primer paso ya es una victoria.",
   text = "No tienes que tener claro qué necesitas. Puedes escribirme y contarme brevemente qué estás viviendo.",
   buttonLabel = "Hablar con Rosa",
 }: {
