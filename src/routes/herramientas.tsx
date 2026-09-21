@@ -88,20 +88,35 @@ function Herramientas() {
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              La Nueva Terapia (LNT) es una terapia energética cuántica que, desde este enfoque,
-              trabaja sobre los diferentes niveles de la persona: físico, emocional y espiritual.
-              Puede ser presencial o realizarse a distancia.
+              Si sientes bloqueos a nivel físico, emocional o espiritual, esta terapia puede
+              ayudarte a recuperar el equilibrio.
             </p>
             <p>
-              Si sientes que estás bloqueado/a en algún aspecto de tu vida y que eso te impide
-              avanzar, disfrutar o sentirte en equilibrio, podemos explorar qué está ocurriendo y
-              valorar este tipo de trabajo. La sesión se adapta a cada persona y se realiza
-              mediante testaje energético, determinando la frecuencia y duración del trabajo según
-              lo que se observe en cada caso.
+              Trabaja sobre los tres cuerpos: físico, emocional y espiritual, con más de 30 años de
+              experiencia. Está disponible tanto presencial como a distancia.
             </p>
+            <div>
+              <p className="eyebrow">Beneficios</p>
+              <ul className="mt-3 grid gap-2 text-sm">
+                {[
+                  "Alivio de dolencias (migrañas, dolores, contracturas, etc.)",
+                  "Reducción de estrés, ansiedad e insomnio",
+                  "Apoyo en alergias e infertilidad",
+                  "Desbloqueo emocional (fobias, adicciones, inseguridades, falta de abundancia…)",
+                ].map((b) => (
+                  <li key={b} className="border-b border-border pb-2">
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <p className="text-sm">
-              La Nueva Terapia no sustituye tratamientos médicos ni psicológicos. Es un
-              acompañamiento complementario de bienestar y desarrollo personal.
+              No sustituye los tratamientos médicos: los complementa.
+            </p>
+            <p>
+              En la modalidad presencial, la sesión se repite cada 15-20 días hasta notar mejoría.
+              A distancia, el tratamiento se determina mediante radiestesia, que indica tanto el
+              número de semanas necesarias como la frecuencia adecuada para cada caso.
             </p>
           </div>
         </div>
