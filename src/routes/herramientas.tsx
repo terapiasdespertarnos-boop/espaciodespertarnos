@@ -130,9 +130,10 @@ function Herramientas() {
       {/* CONSTELACIONES */}
       <Section>
         <p className="eyebrow">03</p>
-        <h2 className="mt-4 max-w-3xl text-3xl leading-tight md:text-5xl">
+        <h2 className="mt-3 text-3xl md:text-4xl">Constelaciones familiares</h2>
+        <p className="mt-4 max-w-3xl text-lg leading-snug text-[var(--sage-deep)] font-display md:text-xl">
           ¿Y si parte de lo que cargas no te corresponde?
-        </h2>
+        </p>
         <span className="rule-line mt-7" />
         <div className="mt-10 grid gap-10 md:grid-cols-2">
           <div className="space-y-5 leading-relaxed text-muted-foreground">
