@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import calma from "@/assets/calma.jpg";
+import lntRosaTerapeuta from "@/assets/lnt-rosa-terapeuta.png";
 
 export const Route = createFileRoute("/herramientas")({
   head: () => ({
@@ -13,11 +14,13 @@ export const Route = createFileRoute("/herramientas")({
           "Constelaciones familiares, coaching ontológico, regresiones, LNT, digitopuntura craneal y técnicas energéticas dentro de un acompañamiento personalizado.",
       },
       { property: "og:title", content: "Mis herramientas · Espacio Despertar-Nos" },
+      { property: "og:type", content: "website" },
       {
         property: "og:description",
         content: "Diferentes herramientas. Una misma intención: ayudarte a volver a ti.",
       },
       { property: "og:url", content: "/herramientas" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/herramientas" }],
   }),
@@ -81,10 +84,18 @@ function Herramientas() {
 
       {/* LNT */}
       <Section tone="sand">
-        <div className="grid gap-10 md:grid-cols-[1fr_1.2fr]">
-          <div>
+        <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+          <div className="space-y-7">
             <p className="eyebrow">02</p>
             <h2 className="mt-3 text-3xl md:text-4xl">LNT · Sanación energética cuántica</h2>
+            <img
+              src={lntRosaTerapeuta}
+              alt="Rosa acompañando una sesión de LNT en un espacio sereno"
+              loading="lazy"
+              width={960}
+              height={1200}
+              className="aspect-[4/5] w-full rounded-2xl object-cover shadow-[var(--shadow-soft)]"
+            />
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
