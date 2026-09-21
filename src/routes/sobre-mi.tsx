@@ -117,18 +117,14 @@ function SobreMi() {
 
       {/* MI HISTORIA */}
       <Section tone="cream" glow id="mi-historia">
-        <SectionHeading
-          eyebrow="Mi historia"
-          title="Yo también tuve que aprender a soltar"
-          intro="Yo sabía quién era y hacia dónde quería dirigirme. Lo que tuve que aprender fue a soltar aquello que me impedía caminar hacia donde mi corazón me llamaba."
-        />
+        <SectionHeading eyebrow="Mi historia" title="Yo también tuve que aprender a soltar" />
 
         <div className="mt-16 space-y-20 md:mt-24 md:space-y-28">
           <article className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-16">
             <div className="relative">
               <img
-                src={rosaMeditacion.url}
-                alt="Rosa en un momento de meditación y escucha interior"
+                src={rosaCuenco.url}
+                alt="Rosa trabajando con un cuenco en su espacio"
                 width={768}
                 height={852}
                 className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
@@ -137,20 +133,21 @@ function SobreMi() {
               <span className="frequency-ribbon -bottom-8" aria-hidden="true" />
             </div>
             <div>
-              <p className="eyebrow">01 · La separación y el miedo</p>
+              <p className="eyebrow">01 · El miedo</p>
               <div className="mt-6 space-y-5 leading-relaxed text-muted-foreground">
                 <p>
-                  Cuando me separé del padre de mi hijo, yo sabía quién era y sabía hacia dónde
-                  quería dirigirme.
+                  Cuando me separé del padre de mi hijo, yo sabía quién era y sabía hacia dónde quería
+                  dirigirme.
                 </p>
                 <Quote>“No estaba perdida. Pero tenía miedo.”</Quote>
+                <div className="space-y-2 text-foreground">
+                  <p>Miedo a criar a mi hijo sola.</p>
+                  <p>Miedo a cerrar una etapa familiar que había sido muy importante para mí.</p>
+                  <p>Miedo a lo que vendría después.</p>
+                </div>
                 <p>
-                  Miedo a criar a mi hijo sola, a cerrar una etapa como familia, concepto que había
-                  sido tan importante para mí.
-                </p>
-                <p>
-                  Fue uno de esos momentos en los que, aunque por fuera sigues adelante, por dentro
-                  sientes que algo se ha roto y te invade una profunda soledad.
+                  La separación trajo consigo una profunda sensación de soledad y, en medio de todo
+                  aquello, sentí que necesitaba parar y escuchar qué estaba pasando dentro de mí.
                 </p>
               </div>
             </div>
@@ -168,61 +165,54 @@ function SobreMi() {
               />
             </div>
             <div className="md:order-1">
-              <p className="eyebrow">02 · Parar y escucharme</p>
+              <p className="eyebrow">02 · Volver a mí</p>
               <div className="mt-6 space-y-5 leading-relaxed text-muted-foreground">
                 <p>
-                  Llegó un momento en el que tuve que parar para empezar a escuchar lo que estaba
-                  pasando dentro de mí.
+                  Fue entonces cuando el Yoga Kundalini, el trabajo interior y muchas de las
+                  formaciones que había ido haciendo a lo largo de los años —y que estaban ahí, en mi
+                  particular “baúl de los recuerdos”— volvieron a cobrar sentido.
                 </p>
+                <Quote>
+                  “Se convirtieron en un refugio, pero también en un camino de regreso a mí.”
+                </Quote>
+                <p>Poco a poco fui reconstruyéndome.</p>
                 <p>
-                  El Yoga Kundalini, el trabajo interior y todas las formaciones que fui realizando
-                  y rescatando del baúl de los recuerdos se convirtieron entonces en mucho más que
-                  herramientas: fueron mi refugio y, poco a poco, mi camino de regreso.
+                  Empecé a reconocer mi valor, a recuperar la confianza en mí misma y en mis
+                  capacidades, a entender mi historia y mi sistema familiar y, sobre todo, a aprender
+                  a ocupar mi lugar.
                 </p>
-                <p>
-                  Empecé a reconstruirme, a reconocer mi valor, a recuperar mi confianza, a aprender
-                  a ponerme en mi lugar, a soltar cargas que no me correspondían, a entender muchas
-                  cosas de mi historia y de mi familia y, sobre todo, a volver a escucharme.
-                </p>
-                <p className="text-foreground">
-                  Con el tiempo comprendí algo que hoy forma parte de mi manera de acompañar: a veces
-                  necesitamos atravesar una etapa de ruptura para descubrir que también podemos
-                  volver a elegirnos.
-                </p>
-                <p>No fue un camino rápido ni perfecto. Fue un camino real.</p>
               </div>
             </div>
           </article>
 
-          <article className="mx-auto max-w-4xl border-y border-gold/40 py-12 text-center md:py-16">
-            <p className="eyebrow">03 · La pregunta que cambió el rumbo</p>
-            <p className="mt-7 font-display text-3xl leading-tight text-earth italic md:text-5xl">
-              “¿Qué pasaría si me atreviera a caminar hacia aquello que realmente sentía mi
-              corazón?”
-            </p>
-            <div className="mx-auto mt-9 max-w-2xl space-y-5 leading-relaxed text-muted-foreground">
-              <p>Tras esta dura etapa apareció esa pregunta.</p>
-              <p>Decidí dejar mi negocio de más de treinta años. Qué loca, ¿no?</p>
+          <article className="mx-auto max-w-4xl border-y border-gold/40 py-12 md:py-16">
+            <p className="eyebrow">03 · Aprender a soltar</p>
+            <h3 className="mt-6 font-display text-3xl leading-tight text-earth md:text-5xl">
+              También tuve que empezar a soltar.
+            </h3>
+            <div className="mt-8 grid gap-3 text-lg leading-relaxed text-foreground md:text-xl">
+              <p>Soltar miedos.</p>
+              <p>Soltar antiguas creencias.</p>
+              <p>Soltar la necesidad de tenerlo todo bajo control.</p>
               <p>
-                Había sido una parte fundamental de mi vida. Había construido mucho, había trabajado,
-                había sostenido responsabilidades desde muy jovencita y había aprendido a salir
-                adelante. Pero sentía que ya había cumplido su propósito.
-              </p>
-              <p>Mi negación a escuchar a mi alma me hacía sentir enferma.</p>
-              <p>
-                Los futuros inciertos con un hijo dan mucho vértigo. Pero mi hijo también fue una
-                inspiración para mí. Quería transmitirle, con mi propia vida, que lo más importante
-                en esta vida es amarse y ser fiel a uno mismo. Y ese deseo me dio las fuerzas
-                necesarias para hacerlo.
+                Soltar una mochila que había llevado durante muchos años y que, en realidad, ya no
+                necesitaba seguir cargando.
               </p>
             </div>
+          </article>
+
+          <article className="mx-auto max-w-4xl py-4 text-center md:py-8">
+            <p className="eyebrow">04 · La pregunta</p>
+            <p className="mt-7 font-display text-3xl leading-tight text-earth italic md:text-5xl">
+              “¿Qué pasaría si me atreviera a caminar hacia aquello que realmente sentía mi corazón?”
+            </p>
           </article>
 
           <article className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-16">
             <div className="relative">
               <img
-                src={altarLuz.url}
-                alt="Altar de Espacio Despertar-Nos entre plantas y luz natural"
+                src={rosaMeditacion.url}
+                alt="Rosa en un momento de meditación y escucha interior"
                 width={768}
                 height={852}
                 className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
@@ -230,24 +220,35 @@ function SobreMi() {
               />
             </div>
             <div>
-              <p className="eyebrow">04 · Soltar el negocio y las viejas creencias</p>
-              <h3 className="mt-5 font-display text-4xl leading-tight text-earth md:text-6xl">
-                Había que soltar.
-              </h3>
-              <div className="mt-7 space-y-5 leading-relaxed text-muted-foreground">
-                <p>Soltar miedos. Soltar viejas creencias.</p>
+              <p className="eyebrow">05 · Cerrar una etapa</p>
+              <div className="mt-6 space-y-5 leading-relaxed text-muted-foreground">
                 <p>
-                  Soltar la necesidad de tenerlo todo bajo control. Soltar una forma de vida que
-                  conocía muy bien.
+                  Después de más de 30 años dedicados a mi negocio, llegó el momento de tomar una
+                  decisión que, para muchos, podía parecer una locura.
+                </p>
+                <h3 className="font-display text-3xl leading-tight text-earth md:text-4xl">
+                  Cerrar una etapa profesional que había sido fundamental en mi vida.
+                </h3>
+                <p>
+                  Había trabajado muchísimo, había construido, había sostenido responsabilidades desde
+                  muy joven y había aprendido a salir adelante.
                 </p>
                 <p>
-                  Y soltar una mochila que durante mucho tiempo había llevado conmigo y que ya no me
-                  correspondía seguir cargando.
+                  Pero algo dentro de mí me decía que aquella etapa había cumplido su propósito.
                 </p>
+                <p className="text-foreground">Mi negación a escuchar a mi alma me hacía sentir enferma.</p>
+                <p>Y sí… daba vértigo.</p>
+                <p>Especialmente teniendo un hijo y sin saber exactamente qué iba a ocurrir después.</p>
                 <p>
-                  Escucharme con claridad y armarme de valor me ayudaron en mi propósito y, sobre
-                  todo, a confiar. A reconocer mis capacidades. A conectar de nuevo con esa parte de
-                  mí que siempre había sabido que había algo más.
+                  Pero también había algo que quería transmitirle a él: que lo más importante es
+                  aprender a quererse, ser fiel a uno mismo y tener el valor de elegir la vida que
+                  realmente sentimos.
+                </p>
+                <p>Eso me dio fuerza.</p>
+                <p className="font-display text-3xl text-earth">Había que soltar.</p>
+                <p>Y soltar no significaba renunciar a todo lo que había sido.</p>
+                <p>
+                  Significaba agradecer lo vivido y permitirme caminar hacia quien estaba siendo ahora.
                 </p>
               </div>
             </div>
@@ -256,13 +257,15 @@ function SobreMi() {
           <article className="relative overflow-hidden rounded-2xl bg-sage-deep px-7 py-14 text-primary-foreground shadow-[var(--shadow-glow)] md:px-16 md:py-20">
             <span className="frequency-ribbon top-8 opacity-40" aria-hidden="true" />
             <div className="relative mx-auto max-w-3xl">
-              <p className="eyebrow text-primary-foreground/70">05 · Emprender desde el corazón</p>
-              <h3 className="mt-6 font-display text-4xl leading-tight md:text-6xl">Desde el corazón.</h3>
-              <div className="mt-8 space-y-5 text-base leading-relaxed text-primary-foreground/80 md:text-lg">
-                <p>Y llegó el momento de cerrar mi negocio y emprender desde otro lugar.</p>
-                <p>
-                  No porque tuviera todas las respuestas, sino porque por fin estaba dispuesta a
-                  confiar en el camino.
+              <p className="eyebrow text-primary-foreground/70">06 · Desde el corazón</p>
+              <div className="mt-7 space-y-5 text-base leading-relaxed text-primary-foreground/80 md:text-lg">
+                <p>Así que cerré mi negocio y decidí empezar desde otro lugar.</p>
+                <h3 className="font-display text-4xl leading-tight text-primary-foreground md:text-6xl">
+                  Desde el corazón.
+                </h3>
+                <p className="font-display text-2xl leading-snug text-primary-foreground md:text-3xl">
+                  “No porque tuviera todas las respuestas, sino porque, por fin, estaba dispuesta a
+                  confiar en el camino.”
                 </p>
                 <p className="font-display text-3xl text-primary-foreground italic">¡Qué liberación!</p>
               </div>
@@ -271,74 +274,77 @@ function SobreMi() {
 
           <article className="grid gap-10 md:grid-cols-[0.75fr_1.25fr] md:gap-16">
             <div>
-              <p className="eyebrow">06 · Lo que hoy sé</p>
+              <p className="eyebrow">07 · De mi experiencia a mi forma de acompañar</p>
               <h3 className="mt-5 font-display text-3xl leading-tight text-earth md:text-5xl">
-                Hoy sé que soltar no significa renunciar a lo que has sido.
+                A veces no necesitamos que alguien nos diga que tenemos que ser más fuertes.
               </h3>
-              <p className="mt-6 text-lg leading-relaxed text-foreground">
-                Significa agradecer lo vivido y permitirte caminar hacia lo que ahora eres.
-              </p>
             </div>
             <div className="space-y-5 leading-relaxed text-muted-foreground">
-              <p>Y eso es algo que también forma parte de mi manera de acompañar a otras personas.</p>
-              <Quote>
-                “Necesitamos dejar de cargar con aquello que ya no nos corresponde para poder ser
-                quienes realmente somos.”
-              </Quote>
               <p>
-                No fue la separación en sí lo que me hizo encontrar mi camino. Fue lo que vino
-                después: soltar miedo, creencias y una identidad profesional construida durante
-                muchos años.
+                Y fue precisamente en ese proceso donde comprendí algo que hoy forma parte de mi
+                manera de acompañar a otras personas:
               </p>
+              <Quote>“Necesitamos un lugar donde poder parar.”</Quote>
+              <p>Donde sentirnos escuchados.</p>
               <p>
-                Mi propio camino me enseñó que cuando soltamos el miedo, las creencias y las cargas
-                que hemos llevado durante demasiado tiempo, aparece espacio para algo nuevo.
-              </p>
-              <p>
-                Y precisamente por haberlo vivido, sé que cuando una persona llega a mí sintiendo que
-                ha perdido el rumbo, que carga demasiado o que ya no sabe cómo salir de un patrón, no
-                necesita que alguien le diga simplemente: “tienes que ser fuerte”.
-              </p>
-              <p>Necesita un espacio donde pueda parar, sentirse escuchada y empezar a mirar.</p>
-              <p>
-                Quizá por eso hoy acompaño de una manera tan diferente. Porque sé lo que significa
-                estar al otro lado. Sé lo que significa sentir que tienes que poder con todo.
-              </p>
-              <p className="text-foreground">
-                Y también sé que, incluso cuando parece que hemos perdido el camino, podemos volver a
-                encontrarnos.
+                Donde poder mirar lo que nos está pasando sin juicio y empezar a distinguir qué es
+                nuestro y qué hemos estado cargando durante demasiado tiempo.
               </p>
             </div>
           </article>
 
-          <article className="mx-auto max-w-4xl text-center">
-            <p className="eyebrow">07 · El nacimiento de Espacio Despertar-Nos</p>
-            <div className="mt-8 space-y-3 font-display text-3xl leading-tight text-earth md:text-5xl">
-              <p>Volver a escuchar nuestra propia voz.</p>
-              <p>Volver a conectar con nuestra alma.</p>
-              <p>Volver a caminar la vida desde el corazón.</p>
+          <article className="mx-auto max-w-4xl border-y border-gold/40 py-12 md:py-16">
+            <p className="eyebrow">08 · Lo que llevamos encima</p>
+            <p className="mt-7 font-display text-3xl leading-tight text-earth italic md:text-5xl">
+              “Porque no todo lo que llevamos encima nos pertenece.”
+            </p>
+            <div className="mt-9 space-y-5 leading-relaxed text-muted-foreground">
+              <p>La separación no fue, por sí sola, lo que me hizo encontrar mi camino.</p>
+              <p>Fue todo lo que vino después:</p>
+              <p className="text-lg text-foreground">
+                soltar el miedo, cuestionar antiguas creencias, liberar cargas y dejar atrás una
+                identidad profesional que había construido durante muchos años.
+              </p>
+              <p>Cuando soltamos aquello que ya no necesitamos, aparece espacio.</p>
+              <p>Y en ese espacio podemos volver a escuchar nuestra propia voz.</p>
+              <p>Podemos reconectar con nosotros mismos.</p>
+              <p>
+                Podemos recordar quiénes somos y caminar la vida desde un lugar más auténtico.
+              </p>
             </div>
-            <p className="mt-9 text-lg leading-relaxed text-muted-foreground">Ese fue mi camino.</p>
-            <p className="mt-3 text-lg leading-relaxed text-muted-foreground">Y desde ahí nace hoy:</p>
-            <h3 className="mt-7 font-display text-4xl leading-tight md:text-6xl">
-              Espacio Despertar-Nos
-            </h3>
-            <span className="rule-line mx-auto mt-7" />
-            <p className="mx-auto mt-10 max-w-3xl font-display text-2xl leading-snug text-earth italic md:text-3xl">
-              “Quizá por eso hoy no te pido que seas fuerte. Te ofrezco un espacio donde puedas
-              parar, mirar, soltar y volver a escucharte.”
-            </p>
-            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-foreground">
-              Descansa de tener que averiguar qué terapia necesitas. Solo cuéntame qué estás transitando en este momento.
-            </p>
-            <a
-              href={whatsappUrl("Hola Rosa, quiero contarte qué estoy viviendo.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-9 inline-flex rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase shadow-[var(--shadow-glow)] transition-opacity hover:opacity-90"
-            >
-              Hablar con Rosa
-            </a>
+          </article>
+
+          <article className="grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-16">
+            <div className="md:order-2">
+              <img
+                src={altarLuz.url}
+                alt="Espacio Despertar-Nos entre plantas y luz natural"
+                width={768}
+                height={852}
+                className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:order-1">
+              <p className="eyebrow">09 · El nacimiento de Espacio Despertar-Nos</p>
+              <h3 className="mt-6 font-display text-4xl leading-tight text-earth md:text-6xl">
+                Desde ahí nace Espacio Despertar-Nos.
+              </h3>
+              <div className="mt-8 space-y-5 leading-relaxed text-muted-foreground">
+                <p>
+                  Un espacio creado desde mi propia experiencia y desde todo lo que he aprendido y
+                  sigo aprendiendo en este camino.
+                </p>
+                <p>
+                  Hoy acompaño a otras personas en sus procesos de transformación, no desde tener
+                  todas las respuestas, sino desde haber aprendido también a escuchar, a mirar, a
+                  soltar y a confiar.
+                </p>
+              </div>
+              <p className="mt-10 border-l-2 border-gold/70 pl-6 font-display text-3xl leading-snug text-earth italic md:text-4xl">
+                “Porque yo también he tenido que aprender a soltar.”
+              </p>
+            </div>
           </article>
         </div>
       </Section>
