@@ -251,8 +251,8 @@ function Index() {
         </ol>
         <div className="mt-14">
           <Quote>
-            No vengo a decirte cómo tienes que vivir. Te acompaño a mirar para que puedas elegir de
-            otra manera.
+            Lejos de decirte cómo tienes que vivir, mi rol es acompañarte a mirar para que puedas
+            elegir de otra manera.
           </Quote>
         </div>
       </Section>
