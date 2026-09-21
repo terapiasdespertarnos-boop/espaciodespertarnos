@@ -16,7 +16,7 @@ export const Route = createFileRoute("/yoga")({
       { property: "og:title", content: "Yoga Kundalini · Espacio Despertar-Nos" },
       {
         property: "og:description",
-        content: "El cuerpo también sabe. Y muchas veces habla antes que la cabeza.",
+        content: "A veces solo necesitamos un espacio donde poder escucharnos de verdad.",
       },
       { property: "og:url", content: "/yoga" },
     ],
@@ -33,7 +33,7 @@ function Yoga() {
           <div>
             <SectionHeading
               eyebrow="Yoga Kundalini · Con más de 18 años de experiencia"
-              title="El cuerpo también sabe. Y muchas veces habla antes que la cabeza."
+              title="A veces solo necesitamos un espacio donde poder escucharnos de verdad."
               intro="Utilizo el yoga como una herramienta de conciencia, equilibrio, presencia y conexión con uno mismo."
               className="text-4xl md:text-6xl"
             />
