@@ -3,6 +3,7 @@ import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { Sparkles, EnergyWaves } from "@/components/site/Ornaments";
 import altarLuz from "@/assets/altar-luz.jpeg.asset.json";
+import elevandoAlmita from "@/assets/elevando-almita.jpg.asset.json";
 
 export const Route = createFileRoute("/limpiezas-energeticas")({
   head: () => ({
@@ -171,12 +172,29 @@ function Limpiezas() {
           </article>
         </div>
 
-        <div className="mt-12 max-w-3xl leading-relaxed text-muted-foreground">
-          <p>
-            💫 En casos de polución por desencarnados, mi condición de médium me permite canalizar
-            mensajes de seres queridos que puedan estar atrapados en este plano y acompañarlos a
-            elevarse hacia la luz.
-          </p>
+        <div className="mt-12 grid items-center gap-10 md:grid-cols-2">
+          <div className="relative">
+            <img
+              src={elevandoAlmita.url}
+              alt="Manos que elevan un alma hacia la luz entre nubes"
+              loading="lazy"
+              width={960}
+              height={640}
+              className="aspect-[3/2] rounded-3xl object-cover shadow-[var(--shadow-glow)]"
+            />
+            <Sparkles count={5} />
+          </div>
+          <div>
+            <h3 className="font-display text-3xl leading-snug text-earth md:text-4xl">
+              Uniendo cielo y tierra
+            </h3>
+            <span className="rule-line mt-5" />
+            <p className="text-muted-foreground mt-6 leading-relaxed">
+              💫 En casos de polución por desencarnados, mi condición de médium me permite canalizar
+              mensajes de seres queridos que puedan estar atrapados en este plano y acompañarlos a
+              elevarse hacia la luz.
+            </p>
+          </div>
         </div>
       </Section>
 
