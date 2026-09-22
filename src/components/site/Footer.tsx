@@ -28,11 +28,11 @@ export function Footer() {
           ? herramientasQuote
           : pathname === "/lnt"
             ? lntQuote
-        : pathname === "/constelaciones-familiares"
-          ? constelacionesQuote
-          : pathname === "/limpiezas-energeticas"
-            ? limpiezasQuote
-            : footerQuote;
+            : pathname === "/constelaciones-familiares"
+              ? constelacionesQuote
+              : pathname === "/limpiezas-energeticas"
+                ? limpiezasQuote
+                : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
