@@ -32,6 +32,7 @@ function Lnt() {
       <Section tone="cream" glow>
         <SectionHeading
           eyebrow="LNT · La Nueva Terapia"
+          eyebrowClassName="text-2xl! md:text-3xl!"
           className="text-4xl md:text-6xl"
           title="Sanación energética cuántica"
           intro="Si sientes bloqueos a nivel físico, emocional o espiritual, esta terapia puede acompañarte a recuperar el equilibrio."
