@@ -31,10 +31,7 @@ function Yoga() {
       <Section tone="cream" glow>
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div>
-            <SectionHeading
-              title="Yoga Kundalini"
-              className="text-5xl md:text-7xl"
-            />
+            <p className="eyebrow text-2xl! md:text-3xl!">Yoga Kundalini</p>
             <p className="mt-5 text-sm font-medium uppercase tracking-[0.25em] text-[var(--sage-deep)] md:text-base">
               Con más de 18 años de experiencia
             </p>
