@@ -9,8 +9,8 @@ export function Footer() {
         <BotanicalBranch className="pointer-events-none absolute -top-6 right-0 hidden h-64 opacity-60 md:block" />
         <div className="max-w-3xl">
           <p className="font-display text-2xl leading-snug md:text-4xl">
-            «Quizá no puedas cambiar todo lo que has vivido. Pero sí puedes empezar a relacionarte
-            de otra manera con tu historia.»
+            «No podemos borrar el pasado, pero sí podemos aprender a mirarlo con ternura y caminar
+            sin su peso.»
           </p>
           <p className="mt-8 text-sm tracking-[0.2em] uppercase">Espacio Despertar-Nos</p>
           <p className="mt-1 text-sm text-muted-foreground">{site.tagline}</p>
