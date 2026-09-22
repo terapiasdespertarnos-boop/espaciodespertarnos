@@ -71,7 +71,7 @@ function PoliticaPrivacidad() {
         <LegalBlock title="Para qué los uso">
           <ul>
             <li>Responder a tu consulta y mantener el contacto contigo.</li>
-            <li>Organizar y realizar las sesiones, talleres o retiros que solicites.</li>
+            <li>Organizar y realizar las sesiones o talleres que solicites.</li>
             <li>Cumplir con las obligaciones legales y fiscales que me correspondan.</li>
           </ul>
         </LegalBlock>

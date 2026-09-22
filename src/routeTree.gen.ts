@@ -19,7 +19,6 @@ import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-ene
 import { Route as MediumnidadRouteImport } from './routes/mediumnidad'
 import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
 import { Route as PoliticaDePrivacidadRouteImport } from './routes/politica-de-privacidad'
-import { Route as RetirosRouteImport } from './routes/retiros'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as YogaRouteImport } from './routes/yoga'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
@@ -75,11 +74,6 @@ const PoliticaDePrivacidadRoute = PoliticaDePrivacidadRouteImport.update({
   path: '/politica-de-privacidad',
   getParentRoute: () => rootRouteImport,
 } as any)
-const RetirosRoute = RetirosRouteImport.update({
-  id: '/retiros',
-  path: '/retiros',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const SobreMiRoute = SobreMiRouteImport.update({
   id: '/sobre-mi',
   path: '/sobre-mi',
@@ -112,7 +106,6 @@ export interface FileRoutesByFullPath {
   '/mediumnidad': typeof MediumnidadRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
-  '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -128,7 +121,6 @@ export interface FileRoutesByTo {
   '/mediumnidad': typeof MediumnidadRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
-  '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -146,7 +138,6 @@ export interface FileRoutesById {
   '/mediumnidad': typeof MediumnidadRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
-  '/retiros': typeof RetirosRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -165,7 +156,6 @@ export interface FileRouteTypes {
     | '/mediumnidad'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
-    | '/retiros'
     | '/sobre-mi'
     | '/yoga'
     | '/blog/$slug'
@@ -181,7 +171,6 @@ export interface FileRouteTypes {
     | '/mediumnidad'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
-    | '/retiros'
     | '/sobre-mi'
     | '/yoga'
     | '/blog/$slug'
@@ -198,7 +187,6 @@ export interface FileRouteTypes {
     | '/mediumnidad'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
-    | '/retiros'
     | '/sobre-mi'
     | '/yoga'
     | '/blog/$slug'
@@ -216,7 +204,6 @@ export interface RootRouteChildren {
   MediumnidadRoute: typeof MediumnidadRoute
   PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
   PoliticaDePrivacidadRoute: typeof PoliticaDePrivacidadRoute
-  RetirosRoute: typeof RetirosRoute
   SobreMiRoute: typeof SobreMiRoute
   YogaRoute: typeof YogaRoute
 }
@@ -293,13 +280,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PoliticaDePrivacidadRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/retiros': {
-      id: '/retiros'
-      path: '/retiros'
-      fullPath: '/retiros'
-      preLoaderRoute: typeof RetirosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/sobre-mi': {
       id: '/sobre-mi'
       path: '/sobre-mi'
@@ -354,7 +334,6 @@ const rootRouteChildren: RootRouteChildren = {
   MediumnidadRoute: MediumnidadRoute,
   PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
   PoliticaDePrivacidadRoute: PoliticaDePrivacidadRoute,
-  RetirosRoute: RetirosRoute,
   SobreMiRoute: SobreMiRoute,
   YogaRoute: YogaRoute,
 }

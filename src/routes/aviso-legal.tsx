@@ -54,8 +54,8 @@ function AvisoLegal() {
 
         <LegalBlock title="Objeto de la web">
           <p>
-            Esta web tiene una finalidad informativa: dar a conocer el acompañamiento, las sesiones,
-            los talleres y los retiros de Espacio Despertar-Nos, y facilitar el contacto con Rosa.
+            Esta web tiene una finalidad informativa: dar a conocer el acompañamiento, las sesiones y
+            los talleres de Espacio Despertar-Nos, y facilitar el contacto con Rosa.
           </p>
         </LegalBlock>
 
