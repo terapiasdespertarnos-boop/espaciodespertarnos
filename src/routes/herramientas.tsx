@@ -257,7 +257,7 @@ function Herramientas() {
         <Quote>No trabajo con una técnica. Trabajo contigo.</Quote>
       </Section>
 
-      <CtaBand />
+      <CtaBand title="El primer paso siempre es el más valiente. Aquí estoy para darlo contigo." />
     </>
   );
 }

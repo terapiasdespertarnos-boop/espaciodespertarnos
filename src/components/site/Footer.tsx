@@ -8,6 +8,8 @@ const sobreMiQuote =
   "«No podemos borrar el pasado, pero sí podemos aprender a mirarlo con ternura y caminar sin su peso.»";
 const acompanarteQuote =
   "«Tu historia te ha traído hasta aquí, pero tú eliges cómo quieres escribir el siguiente capítulo.»";
+const herramientasQuote =
+  "«Sanar no es olvidar lo que viviste, sino lograr que ya no te duela al recordarlo.»";
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -16,7 +18,9 @@ export function Footer() {
       ? sobreMiQuote
       : pathname === "/como-puedo-acompanarte"
         ? acompanarteQuote
-        : footerQuote;
+        : pathname === "/herramientas"
+          ? herramientasQuote
+          : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
