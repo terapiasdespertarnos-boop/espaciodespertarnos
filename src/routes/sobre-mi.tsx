@@ -4,7 +4,7 @@ import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
 import rosaPuerta from "@/assets/rosa-puerta-sin-texto.png";
 import rosaCuenco from "@/assets/rosa-cuenco.jpeg.asset.json";
-import rosaCerrarEtapa from "@/assets/rosa-cerrar-etapa.jpg.asset.json";
+import rosaCerrarEtapa from "@/assets/rosa-cerrar-etapa-luz.jpg";
 import rosaYogaSala from "@/assets/rosa-yoga-sala.jpeg.asset.json";
 import altarLuz from "@/assets/altar-luz.jpeg.asset.json";
 
@@ -163,11 +163,11 @@ function SobreMi() {
           <article className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-16">
             <div className="relative">
               <img
-                src={rosaCerrarEtapa.url}
+                src={rosaCerrarEtapa}
                 alt="Rosa meditando en su sala, con un cuenco de hojas secas en primer plano"
-                width={894}
-                height={1600}
-                className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
+                width={768}
+                height={1376}
+                className="w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
                 loading="lazy"
               />
             </div>
