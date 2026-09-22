@@ -86,7 +86,7 @@ function Lnt() {
         </div>
       </Section>
 
-      <CtaBand />
+      <CtaBand title="Sé que asoma el miedo al empezar de nuevo, pero dar el primer paso es abrir la puerta a tu propio alivio" />
     </>
   );
 }

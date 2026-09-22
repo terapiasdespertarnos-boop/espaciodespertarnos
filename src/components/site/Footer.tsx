@@ -10,6 +10,8 @@ const acompanarteQuote =
   "«Tu historia te ha traído hasta aquí, pero tú eliges cómo quieres escribir el siguiente capítulo.»";
 const herramientasQuote =
   "«Sanar no es olvidar lo que viviste, sino lograr que ya no te duela al recordarlo.»";
+const lntQuote =
+  "«No podemos cambiar los capítulos anteriores de tu vida, pero sí podemos empezar a escribir el presente con mucha más ternura.»";
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -20,7 +22,9 @@ export function Footer() {
         ? acompanarteQuote
         : pathname === "/herramientas"
           ? herramientasQuote
-          : footerQuote;
+          : pathname === "/lnt"
+            ? lntQuote
+            : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
