@@ -64,9 +64,6 @@ function Limpiezas() {
           </div>
           <div>
             <p className="eyebrow">Péndulo y radiestesia</p>
-            <h3 className="font-display mt-4 text-2xl leading-snug md:text-3xl">
-              Limpiar, liberar, renovar y devolver cada cosa a su lugar.
-            </h3>
             <p className="text-muted-foreground mt-5 leading-relaxed">
               El péndulo es una de las herramientas que utilizo para afinar y comprobar durante
               determinadas limpiezas. No es un adorno: me ayuda a escuchar la información que un
