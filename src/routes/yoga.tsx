@@ -90,7 +90,7 @@ function Yoga() {
         <div className="mt-16">
           <SectionHeading
             eyebrow="Beneficios"
-            eyebrowClassName="text-lg md:text-2xl tracking-[0.3em]"
+            eyebrowClassName="text-lg! md:text-2xl! tracking-[0.3em]!"
             title="Lo que la práctica te aporta"
             align="center"
           />
