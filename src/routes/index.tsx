@@ -5,7 +5,7 @@ import { whatsappUrl } from "@/lib/site";
 import heroRosa from "@/assets/rosa-yoga-sala.jpeg.asset.json";
 import frecuencias from "@/assets/frecuencias.jpg";
 import naturaleza from "@/assets/naturaleza.jpg";
-import luzCamino from "@/assets/luz-camino.jpg";
+import luzCamino from "@/assets/mediumnidad-natural-b1.png";
 import pendulo from "@/assets/pendulo.jpg";
 import {
   LightOrbs,
@@ -356,10 +356,10 @@ function Index() {
           <div className="relative">
             <img
               src={luzCamino}
-              alt="Camino de piedra entre flores al amanecer, con luz dorada y bruma"
+              alt="Espacio artesanal cálido con lino crudo, madera y flores secas, donde una pequeña luz asciende hacia un túnel de luz dorada"
               loading="lazy"
-              width={1408}
-              height={912}
+              width={1200}
+              height={900}
               className="rounded-3xl object-cover"
             />
             <Sparkles count={7} />
