@@ -1,3 +1,3 @@
 # Roadmap
 
-- [ ] Mediumnidad: sustituir la imagen actual por versiones más naturales y realistas, en la línea de la foto del péndulo (pendulo.jpg) — pendiente de elegir opción
+- [x] Mediumnidad: imagen sustituida por la versión natural del círculo entre ramas (mediumnidad-natural-b2.png)
