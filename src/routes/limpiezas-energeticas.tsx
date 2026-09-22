@@ -50,8 +50,18 @@ function Limpiezas() {
           eyebrow="Limpiezas energéticas"
           className="text-4xl md:text-6xl"
           title="Limpiar, liberar, renovar y devolver cada cosa a su lugar."
-          intro="Las personas y los espacios pueden acumular diferentes cargas o influencias que afectan a nuestra sensación de bienestar, vitalidad y equilibrio. A través del testaje energético exploro qué puede estar influyendo, trabajo sobre ello mediante la limpieza y vuelvo a testar para comprobar cómo se encuentra el campo energético."
         />
+        <div className="mt-6 max-w-3xl">
+          <p className="text-foreground text-xl leading-relaxed md:text-2xl">
+            Las personas y los espacios pueden acumular diferentes cargas o influencias que afectan
+            a nuestra sensación de bienestar, vitalidad y equilibrio.
+          </p>
+          <p className="text-muted-foreground mt-4 leading-relaxed">
+            A través del testaje energético exploro qué puede estar influyendo, trabajo sobre ello
+            mediante la limpieza y vuelvo a testar para comprobar cómo se encuentra el campo
+            energético.
+          </p>
+        </div>
         <div className="mt-14 grid items-center gap-12 md:grid-cols-2">
           <div className="relative">
             <img
@@ -65,7 +75,7 @@ function Limpiezas() {
             <Sparkles count={6} />
           </div>
           <div>
-            <h3 className="font-display text-3xl leading-snug text-earth md:text-4xl">
+            <h3 className="text-foreground text-4xl leading-[1.15] md:text-6xl">
               Péndulo y radiestesia
             </h3>
             <p className="text-muted-foreground mt-5 leading-relaxed">
