@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import constelacionesCirculo from "@/assets/constelaciones-circulo.jpg";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 
