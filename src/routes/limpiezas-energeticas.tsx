@@ -111,7 +111,7 @@ function Limpiezas() {
         <div className="grid gap-8 md:grid-cols-2">
           <article className="gold-card p-8 md:p-10">
             <p className="eyebrow">Limpieza personal</p>
-            <h2 className="font-display mt-3 text-2xl leading-snug text-leaf md:text-3xl">
+            <h2 className="font-display mt-3 text-2xl leading-snug text-primary md:text-3xl">
               Limpiezas energéticas personales
             </h2>
             <p className="text-muted-foreground mt-5 leading-relaxed">
@@ -133,7 +133,7 @@ function Limpiezas() {
               href={whatsappUrl("Hola Rosa, me gustaría una limpieza energética personal.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-block rounded-full bg-leaf px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+              className="mt-8 inline-block rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
             >
               Quiero una limpieza
             </a>
@@ -141,7 +141,7 @@ function Limpiezas() {
 
           <article className="gold-card p-8 md:p-10">
             <p className="eyebrow">Hogares y locales</p>
-            <h2 className="font-display mt-3 text-2xl leading-snug text-leaf md:text-3xl">
+            <h2 className="font-display mt-3 text-2xl leading-snug text-primary md:text-3xl">
               Limpieza de casas y locales
             </h2>
             <p className="text-muted-foreground mt-5 leading-relaxed">
@@ -173,7 +173,7 @@ function Limpiezas() {
               href={whatsappUrl("Hola Rosa, me gustaría una limpieza energética para mi casa o local.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-block rounded-full bg-leaf px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+              className="mt-8 inline-block rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
             >
               Quiero una limpieza
             </a>
