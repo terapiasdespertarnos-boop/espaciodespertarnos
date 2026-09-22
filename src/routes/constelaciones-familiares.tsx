@@ -32,6 +32,7 @@ function Constelaciones() {
       <Section tone="cream" glow>
         <SectionHeading
           eyebrow="Constelaciones familiares"
+          eyebrowClassName="text-2xl! md:text-3xl!"
           className="text-4xl md:text-6xl"
           title="¿Y si parte de lo que cargas no te corresponde?"
         />
