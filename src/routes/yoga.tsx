@@ -91,6 +91,7 @@ function Yoga() {
           <SectionHeading
             eyebrow="Beneficios"
             title="Lo que la práctica te aporta"
+            className="text-4xl md:text-6xl"
             align="center"
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -120,13 +121,13 @@ function Yoga() {
                 "Vuelves a escucharte, a habitarte y a reconocer lo que de verdad necesitas.",
               ],
             ].map(([t, d]) => (
-              <article key={t} className="gold-card p-7">
-                <h3 className="text-lg">{t}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
+              <article key={t} className="gold-card p-8">
+                <h3 className="text-2xl md:text-3xl">{t}</h3>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{d}</p>
               </article>
             ))}
           </div>
-          <p className="mt-10 text-center text-sm font-medium uppercase tracking-[0.2em] text-[var(--sage-deep)]">
+          <p className="mt-12 text-center text-sm font-medium uppercase tracking-[0.2em] text-[var(--sage-deep)]">
             En lo físico
           </p>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -168,9 +169,9 @@ function Yoga() {
                 "La práctica activa y equilibra las glándulas, que regulan tanta parte de cómo te sientes.",
               ],
             ].map(([t, d]) => (
-              <article key={t} className="gold-card p-7">
-                <h3 className="text-lg">{t}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
+              <article key={t} className="gold-card p-8">
+                <h3 className="text-2xl md:text-3xl">{t}</h3>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{d}</p>
               </article>
             ))}
           </div>
