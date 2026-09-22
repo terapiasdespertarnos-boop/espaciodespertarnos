@@ -18,6 +18,8 @@ const limpiezasQuote =
   "«Abrazar tu historia con todas sus luces y sombras es el único camino para dejar de luchar contra ti mismo.»";
 const mediumnidadQuote =
   "«Hacer las paces con lo vivido no significa justificarlo, sino elegir que el ayer no te robe el bienestar del presente.»";
+const yogaQuote =
+  "«No estás atrapada/o en lo que te dolió. Hoy tienes el poder de relacionarte con tus recuerdos desde la compasión.»";
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -36,7 +38,9 @@ export function Footer() {
                 ? limpiezasQuote
                 : pathname === "/mediumnidad"
                   ? mediumnidadQuote
-                  : footerQuote;
+                  : pathname === "/yoga"
+                    ? yogaQuote
+                    : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
