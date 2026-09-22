@@ -185,7 +185,7 @@ function Yoga() {
       </Section>
 
       <CtaBand
-        title="¿Quieres probar una clase?"
+        title="Cuando te atreves a empezar, el camino se vuelve más amable"
         text="Escríbeme y te cuento horarios, grupos y cómo empezar, aunque nunca hayas practicado."
         buttonLabel="Preguntar por las clases"
       />
