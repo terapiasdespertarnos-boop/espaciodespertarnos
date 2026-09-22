@@ -74,7 +74,7 @@ function Yoga() {
         </div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            ["Clases de Yoga Kundalini", "Series completas adaptadas al grupo y al momento."],
+            ["Kriyas", "Secuencias completas adaptadas al grupo y al momento."],
             ["Prácticas de respiración", "La respiración como puerta más directa a la calma."],
             ["Meditaciones", "Tiempo para parar y escuchar lo que hay debajo del ruido."],
             ["Mantras", "Sonido y repetición como forma de sostener la atención."],
