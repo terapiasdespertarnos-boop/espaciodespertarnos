@@ -57,23 +57,6 @@ const terapias: { nombre: string; que: string; momento: string }[] = [
   },
 ];
 
-// Momentos vitales en los que puede acompañarte.
-const momentos: [string, string][] = [
-  ["Procesos personales", "Cuando sientes que necesitas mirar tu vida desde otro lugar."],
-  ["Bloqueos emocionales", "Algo te frena y no consigues ponerle nombre."],
-  ["Patrones repetitivos", "Historias que vuelven una y otra vez con otras caras."],
-  ["Relaciones", "Vínculos que duelen, cansan o se repiten."],
-  ["Familia", "Lealtades, cargas y lugares que quizá no te corresponden."],
-  ["Límites", "Aprender a decir no sin sentir que fallas a nadie."],
-  ["Sensación de estancamiento", "Sabes lo que quieres, pero no consigues moverte."],
-  ["Cansancio emocional", "Llevas demasiado tiempo sosteniendo a todo el mundo."],
-  ["Limpieza energética personal", "Cuando sientes pesadez o necesidad de renovación."],
-  ["Limpieza energética de hogares", "Ambientes cargados, incómodos o extraños."],
-  ["Limpieza energética de negocios", "Renovar el ambiente y empezar una nueva etapa."],
-  ["Yoga Kundalini", "Cuerpo, respiración y presencia como camino de conciencia."],
-  ["Procesos de autoconocimiento", "Comprenderte mejor sin juicio y a tu ritmo."],
-  ["Mediumnidad y presencias", "Acompañar con respeto aquello que se percibe."],
-];
 
 function ComoPuedoAcompanarte() {
   return (
