@@ -95,7 +95,9 @@ function Constelaciones() {
         </div>
       </Section>
 
-      <CtaBand />
+      <CtaBand
+        title="Sé que dar el paso da respeto porque exige mirarse, pero hacerlo es el mayor acto de amor propio que puedes regalarte hoy"
+      />
     </>
   );
 }
