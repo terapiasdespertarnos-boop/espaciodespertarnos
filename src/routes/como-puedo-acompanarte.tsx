@@ -125,7 +125,6 @@ function ComoPuedoAcompanarte() {
 
       <Section tone="sand">
         <SectionHeading
-          eyebrow="Momentos de la vida"
           title="¿En qué momentos puedo acompañarte?"
           intro="No siempre es una terapia concreta: a veces es simplemente el momento que estás transitando."
         />
