@@ -16,6 +16,8 @@ const constelacionesQuote =
   "«Tu pasado no define hacia dónde vas, solo te muestra los lugares de donde hoy decides liberarte.»";
 const limpiezasQuote =
   "«Abrazar tu historia con todas sus luces y sombras es el único camino para dejar de luchar contra ti mismo.»";
+const mediumnidadQuote =
+  "«Hacer las paces con lo vivido no significa justificarlo, sino elegir que el ayer no te robe el bienestar del presente.»";
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
