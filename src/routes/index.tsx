@@ -254,9 +254,9 @@ function Index() {
             src={miradaIntegral}
             alt="Rosa meditando con las manos en el corazón en su sala de acompañamiento"
             loading="lazy"
-            width={1138}
-            height={1400}
-            className="aspect-[4/5] w-full rounded-2xl object-cover"
+            width={1422}
+            height={1300}
+            className="w-full rounded-2xl object-cover"
           />
         </div>
       </Section>
