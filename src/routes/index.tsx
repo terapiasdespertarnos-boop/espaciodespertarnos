@@ -92,32 +92,12 @@ const dimensiones = [
 ];
 
 const herramientas = [
-  { t: "Yoga Kundalini", d: "Conciencia, respiración, presencia y trabajo corporal.", to: "/yoga" },
-  {
-    t: "Constelaciones familiares",
-    d: "Mirar patrones y dinámicas familiares desde otra perspectiva.",
-    to: "/herramientas",
-  },
-  {
-    t: "Coaching ontológico",
-    d: "Revisar cómo interpretamos, decidimos y ponemos límites.",
-    to: "/herramientas",
-  },
-  {
-    t: "Regresiones",
-    d: "Explorar experiencias que sientes que necesitan ser comprendidas.",
-    to: "/herramientas",
-  },
-  {
-    t: "LNT y técnicas energéticas",
-    d: "Acompañamiento energético dentro de un proceso personalizado.",
-    to: "/herramientas",
-  },
-  {
-    t: "Limpiezas energéticas",
-    d: "Personas, hogares y negocios que necesitan renovarse.",
-    to: "/limpiezas-energeticas",
-  },
+  { t: "Yoga Kundalini", to: "/yoga" },
+  { t: "Constelaciones familiares", to: "/herramientas" },
+  { t: "Coaching ontológico", to: "/herramientas" },
+  { t: "Regresiones", to: "/herramientas" },
+  { t: "LNT y técnicas energéticas", to: "/herramientas" },
+  { t: "Limpiezas energéticas", to: "/limpiezas-energeticas" },
 ] as const;
 
 function Index() {
@@ -233,13 +213,7 @@ function Index() {
         <SectionHeading
           eyebrow="Mi forma de acompañar"
           title="Tranquila/o, no es necesario que sepas qué herramienta elegir."
-          intro="Puedes venir con una preocupación, un bloqueo, una relación que se repite, una sensación que no sabes explicar, un cansancio emocional o simplemente con la sensación de que necesitas cambiar algo en tu vida."
         />
-        <p className="mt-8 max-w-3xl leading-relaxed text-muted-foreground">
-          Mi trabajo comienza escuchándote. Después observo qué puede estar ocurriendo y, desde mi
-          experiencia y sensibilidad, puedo utilizar una u otra herramienta, o combinar diferentes
-          técnicas.
-        </p>
         <ol className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {pasos.map((p) => (
             <li key={p.n} className="border-t border-earth/20 pt-6">
@@ -265,19 +239,6 @@ function Index() {
               eyebrow="Mi mirada integral"
               title="Porque tú no eres solo una parte de ti."
             />
-            <div className="mt-8 space-y-4 leading-relaxed text-muted-foreground">
-              <p>
-                A veces necesitamos trabajar el cuerpo. Otras veces necesitamos comprender una
-                emoción. En ocasiones necesitamos mirar nuestra historia familiar.
-              </p>
-              <p>
-                Otras veces necesitamos liberar un bloqueo, cerrar un proceso o simplemente
-                aprender a relacionarnos de otra manera con lo que estamos viviendo.
-              </p>
-              <p className="text-foreground">
-                Por eso no parto de una técnica. Parto de la persona.
-              </p>
-            </div>
             <ul className="mt-8 flex flex-wrap gap-2">
               {dimensiones.map((d) => (
                 <li
@@ -350,7 +311,6 @@ function Index() {
             >
 
               <h3 className="text-xl">{h.t}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{h.d}</p>
               <span className="mt-5 inline-block text-[0.7rem] tracking-[0.18em] text-clay uppercase">
                 Saber más
               </span>
@@ -379,10 +339,6 @@ function Index() {
               title="Escuchar también la información que no se dice con palabras."
               intro="El péndulo forma parte de mi trabajo energético y de determinadas limpiezas. Me ayuda a afinar, a comprobar y a devolver cada cosa a su lugar."
             />
-            <p className="text-muted-foreground mt-8 leading-relaxed">
-              Trabajo también con frecuencias de color: matices, tonos y vibraciones que acompañan
-              el proceso de cada persona de una manera suave y respetuosa.
-            </p>
             <EnergyWaves className="text-gold/70 mt-8 h-16" />
             <Link
               to="/limpiezas-energeticas"
