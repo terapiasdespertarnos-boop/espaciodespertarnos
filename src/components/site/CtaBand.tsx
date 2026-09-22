@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 export function CtaBand({
   title = "Sé que da respeto empezar, pero créeme, dar el primer paso ya es una victoria.",
-  text = "No tienes que tener claro qué necesitas. Puedes escribirme y contarme brevemente qué estás viviendo.",
+  text,
   buttonLabel = "Compartir con Rosa",
 }: {
   title?: string;
@@ -15,9 +15,11 @@ export function CtaBand({
     <Section tone="deep">
       <div className="max-w-3xl">
         <h2 className="text-3xl leading-tight text-primary-foreground md:text-5xl">{title}</h2>
-        <p className="mt-6 text-base leading-relaxed text-primary-foreground/80 md:text-lg">
-          {text}
-        </p>
+        {text ? (
+          <p className="mt-6 text-base leading-relaxed text-primary-foreground/80 md:text-lg">
+            {text}
+          </p>
+        ) : null}
         <div className="mt-9 flex flex-wrap gap-3">
           <a
             href={whatsappUrl()}
