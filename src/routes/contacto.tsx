@@ -95,6 +95,24 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
 
       <Section>
         <div className="grid gap-12 md:grid-cols-[1.1fr_0.9fr]">
+          <div className="grid content-start gap-8">
+            <p className="text-lg leading-relaxed text-foreground">
+              Este es tu espacio seguro. Tómate el tiempo que necesites. Rellena los campos de
+              abajo y cuéntame un poquito qué te trae por aquí. Estoy al otro lado para escucharte
+              sin prisa y sin juicios.{" "}
+              <span className="whitespace-nowrap">
+                O si lo prefieres,{" "}
+                <a
+                  href={whatsappUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4"
+                >
+                  mándame un WhatsApp
+                </a>
+              </span>
+              .
+            </p>
           <form onSubmit={onSubmit} className="gold-card grid gap-5 p-8">
             <div className="grid gap-2">
               <label htmlFor="nombre" className="text-xs tracking-[0.14em] uppercase">
