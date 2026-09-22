@@ -18,7 +18,7 @@ export const Route = createFileRoute("/contacto")({
         content:
           "Escríbeme por WhatsApp, email o con el formulario y cuéntame brevemente qué estás viviendo. No hace falta que sepas qué necesitas.",
       },
-      { property: "og:title", content: "Sé que da respeto empezar, pero créeme, dar el primer paso ya es una victoria." },
+      { property: "og:title", content: "Empezar puede dar miedo, pero acompañada el camino se siente más liviano." },
       {
         property: "og:description",
         content: "Cuéntame qué estás viviendo y vemos juntas/os qué puede acompañarte.",
@@ -73,7 +73,7 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
       <Section tone="cream">
         <SectionHeading
           eyebrow="Contacto"
-          title="Sé que da respeto empezar, pero créeme, dar el primer paso ya es una victoria."
+          title="Empezar puede dar miedo, pero acompañada el camino se siente más liviano."
           intro="No tienes que tener claro qué necesitas. Puedes escribirme y contarme brevemente qué estás viviendo."
         />
         <div className="mt-9 flex flex-wrap gap-3">
