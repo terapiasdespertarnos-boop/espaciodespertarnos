@@ -34,7 +34,9 @@ export function Footer() {
               ? constelacionesQuote
               : pathname === "/limpiezas-energeticas"
                 ? limpiezasQuote
-                : footerQuote;
+                : pathname === "/mediumnidad"
+                  ? mediumnidadQuote
+                  : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
