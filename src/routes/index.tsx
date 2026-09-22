@@ -356,10 +356,10 @@ function Index() {
           <div className="relative">
             <img
               src={luzCamino}
-              alt="Camino de piedra entre flores al amanecer, con luz dorada y bruma"
+              alt="Espacio artesanal cálido con lino crudo, madera y flores secas, donde una pequeña luz asciende hacia un túnel de luz dorada"
               loading="lazy"
-              width={1408}
-              height={912}
+              width={1200}
+              height={900}
               className="rounded-3xl object-cover"
             />
             <Sparkles count={7} />
