@@ -12,9 +12,11 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AvisoLegalRouteImport } from './routes/aviso-legal'
 import { Route as ComoPuedoAcompanarteRouteImport } from './routes/como-puedo-acompanarte'
+import { Route as ConstelacionesFamiliaresRouteImport } from './routes/constelaciones-familiares'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as HerramientasRouteImport } from './routes/herramientas'
 import { Route as LimpiezasEnergeticasRouteImport } from './routes/limpiezas-energeticas'
+import { Route as LntRouteImport } from './routes/lnt'
 import { Route as MediumnidadRouteImport } from './routes/mediumnidad'
 import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cookies'
 import { Route as PoliticaDePrivacidadRouteImport } from './routes/politica-de-privacidad'
@@ -36,6 +38,12 @@ const ComoPuedoAcompanarteRoute = ComoPuedoAcompanarteRouteImport.update({
   path: '/como-puedo-acompanarte',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConstelacionesFamiliaresRoute =
+  ConstelacionesFamiliaresRouteImport.update({
+    id: '/constelaciones-familiares',
+    path: '/constelaciones-familiares',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ContactoRoute = ContactoRouteImport.update({
   id: '/contacto',
   path: '/contacto',
@@ -49,6 +57,11 @@ const HerramientasRoute = HerramientasRouteImport.update({
 const LimpiezasEnergeticasRoute = LimpiezasEnergeticasRouteImport.update({
   id: '/limpiezas-energeticas',
   path: '/limpiezas-energeticas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LntRoute = LntRouteImport.update({
+  id: '/lnt',
+  path: '/lnt',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MediumnidadRoute = MediumnidadRouteImport.update({
@@ -81,9 +94,11 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/aviso-legal': typeof AvisoLegalRoute
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
+  '/constelaciones-familiares': typeof ConstelacionesFamiliaresRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
+  '/lnt': typeof LntRoute
   '/mediumnidad': typeof MediumnidadRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
@@ -94,9 +109,11 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/aviso-legal': typeof AvisoLegalRoute
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
+  '/constelaciones-familiares': typeof ConstelacionesFamiliaresRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
+  '/lnt': typeof LntRoute
   '/mediumnidad': typeof MediumnidadRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
@@ -108,9 +125,11 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/aviso-legal': typeof AvisoLegalRoute
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
+  '/constelaciones-familiares': typeof ConstelacionesFamiliaresRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
   '/limpiezas-energeticas': typeof LimpiezasEnergeticasRoute
+  '/lnt': typeof LntRoute
   '/mediumnidad': typeof MediumnidadRoute
   '/politica-de-cookies': typeof PoliticaDeCookiesRoute
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
@@ -123,9 +142,11 @@ export interface FileRouteTypes {
     | '/'
     | '/aviso-legal'
     | '/como-puedo-acompanarte'
+    | '/constelaciones-familiares'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
+    | '/lnt'
     | '/mediumnidad'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
@@ -136,9 +157,11 @@ export interface FileRouteTypes {
     | '/'
     | '/aviso-legal'
     | '/como-puedo-acompanarte'
+    | '/constelaciones-familiares'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
+    | '/lnt'
     | '/mediumnidad'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
@@ -149,9 +172,11 @@ export interface FileRouteTypes {
     | '/'
     | '/aviso-legal'
     | '/como-puedo-acompanarte'
+    | '/constelaciones-familiares'
     | '/contacto'
     | '/herramientas'
     | '/limpiezas-energeticas'
+    | '/lnt'
     | '/mediumnidad'
     | '/politica-de-cookies'
     | '/politica-de-privacidad'
@@ -163,9 +188,11 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AvisoLegalRoute: typeof AvisoLegalRoute
   ComoPuedoAcompanarteRoute: typeof ComoPuedoAcompanarteRoute
+  ConstelacionesFamiliaresRoute: typeof ConstelacionesFamiliaresRoute
   ContactoRoute: typeof ContactoRoute
   HerramientasRoute: typeof HerramientasRoute
   LimpiezasEnergeticasRoute: typeof LimpiezasEnergeticasRoute
+  LntRoute: typeof LntRoute
   MediumnidadRoute: typeof MediumnidadRoute
   PoliticaDeCookiesRoute: typeof PoliticaDeCookiesRoute
   PoliticaDePrivacidadRoute: typeof PoliticaDePrivacidadRoute
@@ -196,6 +223,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ComoPuedoAcompanarteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/constelaciones-familiares': {
+      id: '/constelaciones-familiares'
+      path: '/constelaciones-familiares'
+      fullPath: '/constelaciones-familiares'
+      preLoaderRoute: typeof ConstelacionesFamiliaresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contacto': {
       id: '/contacto'
       path: '/contacto'
@@ -215,6 +249,13 @@ declare module '@tanstack/react-router' {
       path: '/limpiezas-energeticas'
       fullPath: '/limpiezas-energeticas'
       preLoaderRoute: typeof LimpiezasEnergeticasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lnt': {
+      id: '/lnt'
+      path: '/lnt'
+      fullPath: '/lnt'
+      preLoaderRoute: typeof LntRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mediumnidad': {
@@ -259,9 +300,11 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AvisoLegalRoute: AvisoLegalRoute,
   ComoPuedoAcompanarteRoute: ComoPuedoAcompanarteRoute,
+  ConstelacionesFamiliaresRoute: ConstelacionesFamiliaresRoute,
   ContactoRoute: ContactoRoute,
   HerramientasRoute: HerramientasRoute,
   LimpiezasEnergeticasRoute: LimpiezasEnergeticasRoute,
+  LntRoute: LntRoute,
   MediumnidadRoute: MediumnidadRoute,
   PoliticaDeCookiesRoute: PoliticaDeCookiesRoute,
   PoliticaDePrivacidadRoute: PoliticaDePrivacidadRoute,
