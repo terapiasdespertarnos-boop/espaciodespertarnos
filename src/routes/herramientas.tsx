@@ -84,108 +84,42 @@ function Herramientas() {
 
       {/* LNT */}
       <Section tone="sand">
-        <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-start">
-          <div className="space-y-7">
+        <div className="grid gap-10 md:grid-cols-[1fr_1.2fr]">
+          <div>
             <p className="eyebrow">02</p>
-            <h2 className="mt-3 text-3xl md:text-4xl">LNT · Sanación energética cuántica</h2>
-            <img
-              src={lntRosaTerapeuta}
-              alt="Rosa acompañando una sesión de LNT en un espacio sereno"
-              loading="lazy"
-              width={960}
-              height={1200}
-              className="aspect-[4/5] w-full rounded-2xl object-cover shadow-[var(--shadow-soft)]"
-            />
+            <h2 className="mt-3 text-3xl md:text-4xl">LNT · La Nueva Terapia</h2>
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              Si sientes bloqueos a nivel físico, emocional o espiritual, esta terapia puede
-              acompañarte a recuperar el equilibrio.
+              Sanación energética cuántica que trabaja sobre los tres cuerpos: físico, emocional y
+              espiritual. Presencial o a distancia.
             </p>
-            <p>
-              Trabaja sobre los tres cuerpos: físico, emocional y espiritual, con más de 30 años de
-              experiencia. Está disponible tanto presencial como a distancia.
-            </p>
-            <div>
-              <p className="eyebrow">Beneficios</p>
-              <ul className="mt-3 grid gap-2 text-sm">
-                {[
-                  "Alivio de dolencias (migrañas, dolores, contracturas, etc.)",
-                  "Reducción de estrés, ansiedad e insomnio",
-                  "Apoyo en alergias e infertilidad",
-                  "Desbloqueo emocional (fobias, adicciones, inseguridades, falta de abundancia…)",
-                ].map((b) => (
-                  <li key={b} className="border-b border-border pb-2">
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <p className="text-sm">
-              No sustituye los tratamientos médicos: los complementa.
-            </p>
-            <p>
-              En la modalidad presencial, la sesión se repite cada 15-20 días hasta notar mejoría.
-              A distancia, el tratamiento se determina mediante radiestesia, que indica tanto el
-              número de semanas necesarias como la frecuencia adecuada para cada caso.
-            </p>
-            <p className="font-display text-2xl md:text-3xl leading-snug text-[var(--sage-deep)]">
-              <span className="mr-1 align-top text-3xl md:text-4xl text-[var(--gold)]">«</span>
-              Los resultados no paran de sorprenderme, es fascinante.
-              <span className="ml-1 align-bottom text-3xl md:text-4xl text-[var(--gold)]">»</span>
-            </p>
+            <Link to="/lnt" className="inline-block text-xs tracking-[0.16em] text-clay uppercase">
+              Ver la sección de LNT
+            </Link>
           </div>
         </div>
       </Section>
 
       {/* CONSTELACIONES */}
       <Section>
-        <p className="eyebrow">03</p>
-        <h2 className="mt-3 text-3xl md:text-4xl">Constelaciones familiares</h2>
-        <p className="mt-4 max-w-3xl text-lg leading-snug text-[var(--sage-deep)] font-display md:text-xl">
-          ¿Y si parte de lo que cargas no te corresponde?
-        </p>
-        <span className="rule-line mt-7" />
-        <div className="mt-10 grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-[1fr_1.2fr]">
+          <div>
+            <p className="eyebrow">03</p>
+            <h2 className="mt-3 text-3xl md:text-4xl">Constelaciones familiares</h2>
+          </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              A veces repetimos historias, conflictos o formas de relacionarnos sin comprender de
-              dónde vienen.
+              Sesiones grupales para mirar patrones y dinámicas familiares desde otra perspectiva y
+              reconocer qué cargas nos corresponden y cuáles no.
             </p>
-            <p>
-              Las Constelaciones Familiares permiten mirar determinados patrones y dinámicas
-              familiares desde una perspectiva diferente, para poder reconocer qué cargas nos
-              corresponden y cuáles quizá hemos asumido por amor, lealtad o necesidad de
-              pertenecer.
-            </p>
-            <p>
-              El objetivo no es buscar culpables ni dramatizar el pasado, sino mirar, comprender y
-              devolver simbólicamente a cada persona lo que le corresponde.
-            </p>
-            <p>
-              Las sesiones son grupales. Puedes constelar un tema personal o participar como
-              representante en el proceso de otra persona. Es una experiencia que, más que entender
-              solamente con la cabeza, invita a mirar, sentir y tomar conciencia.
-            </p>
-            <p className="text-sm">
-              Se ofrecen como herramienta de acompañamiento y autoconocimiento. No sustituyen la
-              atención psicológica ni médica.
-            </p>
+            <Link
+              to="/constelaciones-familiares"
+              className="inline-block text-xs tracking-[0.16em] text-clay uppercase"
+            >
+              Ver la sección de constelaciones familiares
+            </Link>
           </div>
-          <ul className="grid gap-3 self-start">
-            {[
-              "¿Por qué siempre me pasa lo mismo?",
-              "¿Por qué siento que tengo que ocuparme de todo?",
-              "¿Por qué no consigo avanzar?",
-              "¿Por qué repito patrones en mis relaciones de pareja?",
-              "¿Por qué vibro siempre en escasez?",
-              "¿Qué no es mío?",
-            ].map((q) => (
-              <li key={q} className="gold-card px-6 py-5 font-display text-xl">
-                {q}
-              </li>
-            ))}
-          </ul>
         </div>
       </Section>
 
