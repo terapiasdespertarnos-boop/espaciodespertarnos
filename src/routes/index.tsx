@@ -121,7 +121,7 @@ function Index() {
           <div className="max-w-2xl fade-up">
             <p className="eyebrow">Espacio Despertar-Nos</p>
             <h1 className="mt-6 font-display text-4xl leading-[1.1] md:text-6xl">
-              Hay momentos en los que seguir tirando ya no es la solución.
+              A veces, la mejor forma de avanzar es hacer una pausa y escucharte.
             </h1>
             <span className="rule-line mt-6" />
             <p className="mt-7 text-lg leading-relaxed text-earth md:text-xl">
