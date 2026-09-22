@@ -20,6 +20,8 @@ const mediumnidadQuote =
   "«Hacer las paces con lo vivido no significa justificarlo, sino elegir que el ayer no te robe el bienestar del presente.»";
 const yogaQuote =
   "«No estás atrapada/o en lo que te dolió. Hoy tienes el poder de relacionarte con tus recuerdos desde la compasión.»";
+const contactoQuote =
+  "«Hacer las paces con tu historia requiere tiempo. No tienes que pasar por esto a solas. Estoy aquí para acompañar tu proceso.»";
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -40,7 +42,9 @@ export function Footer() {
                   ? mediumnidadQuote
                   : pathname === "/yoga"
                     ? yogaQuote
-                    : footerQuote;
+                    : pathname === "/contacto"
+                      ? contactoQuote
+                      : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
