@@ -133,7 +133,7 @@ function Limpiezas() {
               href={whatsappUrl("Hola Rosa, me gustaría una limpieza energética personal.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-block rounded-full bg-leaf px-7 py-3.5 text-xs tracking-[0.14em] text-white uppercase transition-opacity hover:opacity-90"
+              className="mt-8 inline-block rounded-full bg-leaf px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
             >
               Quiero una limpieza
             </a>
@@ -173,7 +173,7 @@ function Limpiezas() {
               href={whatsappUrl("Hola Rosa, me gustaría una limpieza energética para mi casa o local.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-block rounded-full bg-leaf px-7 py-3.5 text-xs tracking-[0.14em] text-white uppercase transition-opacity hover:opacity-90"
+              className="mt-8 inline-block rounded-full bg-leaf px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
             >
               Quiero una limpieza
             </a>
