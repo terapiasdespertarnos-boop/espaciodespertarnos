@@ -37,6 +37,7 @@ export function Section({
 
 export function SectionHeading({
   eyebrow,
+  eyebrowClassName,
   title,
   intro,
   align = "left",
@@ -44,6 +45,7 @@ export function SectionHeading({
   className,
 }: {
   eyebrow?: string;
+  eyebrowClassName?: string;
   title: string;
   intro?: string;
   align?: "left" | "center";
@@ -58,7 +60,7 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? (
-        <p className={cn("eyebrow", invert && "text-primary-foreground/70")}>{eyebrow}</p>
+        <p className={cn("eyebrow", eyebrowClassName, invert && "text-primary-foreground/70")}>{eyebrow}</p>
       ) : null}
       <h2
         className={cn(
