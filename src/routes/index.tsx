@@ -6,14 +6,13 @@ import heroRosa from "@/assets/rosa-yoga-sala.jpeg.asset.json";
 import frecuencias from "@/assets/frecuencias.jpg";
 import miradaIntegral from "@/assets/rosa-mirada-integral-crop.jpg";
 import luzCamino from "@/assets/mediumnidad-rosa-natural.png";
-import pendulo from "@/assets/pendulo.jpg";
 import {
   LightOrbs,
   Sparkles,
   SacredGeometry,
   PendulumMark,
   BotanicalBranch,
-  EnergyWaves,
+
   FrequencyVeil,
 } from "@/components/site/Ornaments";
 
@@ -311,36 +310,6 @@ function Index() {
         </div>
       </Section>
 
-      {/* PÉNDULO · RADIESTESIA Y FRECUENCIAS */}
-      <Section glow>
-        <div className="grid items-center gap-12 md:grid-cols-2">
-          <div className="relative">
-            <img
-              src={pendulo}
-              alt="Péndulo de latón sobre lino crudo, junto a hojas de salvia y flores secas"
-              loading="lazy"
-              width={1200}
-              height={912}
-              className="rounded-3xl object-cover shadow-[var(--shadow-glow)]"
-            />
-            <Sparkles count={6} />
-          </div>
-          <div>
-            <SectionHeading
-              eyebrow="Péndulo y frecuencias"
-              title="Escuchar también la información que no se dice con palabras."
-              intro="El péndulo forma parte de mi trabajo energético y de determinadas limpiezas. Me ayuda a afinar, a comprobar y a devolver cada cosa a su lugar."
-            />
-            <EnergyWaves className="text-gold/70 mt-8 h-16" />
-            <Link
-              to="/limpiezas-energeticas"
-              className="border-gold/60 hover:bg-cream mt-6 inline-flex rounded-full border px-7 py-3.5 text-xs tracking-[0.14em] uppercase transition-colors"
-            >
-              Ver las limpiezas energéticas
-            </Link>
-          </div>
-        </div>
-      </Section>
 
       {/* MEDIUMNIDAD BREVE */}
       <Section tone="cream">
