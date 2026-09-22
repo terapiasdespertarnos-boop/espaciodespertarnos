@@ -109,7 +109,7 @@ function ComoPuedoAcompanarte() {
         <Quote>Te escucho. Te miro. Percibo. Y juntas/os buscamos qué necesitas.</Quote>
       </Section>
 
-      <CtaBand />
+      <CtaBand title="Sé que dar el primer paso da vértigo, pero recuerda que ya estás en camino solo con pensarlo." />
     </>
   );
 }
