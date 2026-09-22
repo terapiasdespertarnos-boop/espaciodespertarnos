@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import constelacionesCirculo from "@/assets/constelaciones-circulo.jpg";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 
@@ -34,6 +35,19 @@ function Constelaciones() {
           className="text-4xl md:text-6xl"
           title="¿Y si parte de lo que cargas no te corresponde?"
         />
+      </Section>
+
+      <Section tone="cream" className="pt-0">
+        <figure className="overflow-hidden rounded-[2rem] shadow-[0_20px_60px_-20px_rgba(122,90,50,0.35)]">
+          <img
+            src={constelacionesCirculo}
+            alt="Círculo de personas en un prado al atardecer, unidas por hilos de luz dorada que evocan los vínculos familiares"
+            width={1600}
+            height={1008}
+            loading="lazy"
+            className="h-auto w-full object-cover"
+          />
+        </figure>
       </Section>
 
       <Section>
