@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import calma from "@/assets/calma.jpg";
-import lntRosaTerapeuta from "@/assets/lnt-rosa-terapeuta.png";
 
 export const Route = createFileRoute("/herramientas")({
   head: () => ({
