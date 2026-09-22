@@ -43,15 +43,12 @@ export const Route = createFileRoute("/")({
 const frases = [
   "Siempre me pasa lo mismo.",
   "Siento que cargo con todo.",
-  "No consigo avanzar.",
   "Doy mucho y recibo muy poco.",
   "Me cuesta poner límites.",
-  "Siempre termino repitiendo las mismas historias.",
   "Siento que algo me bloquea.",
   "Estoy cansada/o de entenderlo todo con la cabeza.",
   "Quiero dejar de sentirme responsable de todo.",
   "Necesito saber qué es mío y qué no.",
-  "Quiero sentirme más ligera/o.",
   "Quiero volver a disfrutar de mi vida.",
 ];
 
