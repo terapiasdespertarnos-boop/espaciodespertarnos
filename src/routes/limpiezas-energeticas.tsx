@@ -48,6 +48,7 @@ function Limpiezas() {
       <Section tone="cream" glow>
         <SectionHeading
           eyebrow="Limpiezas energéticas"
+          eyebrowClassName="text-2xl! md:text-3xl!"
           className="text-4xl md:text-6xl"
           title="Limpiar, liberar, renovar y devolver cada cosa a su lugar."
         />
@@ -75,9 +76,9 @@ function Limpiezas() {
             <Sparkles count={6} />
           </div>
           <div>
-            <h3 className="text-foreground text-4xl leading-[1.15] md:text-6xl">
+            <h2 className="text-4xl leading-[1.15] md:text-6xl">
               Péndulo y radiestesia
-            </h3>
+            </h2>
             <p className="text-muted-foreground mt-5 leading-relaxed">
               El péndulo es una de las herramientas que utilizo para afinar y comprobar durante
               determinadas limpiezas. No es un adorno: me ayuda a escuchar la información que un
