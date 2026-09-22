@@ -32,18 +32,22 @@ function Mediumnidad() {
           <div>
             <SectionHeading
               eyebrow="Mediumnidad"
-              title="Hay cosas que no siempre se ven, pero sí se sienten."
+              title="Conexión invisible: lo que se siente más allá de la vista."
             />
             <div className="mt-8 space-y-5 leading-relaxed text-muted-foreground">
               <p>
-                A lo largo de mi camino también he desarrollado una sensibilidad especial y una
-                capacidad de mediumnidad que forma parte de mi manera de percibir determinadas
-                personas, espacios y situaciones.
+                Hay cosas que no siempre se ven, pero sí se sienten. El mundo que nos rodea no se
+                limita únicamente a lo que podemos tocar o comprobar a través de los sentidos
+                físicos. Existe una dimensión sutil, una vibración invisible que se teje en los
+                espacios que habitamos, en las historias que cargamos y en los vínculos que dejamos
+                atrás.
               </p>
               <p>
-                En ocasiones puedo percibir presencias o energías que siento vinculadas a un lugar
-                o a una persona. Cuando esto ocurre, puedo acompañar ese proceso desde el respeto,
-                la calma y la sensibilidad.
+                A lo largo de mi propio camino y evolución personal, he desarrollado una
+                sensibilidad especial y una capacidad de mediumnidad profundamente arraigada. Esta
+                facultad no es un espectáculo, sino una forma íntima, respetuosa y natural de
+                percibir a determinadas personas, comprender la atmósfera de ciertos espacios y
+                descifrar situaciones complejas desde el plano energético.
               </p>
             </div>
           </div>
@@ -59,22 +63,77 @@ function Mediumnidad() {
       </Section>
 
       <Section>
-        <h2 className="max-w-2xl text-3xl leading-tight md:text-4xl">
-          Acompañar para que cada alma pueda seguir su camino.
-        </h2>
-        <span className="rule-line mt-7" />
-        <div className="mt-9 grid max-w-4xl gap-5 leading-relaxed text-muted-foreground">
-          <p>
-            En determinadas situaciones siento que hay «almitas» o presencias que han quedado
-            vinculadas a esta dimensión y necesitan ser acompañadas para poder encontrar el lugar
-            que les corresponde y continuar su camino.
+        <div className="max-w-3xl">
+          <h2 className="font-display text-3xl leading-snug text-earth md:text-4xl">
+            La percepción de lo sutil
+          </h2>
+          <span className="rule-line mt-6" />
+          <p className="text-muted-foreground mt-8 leading-relaxed">
+            En ocasiones, la vida nos sitúa ante presencias o energías que se sienten vinculadas de
+            manera muy clara a un lugar físico o al campo áurico de una persona. Pueden
+            manifestarse como:
           </p>
-          <p>
-            Se trata de acompañar desde el amor, con respeto y cariño, aquello que percibimos.
-          </p>
+          <ul className="text-muted-foreground mt-6 space-y-4 leading-relaxed">
+            <li className="flex gap-3">
+              <span className="text-gold mt-1">·</span>
+              <span>
+                Impresiones emocionales repentinas sin una causa aparente en el entorno inmediato.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-gold mt-1">·</span>
+              <span>
+                Memorias energéticas estancadas en espacios que bloquean el bienestar físico o
+                mental.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-gold mt-1">·</span>
+              <span>
+                Mensajes o lazos sutiles de seres que ya no están en este plano material pero que
+                buscan transmitir paz.
+              </span>
+            </li>
+          </ul>
         </div>
       </Section>
 
+      <Section tone="sand">
+        <div className="max-w-3xl">
+          <h2 className="font-display text-3xl leading-snug text-earth md:text-4xl">
+            Un acompañamiento desde el respeto y el cuidado
+          </h2>
+          <span className="rule-line mt-6" />
+          <p className="text-muted-foreground mt-8 leading-relaxed">
+            Cuando estas percepciones se hacen presentes, mi propósito no es generar temor, sino
+            acompañar ese proceso desde el respeto absoluto, la calma y la sensibilidad más pura.
+            Entiendo este don como un puente de servicio y sanación para:
+          </p>
+          <ul className="text-muted-foreground mt-6 space-y-4 leading-relaxed">
+            <li className="flex gap-3">
+              <span className="text-gold mt-1">·</span>
+              <span>
+                Brindar claridad a quienes experimentan sensaciones que no logran comprender del
+                todo.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-gold mt-1">·</span>
+              <span>
+                Armonizar espacios cargados o en conflicto para devolverles la ligereza y el
+                equilibrio.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-gold mt-1">·</span>
+              <span>
+                Facilitar cierres emocionales necesarios para avanzar con total libertad y
+                tranquilidad.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </Section>
 
       <CtaBand
         title="Si estás percibiendo algo y no sabes cómo nombrarlo"
