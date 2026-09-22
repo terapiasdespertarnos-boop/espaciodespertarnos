@@ -49,10 +49,10 @@ function Mediumnidad() {
           </div>
           <img
             src={almitaTunel}
-            alt="Almita de luz ascendiendo hacia un túnel luminoso, donde una figura la recibe con las manos abiertas"
+            alt="Pequeña luz ascendiendo hacia un círculo de luz entre ramas y flores secas, donde una figura la recibe con las manos abiertas"
             loading="lazy"
             width={1200}
-            height={912}
+            height={900}
             className="rounded-3xl object-cover shadow-[var(--shadow-glow)]"
           />
         </div>
