@@ -5,7 +5,7 @@ import { whatsappUrl } from "@/lib/site";
 import heroRosa from "@/assets/rosa-yoga-sala.jpeg.asset.json";
 import frecuencias from "@/assets/frecuencias.jpg";
 import naturaleza from "@/assets/naturaleza.jpg";
-import luzCamino from "@/assets/mediumnidad-natural-b1.png";
+import luzCamino from "@/assets/mediumnidad-natural-b2.png";
 import pendulo from "@/assets/pendulo.jpg";
 import {
   LightOrbs,
@@ -356,7 +356,7 @@ function Index() {
           <div className="relative">
             <img
               src={luzCamino}
-              alt="Espacio artesanal cálido con lino crudo, madera y flores secas, donde una pequeña luz asciende hacia un túnel de luz dorada"
+              alt="Mujer serena con las manos abiertas en la naturaleza, recibiendo una pequeña luz que asciende hacia una apertura de luz entre las ramas"
               loading="lazy"
               width={1200}
               height={900}
