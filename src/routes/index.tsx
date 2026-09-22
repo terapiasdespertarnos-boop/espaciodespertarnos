@@ -198,11 +198,6 @@ function Index() {
             </li>
           ))}
         </ul>
-        <p className="mt-12 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
-          Si algo de esto te resulta familiar, quizá no necesites seguir buscando respuestas por tu
-          cuenta. Quizá necesites un espacio seguro donde poder mirar lo que está ocurriendo desde
-          otra perspectiva.
-        </p>
       </Section>
 
       {/* MI FORMA DE ACOMPAÑAR */}
