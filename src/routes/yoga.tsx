@@ -78,7 +78,7 @@ function Yoga() {
             ["Prácticas de respiración", "La respiración como puerta más directa a la calma."],
             ["Meditaciones", "Tiempo para parar y escuchar lo que hay debajo del ruido."],
             ["Mantras", "Sonido y repetición como forma de sostener la atención."],
-            ["Movimiento consciente", "Moverse desde dentro, sin exigencia ni competición."],
+            ["Relajación", "Espacio para soltar el cuerpo y la mente, y dejar que la calma se instale."],
             ["Trabajo corporal y energético", "Cuerpo y energía como parte del mismo proceso."],
           ].map(([t, d]) => (
             <article key={t} className="gold-card p-7">

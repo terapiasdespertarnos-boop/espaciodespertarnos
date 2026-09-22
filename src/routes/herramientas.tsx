@@ -67,7 +67,7 @@ function Herramientas() {
                 "Prácticas de respiración",
                 "Meditaciones",
                 "Mantras",
-                "Movimiento consciente",
+                "Relajación",
                 "Trabajo corporal y energético",
               ].map((i) => (
                 <li key={i} className="border-b border-border pb-2">
