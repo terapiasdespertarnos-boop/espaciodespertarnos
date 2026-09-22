@@ -42,7 +42,9 @@ export function Footer() {
                   ? mediumnidadQuote
                   : pathname === "/yoga"
                     ? yogaQuote
-                    : footerQuote;
+                    : pathname === "/contacto"
+                      ? contactoQuote
+                      : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
