@@ -6,10 +6,17 @@ const footerQuote =
   "«Quizá no puedas cambiar todo lo que has vivido. Pero sí puedes empezar a relacionarte de otra manera con tu historia.»";
 const sobreMiQuote =
   "«No podemos borrar el pasado, pero sí podemos aprender a mirarlo con ternura y caminar sin su peso.»";
+const acompanarteQuote =
+  "«Tu historia te ha traído hasta aquí, pero tú eliges cómo quieres escribir el siguiente capítulo.»";
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const quote = pathname === "/sobre-mi" ? sobreMiQuote : footerQuote;
+  const quote =
+    pathname === "/sobre-mi"
+      ? sobreMiQuote
+      : pathname === "/como-puedo-acompanarte"
+        ? acompanarteQuote
+        : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
