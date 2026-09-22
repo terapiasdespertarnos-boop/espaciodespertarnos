@@ -12,6 +12,8 @@ const herramientasQuote =
   "«Sanar no es olvidar lo que viviste, sino lograr que ya no te duela al recordarlo.»";
 const lntQuote =
   "«No podemos cambiar los capítulos anteriores de tu vida, pero sí podemos empezar a escribir el presente con mucha más ternura.»";
+const constelacionesQuote =
+  "«Tu pasado no define hacia dónde vas, solo te muestra los lugares de donde hoy decides liberarte.»";
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -24,7 +26,9 @@ export function Footer() {
           ? herramientasQuote
           : pathname === "/lnt"
             ? lntQuote
-            : footerQuote;
+            : pathname === "/constelaciones-familiares"
+              ? constelacionesQuote
+              : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
