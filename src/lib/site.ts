@@ -24,7 +24,6 @@ export const navItems = [
   { to: "/limpiezas-energeticas", label: "Limpiezas energéticas" },
   { to: "/mediumnidad", label: "Mediumnidad" },
   { to: "/yoga", label: "Yoga Kundalini" },
-  { to: "/retiros", label: "Retiros" },
   { to: "/blog", label: "Blog" },
   { to: "/contacto", label: "Contacto" },
 ] as const;
