@@ -6,11 +6,11 @@ export const Route = createFileRoute("/como-puedo-acompanarte")({
   head: () => ({
     meta: [
       { title: "Cómo puedo acompañarte · Espacio Despertar-Nos" },
-      {
-        name: "description",
-        content:
-          "Limpiezas energéticas, LNT, Sat Nam Rasayan, coaching ontológico, constelaciones familiares, digitopuntura craneal y regresiones. Y los momentos en los que puedo acompañarte.",
-      },
+        {
+          name: "description",
+          content:
+            "Limpiezas energéticas, LNT, Sat Nam Rasayan, coaching ontológico, constelaciones familiares, digitopuntura craneal y regresiones.",
+        },
       { property: "og:title", content: "Cómo puedo acompañarte · Espacio Despertar-Nos" },
       {
         property: "og:description",
@@ -57,23 +57,6 @@ const terapias: { nombre: string; que: string; momento: string }[] = [
   },
 ];
 
-// Momentos vitales en los que puede acompañarte.
-const momentos: [string, string][] = [
-  ["Procesos personales", "Cuando sientes que necesitas mirar tu vida desde otro lugar."],
-  ["Bloqueos emocionales", "Algo te frena y no consigues ponerle nombre."],
-  ["Patrones repetitivos", "Historias que vuelven una y otra vez con otras caras."],
-  ["Relaciones", "Vínculos que duelen, cansan o se repiten."],
-  ["Familia", "Lealtades, cargas y lugares que quizá no te corresponden."],
-  ["Límites", "Aprender a decir no sin sentir que fallas a nadie."],
-  ["Sensación de estancamiento", "Sabes lo que quieres, pero no consigues moverte."],
-  ["Cansancio emocional", "Llevas demasiado tiempo sosteniendo a todo el mundo."],
-  ["Limpieza energética personal", "Cuando sientes pesadez o necesidad de renovación."],
-  ["Limpieza energética de hogares", "Ambientes cargados, incómodos o extraños."],
-  ["Limpieza energética de negocios", "Renovar el ambiente y empezar una nueva etapa."],
-  ["Yoga Kundalini", "Cuerpo, respiración y presencia como camino de conciencia."],
-  ["Procesos de autoconocimiento", "Comprenderte mejor sin juicio y a tu ritmo."],
-  ["Mediumnidad y presencias", "Acompañar con respeto aquello que se percibe."],
-];
 
 function ComoPuedoAcompanarte() {
   return (
@@ -120,21 +103,6 @@ function ComoPuedoAcompanarte() {
           Este acompañamiento es un espacio de bienestar, autoconocimiento y crecimiento personal.
           No sustituye ni reemplaza la atención médica o psicológica.
         </p>
-      </Section>
-
-      <Section tone="sand">
-        <SectionHeading
-          title="¿En qué momentos puedo acompañarte?"
-          intro="No siempre es una terapia concreta: a veces es simplemente el momento que estás transitando."
-        />
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {momentos.map(([t, d]) => (
-            <article key={t} className="gold-card p-7">
-              <h2 className="text-lg">{t}</h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
-            </article>
-          ))}
-        </div>
       </Section>
 
       <Section>
