@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
+import { whatsappUrl } from "@/lib/site";
 import { Sparkles, EnergyWaves } from "@/components/site/Ornaments";
 import penduloTesteo from "@/assets/pendulo-testeo.jpg";
 import elevandoAlmita from "@/assets/elevando-almita.jpg.asset.json";
