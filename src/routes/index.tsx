@@ -4,7 +4,7 @@ import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
 import heroRosa from "@/assets/rosa-yoga-sala.jpeg.asset.json";
 import frecuencias from "@/assets/frecuencias.jpg";
-import naturaleza from "@/assets/naturaleza.jpg";
+import miradaIntegral from "@/assets/rosa-mirada-integral.jpg.asset.json";
 import luzCamino from "@/assets/mediumnidad-natural-b2.png";
 import pendulo from "@/assets/pendulo.jpg";
 import {
@@ -251,12 +251,12 @@ function Index() {
             </ul>
           </div>
           <img
-            src={naturaleza}
-            alt="Hojas de salvia y espigas secas sobre una pared clara"
+            src={miradaIntegral.url}
+            alt="Rosa meditando con las manos en el corazón en su sala de acompañamiento"
             loading="lazy"
             width={1200}
-            height={800}
-            className="rounded-2xl object-cover"
+            height={1600}
+            className="aspect-[4/5] w-full rounded-2xl object-cover"
           />
         </div>
       </Section>
