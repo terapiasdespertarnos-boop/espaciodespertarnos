@@ -14,6 +14,8 @@ const lntQuote =
   "«No podemos cambiar los capítulos anteriores de tu vida, pero sí podemos empezar a escribir el presente con mucha más ternura.»";
 const constelacionesQuote =
   "«Tu pasado no define hacia dónde vas, solo te muestra los lugares de donde hoy decides liberarte.»";
+const limpiezasQuote =
+  "«Abrazar tu historia con todas sus luces y sombras es el único camino para dejar de luchar contra ti mismo.»";
 
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
