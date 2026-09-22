@@ -1,16 +1,23 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { navItems, site, whatsappUrl } from "@/lib/site";
 import { BotanicalBranch } from "./Ornaments";
 
+const footerQuote =
+  "«Quizá no puedas cambiar todo lo que has vivido. Pero sí puedes empezar a relacionarte de otra manera con tu historia.»";
+const sobreMiQuote =
+  "«No podemos borrar el pasado, pero sí podemos aprender a mirarlo con ternura y caminar sin su peso.»";
+
 export function Footer() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const quote = pathname === "/sobre-mi" ? sobreMiQuote : footerQuote;
+
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
       <div className="section-shell container-prose relative !py-16">
         <BotanicalBranch className="pointer-events-none absolute -top-6 right-0 hidden h-64 opacity-60 md:block" />
         <div className="max-w-3xl">
           <p className="font-display text-2xl leading-snug md:text-4xl">
-            «No podemos borrar el pasado, pero sí podemos aprender a mirarlo con ternura y caminar
-            sin su peso.»
+            {quote}
           </p>
           <p className="mt-8 text-sm tracking-[0.2em] uppercase">Espacio Despertar-Nos</p>
           <p className="mt-1 text-sm text-muted-foreground">{site.tagline}</p>
