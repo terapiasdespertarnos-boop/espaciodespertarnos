@@ -137,7 +137,7 @@ function Mediumnidad() {
       </Section>
 
       <CtaBand
-        title="Si estás percibiendo algo y no sabes cómo nombrarlo"
+        title="No hace falta que veas todo el camino por delante. Basta con que te permitas dar solo este primer paso"
         text="Puedes contármelo con tus palabras. Escucharé sin juzgar y te diré con honestidad si creo que puedo acompañarte."
       />
     </>
