@@ -99,17 +99,6 @@ function Limpiezas() {
           ))}
         </div>
 
-        <div className="mt-14 max-w-3xl space-y-5 leading-relaxed text-muted-foreground">
-          <p className="text-foreground">
-            En una limpieza energética no me limito a aplicar una técnica. Observo el espacio,
-            percibo y valoro qué puede necesitarse en cada caso.
-          </p>
-          <p>
-            Cuando percibo que hay algo más —una presencia, una energía vinculada al lugar o a la
-            persona— lo acompaño desde la serenidad, sin miedo y sin dramatizar. Intervengo según
-            la necesidad.
-          </p>
-        </div>
       </Section>
 
 
