@@ -65,7 +65,6 @@ const momentos: [string, string][] = [
   ["Relaciones", "Vínculos que duelen, cansan o se repiten."],
   ["Familia", "Lealtades, cargas y lugares que quizá no te corresponden."],
   ["Límites", "Aprender a decir no sin sentir que fallas a nadie."],
-  ["Cambios vitales", "Etapas que se cierran y otras que aún no tienen forma."],
   ["Sensación de estancamiento", "Sabes lo que quieres, pero no consigues moverte."],
   ["Cansancio emocional", "Llevas demasiado tiempo sosteniendo a todo el mundo."],
   ["Limpieza energética personal", "Cuando sientes pesadez o necesidad de renovación."],
