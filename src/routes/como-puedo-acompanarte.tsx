@@ -6,11 +6,11 @@ export const Route = createFileRoute("/como-puedo-acompanarte")({
   head: () => ({
     meta: [
       { title: "Cómo puedo acompañarte · Espacio Despertar-Nos" },
-      {
-        name: "description",
-        content:
-          "Limpiezas energéticas, LNT, Sat Nam Rasayan, coaching ontológico, constelaciones familiares, digitopuntura craneal y regresiones. Y los momentos en los que puedo acompañarte.",
-      },
+        {
+          name: "description",
+          content:
+            "Limpiezas energéticas, LNT, Sat Nam Rasayan, coaching ontológico, constelaciones familiares, digitopuntura craneal y regresiones.",
+        },
       { property: "og:title", content: "Cómo puedo acompañarte · Espacio Despertar-Nos" },
       {
         property: "og:description",
