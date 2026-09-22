@@ -164,8 +164,8 @@ function SobreMi() {
             <div className="relative">
               <img
                 src={rosaCerrarEtapa.url}
-                alt="Rosa sentada en su sala, con la mano en el corazón, en un momento de escucha interior"
-                width={1204}
+                alt="Rosa meditando en su sala, con un cuenco de hojas secas en primer plano"
+                width={894}
                 height={1600}
                 className="aspect-[4/5] w-full rounded-2xl object-cover object-center shadow-[var(--shadow-glow)]"
                 loading="lazy"
