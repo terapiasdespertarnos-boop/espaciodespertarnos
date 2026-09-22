@@ -311,7 +311,6 @@ function Index() {
             >
 
               <h3 className="text-xl">{h.t}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{h.d}</p>
               <span className="mt-5 inline-block text-[0.7rem] tracking-[0.18em] text-clay uppercase">
                 Saber más
               </span>
