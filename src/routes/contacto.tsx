@@ -193,6 +193,7 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
               </p>
             ) : null}
           </form>
+          </div>
 
           <aside className="space-y-8">
             <div>
