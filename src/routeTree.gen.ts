@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AvisoLegalRouteImport } from './routes/aviso-legal'
-import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ComoPuedoAcompanarteRouteImport } from './routes/como-puedo-acompanarte'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as HerramientasRouteImport } from './routes/herramientas'
@@ -21,8 +20,6 @@ import { Route as PoliticaDeCookiesRouteImport } from './routes/politica-de-cook
 import { Route as PoliticaDePrivacidadRouteImport } from './routes/politica-de-privacidad'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as YogaRouteImport } from './routes/yoga'
-import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -32,11 +29,6 @@ const IndexRoute = IndexRouteImport.update({
 const AvisoLegalRoute = AvisoLegalRouteImport.update({
   id: '/aviso-legal',
   path: '/aviso-legal',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BlogRoute = BlogRouteImport.update({
-  id: '/blog',
-  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ComoPuedoAcompanarteRoute = ComoPuedoAcompanarteRouteImport.update({
@@ -84,21 +76,10 @@ const YogaRoute = YogaRouteImport.update({
   path: '/yoga',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => BlogRoute,
-} as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => BlogRoute,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/aviso-legal': typeof AvisoLegalRoute
-  '/blog': typeof BlogRouteWithChildren
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
@@ -108,8 +89,6 @@ export interface FileRoutesByFullPath {
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
-  '/blog/$slug': typeof BlogSlugRoute
-  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -123,14 +102,11 @@ export interface FileRoutesByTo {
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
-  '/blog/$slug': typeof BlogSlugRoute
-  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/aviso-legal': typeof AvisoLegalRoute
-  '/blog': typeof BlogRouteWithChildren
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/contacto': typeof ContactoRoute
   '/herramientas': typeof HerramientasRoute
@@ -140,15 +116,12 @@ export interface FileRoutesById {
   '/politica-de-privacidad': typeof PoliticaDePrivacidadRoute
   '/sobre-mi': typeof SobreMiRoute
   '/yoga': typeof YogaRoute
-  '/blog/$slug': typeof BlogSlugRoute
-  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/aviso-legal'
-    | '/blog'
     | '/como-puedo-acompanarte'
     | '/contacto'
     | '/herramientas'
@@ -158,8 +131,6 @@ export interface FileRouteTypes {
     | '/politica-de-privacidad'
     | '/sobre-mi'
     | '/yoga'
-    | '/blog/$slug'
-    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -173,13 +144,10 @@ export interface FileRouteTypes {
     | '/politica-de-privacidad'
     | '/sobre-mi'
     | '/yoga'
-    | '/blog/$slug'
-    | '/blog'
   id:
     | '__root__'
     | '/'
     | '/aviso-legal'
-    | '/blog'
     | '/como-puedo-acompanarte'
     | '/contacto'
     | '/herramientas'
@@ -189,14 +157,11 @@ export interface FileRouteTypes {
     | '/politica-de-privacidad'
     | '/sobre-mi'
     | '/yoga'
-    | '/blog/$slug'
-    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AvisoLegalRoute: typeof AvisoLegalRoute
-  BlogRoute: typeof BlogRouteWithChildren
   ComoPuedoAcompanarteRoute: typeof ComoPuedoAcompanarteRoute
   ContactoRoute: typeof ContactoRoute
   HerramientasRoute: typeof HerramientasRoute
@@ -222,13 +187,6 @@ declare module '@tanstack/react-router' {
       path: '/aviso-legal'
       fullPath: '/aviso-legal'
       preLoaderRoute: typeof AvisoLegalRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blog': {
-      id: '/blog'
-      path: '/blog'
-      fullPath: '/blog'
-      preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/como-puedo-acompanarte': {
@@ -294,39 +252,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof YogaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/': {
-      id: '/blog/'
-      path: '/'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
-      parentRoute: typeof BlogRoute
-    }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof BlogRoute
-    }
   }
 }
-
-interface BlogRouteChildren {
-  BlogSlugRoute: typeof BlogSlugRoute
-  BlogIndexRoute: typeof BlogIndexRoute
-}
-
-const BlogRouteChildren: BlogRouteChildren = {
-  BlogSlugRoute: BlogSlugRoute,
-  BlogIndexRoute: BlogIndexRoute,
-}
-
-const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AvisoLegalRoute: AvisoLegalRoute,
-  BlogRoute: BlogRouteWithChildren,
   ComoPuedoAcompanarteRoute: ComoPuedoAcompanarteRoute,
   ContactoRoute: ContactoRoute,
   HerramientasRoute: HerramientasRoute,
