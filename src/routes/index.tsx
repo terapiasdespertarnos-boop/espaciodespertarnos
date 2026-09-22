@@ -12,7 +12,7 @@ import {
   SacredGeometry,
   PendulumMark,
   BotanicalBranch,
-  EnergyWaves,
+
   FrequencyVeil,
 } from "@/components/site/Ornaments";
 
