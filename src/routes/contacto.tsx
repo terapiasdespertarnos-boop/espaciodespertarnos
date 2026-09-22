@@ -74,7 +74,6 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
         <SectionHeading
           eyebrow="Contacto"
           title="No hace falta que lo tengas todo claro ahora mismo. Basta con que te permitas dar este primer paso y me escribas."
-          intro="No tienes que tener claro qué necesitas. Puedes escribirme y contarme brevemente qué estás viviendo."
         />
         <div className="mt-9 flex flex-wrap gap-3">
           <a
