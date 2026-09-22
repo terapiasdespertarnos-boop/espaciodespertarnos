@@ -356,7 +356,7 @@ function Index() {
           <div className="relative">
             <img
               src={luzCamino}
-              alt="Espacio artesanal cálido con lino crudo, madera y flores secas, donde una pequeña luz asciende hacia un túnel de luz dorada"
+              alt="Mujer serena con las manos abiertas en la naturaleza, recibiendo una pequeña luz que asciende hacia una apertura de luz entre las ramas"
               loading="lazy"
               width={1200}
               height={900}
