@@ -63,7 +63,7 @@ function Herramientas() {
             </p>
             <ul className="grid gap-2 text-sm">
               {[
-                "Clases de Yoga Kundalini",
+                "Kriyas",
                 "Prácticas de respiración",
                 "Meditaciones",
                 "Mantras",
