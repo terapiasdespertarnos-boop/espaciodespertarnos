@@ -90,8 +90,12 @@ function Limpiezas() {
         <div className="grid gap-5 md:grid-cols-3">
           {servicios.map(([t, d]) => (
             <article key={t} className="gold-card p-8">
-              <h2 className="text-xl leading-snug">{t}</h2>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{d}</p>
+              <Sparkles count={4} />
+              <h2 className="font-display mt-4 text-2xl leading-snug text-earth md:text-3xl">
+                {t}
+              </h2>
+              <span className="rule-line mt-4 block" />
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{d}</p>
             </article>
           ))}
         </div>
