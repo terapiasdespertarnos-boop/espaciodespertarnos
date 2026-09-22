@@ -214,8 +214,8 @@ function Limpiezas() {
       </Section>
 
       <CtaBand
-        title="¿Sientes que tu casa o tu negocio necesitan renovarse?"
-        text="Cuéntame qué estás percibiendo y valoramos juntas/os qué puede necesitarse."
+        title=""
+        text=""
         buttonLabel="Quiero una limpieza"
       />
     </>

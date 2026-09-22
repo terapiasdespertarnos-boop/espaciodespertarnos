@@ -14,7 +14,9 @@ export function CtaBand({
   return (
     <Section tone="deep">
       <div className="max-w-3xl">
-        <h2 className="text-3xl leading-tight text-primary-foreground md:text-5xl">{title}</h2>
+        {title ? (
+          <h2 className="text-3xl leading-tight text-primary-foreground md:text-5xl">{title}</h2>
+        ) : null}
         {text ? (
           <p className="mt-6 text-base leading-relaxed text-primary-foreground/80 md:text-lg">
             {text}
