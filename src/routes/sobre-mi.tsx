@@ -327,7 +327,7 @@ function SobreMi() {
         </div>
       </Section>
 
-      <CtaBand />
+      <CtaBand title="Empezar puede dar miedo, pero acompañada el camino se siente más liviano" />
     </>
   );
 }
