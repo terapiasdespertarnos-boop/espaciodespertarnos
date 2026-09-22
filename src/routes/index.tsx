@@ -5,7 +5,7 @@ import { whatsappUrl } from "@/lib/site";
 import heroRosa from "@/assets/rosa-yoga-sala.jpeg.asset.json";
 import frecuencias from "@/assets/frecuencias.jpg";
 import naturaleza from "@/assets/naturaleza.jpg";
-import luzCamino from "@/assets/luz-camino.jpg";
+import luzCamino from "@/assets/mediumnidad-natural-b1.png";
 import pendulo from "@/assets/pendulo.jpg";
 import {
   LightOrbs,
