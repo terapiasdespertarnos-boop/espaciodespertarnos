@@ -32,6 +32,7 @@ function Mediumnidad() {
           <div>
             <SectionHeading
               eyebrow="Mediumnidad"
+              eyebrowClassName="text-2xl! md:text-3xl!"
               title="Conexión invisible: lo que se siente más allá de la vista."
             />
             <div className="mt-8 space-y-5 leading-relaxed text-muted-foreground">
