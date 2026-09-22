@@ -3,7 +3,7 @@ import { whatsappUrl } from "@/lib/site";
 import { Section } from "./Section";
 
 export function CtaBand({
-  title = "Sé que da respeto empezar, pero créeme, dar el primer paso ya es una victoria.",
+  title = "Empezar puede dar miedo, pero acompañada el camino se siente más liviano",
   text,
   buttonLabel = "Compartir con Rosa",
 }: {
