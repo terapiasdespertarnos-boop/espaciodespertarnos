@@ -177,8 +177,8 @@ function Limpiezas() {
             <span className="rule-line mt-5" />
             <p className="text-muted-foreground mt-6 leading-relaxed">
               💫 En casos de polución por desencarnados, mi condición de médium me permite canalizar
-              mensajes de seres queridos que puedan estar atrapados en este plano y acompañarlos a
-              elevarse hacia la luz.
+              mensajes (si ellos quieren que los facilite) de seres queridos que puedan estar
+              atrapados en este plano y acompañarlos a seguir su evolución como almitas.
             </p>
           </div>
         </div>
