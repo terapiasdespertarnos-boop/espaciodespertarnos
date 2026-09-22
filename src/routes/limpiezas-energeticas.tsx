@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
+import { whatsappUrl } from "@/lib/site";
 import { Sparkles, EnergyWaves } from "@/components/site/Ornaments";
 import penduloTesteo from "@/assets/pendulo-testeo.jpg";
 import elevandoAlmita from "@/assets/elevando-almita.jpg.asset.json";
@@ -128,6 +129,14 @@ function Limpiezas() {
                 <li>Impulso tu vitalidad física y psíquica</li>
               </ul>
             </div>
+            <a
+              href={whatsappUrl("Hola Rosa, me gustaría una limpieza energética personal.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-block rounded-full bg-earth px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+            >
+              Quiero una limpieza
+            </a>
           </article>
 
           <article className="gold-card p-8 md:p-10">
@@ -160,6 +169,14 @@ function Limpiezas() {
                 <li>Limpieza completa del espacio</li>
               </ul>
             </div>
+            <a
+              href={whatsappUrl("Hola Rosa, me gustaría una limpieza energética para mi casa o local.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-block rounded-full bg-earth px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+            >
+              Quiero una limpieza
+            </a>
           </article>
         </div>
 
