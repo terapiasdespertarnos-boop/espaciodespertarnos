@@ -30,9 +30,7 @@ export function Footer() {
         ? acompanarteQuote
         : pathname === "/herramientas"
           ? herramientasQuote
-          : pathname === "/contacto"
-            ? contactoQuote
-            : footerQuote;
+          : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
