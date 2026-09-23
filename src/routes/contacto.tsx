@@ -204,13 +204,32 @@ function Contacto() {
             </label>
             <button
               type="submit"
-              className="justify-self-start rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+              disabled={estado === "enviando"}
+              className="justify-self-start rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90 disabled:opacity-60"
             >
-              Enviar mensaje
+              {estado === "enviando" ? "Enviando…" : "Enviar mensaje"}
             </button>
-            {enviado ? (
+            {estado === "ok" ? (
               <p className="text-sm text-primary">
-                Gracias. Se ha abierto WhatsApp con tu mensaje para que puedas enviármelo.
+                Gracias por escribirme. Tu mensaje ya está en camino y te responderé personalmente.
+              </p>
+            ) : null}
+            {estado === "error" ? (
+              <p className="text-sm text-muted-foreground">
+                No he podido enviar el mensaje en este momento. Puedes escribirme a{" "}
+                <a href={`mailto:${site.email}`} className="underline underline-offset-2">
+                  {site.email}
+                </a>{" "}
+                o{" "}
+                <a
+                  href={whatsappUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2"
+                >
+                  por WhatsApp
+                </a>
+                .
               </p>
             ) : null}
           </form>
