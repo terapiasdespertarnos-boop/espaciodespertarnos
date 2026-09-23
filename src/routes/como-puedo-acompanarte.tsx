@@ -86,16 +86,11 @@ function ComoPuedoAcompanarte() {
         </div>
 
         <article className="gold-card mt-5 p-8">
-          <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-            <h2 className="text-xl leading-snug">Regresiones</h2>
-            <p className="text-xs font-medium uppercase tracking-[0.18em] text-clay">
-              Actualmente no realizo sesiones
-            </p>
-          </div>
+          <h2 className="text-xl leading-snug">Regresiones</h2>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-            Una herramienta de exploración personal para mirar experiencias que la persona siente
-            que necesitan ser comprendidas. La mantengo como parte de mi recorrido y, si en algún
-            momento vuelvo a ofrecerla, aparecerá aquí.
+            Actualmente, de mi formación en regresiones e hipnosis, recupero aquellas herramientas
+            que considero más útiles y las integro para enriquecer otras terapias según lo que
+            requiera cada caso.
           </p>
         </article>
 
