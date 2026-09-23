@@ -56,17 +56,35 @@ const faqs: [string, string][] = [
 ];
 
 function Contacto() {
-  const [enviado, setEnviado] = useState(false);
+  const [estado, setEstado] = useState<"idle" | "enviando" | "ok" | "error">("idle");
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const texto = `Hola Rosa, soy ${data.get("nombre")}.
-${data.get("ayuda")}
-${data.get("mensaje")}
-Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
-    window.open(whatsappUrl(texto), "_blank", "noopener,noreferrer");
-    setEnviado(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    setEstado("enviando");
+
+    try {
+      const res = await fetch(`https://formsubmit.co/ajax/${site.email}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `Nuevo mensaje desde la web de ${data.get("nombre") || "una persona"}`,
+          _template: "table",
+          _captcha: "false",
+          Nombre: data.get("nombre"),
+          Email: data.get("email"),
+          Teléfono: data.get("telefono"),
+          "¿En qué puedo acompañarte?": data.get("ayuda"),
+          Mensaje: data.get("mensaje"),
+        }),
+      });
+      if (!res.ok) throw new Error("envío fallido");
+      form.reset();
+      setEstado("ok");
+    } catch {
+      setEstado("error");
+    }
   };
 
   return (
@@ -186,13 +204,32 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
             </label>
             <button
               type="submit"
-              className="justify-self-start rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+              disabled={estado === "enviando"}
+              className="justify-self-start rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90 disabled:opacity-60"
             >
-              Enviar mensaje
+              {estado === "enviando" ? "Enviando…" : "Enviar mensaje"}
             </button>
-            {enviado ? (
+            {estado === "ok" ? (
               <p className="text-sm text-primary">
-                Gracias. Se ha abierto WhatsApp con tu mensaje para que puedas enviármelo.
+                Gracias por escribirme. Tu mensaje ya está en camino y te responderé personalmente.
+              </p>
+            ) : null}
+            {estado === "error" ? (
+              <p className="text-sm text-muted-foreground">
+                No he podido enviar el mensaje en este momento. Puedes escribirme a{" "}
+                <a href={`mailto:${site.email}`} className="underline underline-offset-2">
+                  {site.email}
+                </a>{" "}
+                o{" "}
+                <a
+                  href={whatsappUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2"
+                >
+                  por WhatsApp
+                </a>
+                .
               </p>
             ) : null}
           </form>
