@@ -131,34 +131,15 @@ function Herramientas() {
           </div>
           <div className="space-y-5 leading-relaxed text-muted-foreground">
             <p>
-              Hay momentos en los que sabemos que queremos cambiar algo, pero no encontramos la
-              manera de hacerlo. En el coaching trabajamos desde la conversación y la reflexión
-              para observar aquello que estás viviendo desde otra perspectiva. Puede ser presencial
-              u online.
+              Trabajamos desde la conversación y la reflexión para observar lo que estás viviendo
+              desde otra perspectiva y descubrir nuevas posibilidades. Presencial u online.
             </p>
-            <p>
-              A través de preguntas y nuevas formas de mirar una situación, puedes descubrir
-              posibilidades que antes no estabas viendo y decidir qué acciones quieres llevar a
-              cabo. Porque cuando cambia nuestra manera de observar, también pueden cambiar
-              nuestras posibilidades de actuar.
-            </p>
-            <ul className="flex flex-wrap gap-2">
-              {[
-                "Tomar decisiones",
-                "Poner límites",
-                "Cambiar patrones",
-                "Mejorar relaciones",
-                "Salir de bloqueos",
-                "Recuperar capacidad de elección",
-              ].map((i) => (
-                <li
-                  key={i}
-                  className="rounded-full border border-border bg-background px-4 py-2 text-xs"
-                >
-                  {i}
-                </li>
-              ))}
-            </ul>
+            <Link
+              to="/coaching-ontologico"
+              className="inline-block text-xs tracking-[0.16em] text-clay uppercase"
+            >
+              Ver la sección de coaching ontológico
+            </Link>
           </div>
         </div>
       </Section>
