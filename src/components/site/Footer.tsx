@@ -10,9 +10,6 @@ const acompanarteQuote =
   "«Tu historia te ha traído hasta aquí, pero tú eliges cómo quieres escribir el siguiente capítulo.»";
 const herramientasQuote =
   "«Sanar no es olvidar lo que viviste, sino lograr que ya no te duela al recordarlo.»";
-const contactoQuote =
-  "«Hacer las paces con tu historia requiere tiempo. No tienes que pasar por esto a solas. Estoy aquí para acompañar tu proceso.»";
-
 const sinQuote = new Set([
   "/lnt",
   "/constelaciones-familiares",
@@ -20,6 +17,7 @@ const sinQuote = new Set([
   "/mediumnidad",
   "/yoga",
   "/coaching-ontologico",
+  "/contacto",
 ]);
 
 export function Footer() {
@@ -32,9 +30,7 @@ export function Footer() {
         ? acompanarteQuote
         : pathname === "/herramientas"
           ? herramientasQuote
-          : pathname === "/contacto"
-            ? contactoQuote
-            : footerQuote;
+          : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
