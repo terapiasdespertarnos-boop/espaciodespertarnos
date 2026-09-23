@@ -10,50 +10,42 @@ const acompanarteQuote =
   "«Tu historia te ha traído hasta aquí, pero tú eliges cómo quieres escribir el siguiente capítulo.»";
 const herramientasQuote =
   "«Sanar no es olvidar lo que viviste, sino lograr que ya no te duela al recordarlo.»";
-const lntQuote =
-  "«No podemos cambiar los capítulos anteriores de tu vida, pero sí podemos empezar a escribir el presente con mucha más ternura.»";
-const constelacionesQuote =
-  "«Tu pasado no define hacia dónde vas, solo te muestra los lugares de donde hoy decides liberarte.»";
-const limpiezasQuote =
-  "«Abrazar tu historia con todas sus luces y sombras es el único camino para dejar de luchar contra ti mismo.»";
-const mediumnidadQuote =
-  "«Hacer las paces con lo vivido no significa justificarlo, sino elegir que el ayer no te robe el bienestar del presente.»";
-const yogaQuote =
-  "«No estás atrapada/o en lo que te dolió. Hoy tienes el poder de relacionarte con tus recuerdos desde la compasión.»";
 const contactoQuote =
   "«Hacer las paces con tu historia requiere tiempo. No tienes que pasar por esto a solas. Estoy aquí para acompañar tu proceso.»";
 
+const sinQuote = new Set([
+  "/lnt",
+  "/constelaciones-familiares",
+  "/limpiezas-energeticas",
+  "/mediumnidad",
+  "/yoga",
+  "/coaching-ontologico",
+]);
+
 export function Footer() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const quote =
-    pathname === "/sobre-mi"
+  const quote = sinQuote.has(pathname)
+    ? null
+    : pathname === "/sobre-mi"
       ? sobreMiQuote
       : pathname === "/como-puedo-acompanarte"
         ? acompanarteQuote
         : pathname === "/herramientas"
           ? herramientasQuote
-          : pathname === "/lnt"
-            ? lntQuote
-            : pathname === "/constelaciones-familiares"
-              ? constelacionesQuote
-              : pathname === "/limpiezas-energeticas"
-                ? limpiezasQuote
-                : pathname === "/mediumnidad"
-                  ? mediumnidadQuote
-                  : pathname === "/yoga"
-                    ? yogaQuote
-                    : pathname === "/contacto"
-                      ? contactoQuote
-                      : footerQuote;
+          : pathname === "/contacto"
+            ? contactoQuote
+            : footerQuote;
 
   return (
     <footer className="border-gold/30 bg-cream relative isolate overflow-hidden border-t">
       <div className="section-shell container-prose relative !py-16">
         <BotanicalBranch className="pointer-events-none absolute -top-6 right-0 hidden h-64 opacity-60 md:block" />
         <div className="max-w-3xl">
-          <p className="font-display text-2xl leading-snug md:text-4xl">
-            {quote}
-          </p>
+          {quote ? (
+            <p className="font-display text-2xl leading-snug md:text-4xl">
+              {quote}
+            </p>
+          ) : null}
           <p className="mt-8 text-sm tracking-[0.2em] uppercase">Espacio Despertar-Nos</p>
           <p className="mt-1 text-sm text-muted-foreground">{site.tagline}</p>
           <a
