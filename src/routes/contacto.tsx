@@ -8,7 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { site, whatsappUrl } from "@/lib/site";
-import rosaDespedida from "@/assets/rosa-despedida.jpg.asset.json";
+import rosaDespedida from "@/assets/rosa-despedida-nueva.jpg.asset.json";
 
 export const Route = createFileRoute("/contacto")({
   head: () => ({
@@ -92,6 +92,19 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
             Escribir un email
           </a>
         </div>
+        <figure className="mt-10 max-w-xs">
+          <img
+            src={rosaDespedida.url}
+            alt="Rosa, de Espacio Despertar-Nos, con su turbante blanco y flores a su lado"
+            width={880}
+            height={1160}
+            loading="lazy"
+            className="w-full rounded-[1.75rem] object-cover shadow-[0_24px_48px_-24px_rgba(0,0,0,0.25)] ring-1 ring-gold/40"
+          />
+          <figcaption className="mt-5 text-sm tracking-[0.14em] text-muted-foreground uppercase">
+            Nos vemos al otro lado
+          </figcaption>
+        </figure>
       </Section>
 
       <Section>
@@ -241,21 +254,6 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
         </Accordion>
       </Section>
 
-      <Section>
-        <figure className="mx-auto max-w-xl text-center">
-          <img
-            src={rosaDespedida.url}
-            alt="Rosa, de Espacio Despertar-Nos, sonriendo con su turbante blanco"
-            width={1200}
-            height={1500}
-            loading="lazy"
-            className="mx-auto w-full rounded-[2rem] object-cover shadow-[0_30px_60px_-30px_rgba(0,0,0,0.25)] ring-1 ring-gold/40"
-          />
-          <figcaption className="mt-6 text-sm tracking-[0.14em] text-muted-foreground uppercase">
-            Nos vemos al otro lado
-          </figcaption>
-        </figure>
-      </Section>
     </>
   );
 }
