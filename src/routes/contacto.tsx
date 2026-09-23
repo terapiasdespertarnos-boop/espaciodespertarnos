@@ -56,17 +56,35 @@ const faqs: [string, string][] = [
 ];
 
 function Contacto() {
-  const [enviado, setEnviado] = useState(false);
+  const [estado, setEstado] = useState<"idle" | "enviando" | "ok" | "error">("idle");
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const texto = `Hola Rosa, soy ${data.get("nombre")}.
-${data.get("ayuda")}
-${data.get("mensaje")}
-Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
-    window.open(whatsappUrl(texto), "_blank", "noopener,noreferrer");
-    setEnviado(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    setEstado("enviando");
+
+    try {
+      const res = await fetch(`https://formsubmit.co/ajax/${site.email}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `Nuevo mensaje desde la web de ${data.get("nombre") || "una persona"}`,
+          _template: "table",
+          _captcha: "false",
+          Nombre: data.get("nombre"),
+          Email: data.get("email"),
+          Teléfono: data.get("telefono"),
+          "¿En qué puedo acompañarte?": data.get("ayuda"),
+          Mensaje: data.get("mensaje"),
+        }),
+      });
+      if (!res.ok) throw new Error("envío fallido");
+      form.reset();
+      setEstado("ok");
+    } catch {
+      setEstado("error");
+    }
   };
 
   return (
