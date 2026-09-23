@@ -4,7 +4,7 @@ import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
 import { Sparkles, EnergyWaves } from "@/components/site/Ornaments";
 import penduloTesteo from "@/assets/pendulo-testeo.jpg";
-import elevandoAlmita from "@/assets/elevando-almita.jpg.asset.json";
+import elevandoAlmita from "@/assets/elevando-almita.jpg";
 
 export const Route = createFileRoute("/limpiezas-energeticas")({
   head: () => ({
@@ -194,7 +194,7 @@ function Limpiezas() {
         <div className="mt-12 grid items-center gap-10 md:grid-cols-2">
           <div className="relative">
             <img
-              src={elevandoAlmita.url}
+              src={elevandoAlmita}
               alt="Manos que elevan un alma hacia la luz entre nubes"
               loading="lazy"
               width={960}

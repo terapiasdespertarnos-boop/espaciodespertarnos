@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
-import rosaYoga from "@/assets/rosa-meditacion.jpeg.asset.json";
-import salaYoga from "@/assets/sala-yoga.jpeg.asset.json";
+import rosaYoga from "@/assets/rosa-meditacion.jpeg";
+import salaYoga from "@/assets/sala-yoga.jpeg";
 
 export const Route = createFileRoute("/yoga")({
   head: () => ({
@@ -44,7 +44,7 @@ function Yoga() {
             </p>
           </div>
           <img
-            src={rosaYoga.url}
+            src={rosaYoga}
             alt="Rosa meditando en su sala de Yoga Kundalini"
             loading="lazy"
             width={768}
@@ -61,7 +61,7 @@ function Yoga() {
             intro="Un espacio real, íntimo y preparado con cuidado para practicar en grupo, sin exigencia ni competición."
           />
           <img
-            src={salaYoga.url}
+            src={salaYoga}
             alt="Sala de Yoga Kundalini preparada con esterillas, cojines y mantas"
             loading="lazy"
             width={1024}
