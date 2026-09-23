@@ -254,21 +254,6 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
         </Accordion>
       </Section>
 
-      <Section>
-        <figure className="mx-auto max-w-xl text-center">
-          <img
-            src={rosaDespedida.url}
-            alt="Rosa, de Espacio Despertar-Nos, sonriendo con su turbante blanco"
-            width={1200}
-            height={1500}
-            loading="lazy"
-            className="mx-auto w-full rounded-[2rem] object-cover shadow-[0_30px_60px_-30px_rgba(0,0,0,0.25)] ring-1 ring-gold/40"
-          />
-          <figcaption className="mt-6 text-sm tracking-[0.14em] text-muted-foreground uppercase">
-            Nos vemos al otro lado
-          </figcaption>
-        </figure>
-      </Section>
     </>
   );
 }
