@@ -119,8 +119,8 @@ function Index() {
 
         <div className="container-prose relative px-6 py-28 md:py-44">
           <div className="max-w-2xl fade-up">
-            <p className="eyebrow">Espacio Despertar-Nos</p>
-            <h1 className="mt-6 font-display text-5xl leading-[1.1] md:text-7xl">
+            <p className="eyebrow text-2xl! md:text-3xl!">Espacio Despertar-Nos</p>
+            <h1 className="mt-6 font-display text-4xl leading-[1.1] md:text-6xl">
               A veces, la mejor forma de avanzar es hacer una pausa y escucharte.
             </h1>
             <span className="rule-line mt-6" />

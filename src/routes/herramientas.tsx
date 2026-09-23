@@ -42,7 +42,7 @@ function Herramientas() {
     <>
       <Section tone="cream">
         <SectionHeading
-          className="text-4xl md:text-6xl"
+          eyebrowClassName="text-2xl! md:text-3xl!"
           eyebrow="Mis herramientas"
           title="Diferentes herramientas. Una misma intención: acompañarte a volver a ti."
 
