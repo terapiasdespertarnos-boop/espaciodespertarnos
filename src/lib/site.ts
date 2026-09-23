@@ -23,6 +23,7 @@ export const navItems = [
   { to: "/herramientas", label: "Herramientas" },
   { to: "/lnt", label: "LNT · La Nueva Terapia" },
   { to: "/constelaciones-familiares", label: "Constelaciones familiares" },
+  { to: "/coaching-ontologico", label: "Coaching ontológico" },
   { to: "/limpiezas-energeticas", label: "Limpiezas energéticas" },
   { to: "/mediumnidad", label: "Mediumnidad" },
   { to: "/yoga", label: "Yoga Kundalini" },
