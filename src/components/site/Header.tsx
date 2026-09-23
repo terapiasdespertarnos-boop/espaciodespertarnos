@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { navItems, whatsappUrl } from "@/lib/site";
-import logoAsset from "@/assets/logo-espacio-despertarnos.jpeg.asset.json";
+import logoAsset from "@/assets/logo-espacio-despertarnos.jpeg";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -17,7 +17,7 @@ export function Header() {
           aria-label="Espacio Despertar-Nos · Inicio"
         >
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt=""
             width={56}
             height={56}

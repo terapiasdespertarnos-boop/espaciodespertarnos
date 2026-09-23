@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
-import heroRosa from "@/assets/rosa-yoga-sala.jpeg.asset.json";
+import heroRosa from "@/assets/rosa-yoga-sala.jpeg";
 import frecuencias from "@/assets/frecuencias.jpg";
 import miradaIntegral from "@/assets/rosa-mirada-integral-crop.jpg";
 import luzCamino from "@/assets/mediumnidad-rosa-natural.png";
@@ -102,7 +102,7 @@ function Index() {
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <img
-          src={heroRosa.url}
+          src={heroRosa}
           alt="Rosa practicando Yoga Kundalini en su espacio de acompañamiento"
           width={1920}
           height={1200}

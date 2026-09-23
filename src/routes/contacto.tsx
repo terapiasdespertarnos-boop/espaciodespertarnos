@@ -8,7 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { site, whatsappUrl } from "@/lib/site";
-import rosaDespedida from "@/assets/rosa-despedida-nueva.jpg.asset.json";
+import rosaDespedida from "@/assets/rosa-despedida-nueva.jpg";
 
 export const Route = createFileRoute("/contacto")({
   head: () => ({
@@ -225,7 +225,7 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
             </p>
             <figure className="max-w-xs">
               <img
-                src={rosaDespedida.url}
+                src={rosaDespedida}
                 alt="Rosa, de Espacio Despertar-Nos, con su turbante blanco y flores a su lado"
                 width={880}
                 height={1160}

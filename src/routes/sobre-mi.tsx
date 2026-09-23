@@ -3,10 +3,10 @@ import { Section, SectionHeading, Quote } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
 import { whatsappUrl } from "@/lib/site";
 import rosaPuerta from "@/assets/rosa-puerta-sin-texto.png";
-import rosaCuenco from "@/assets/rosa-cuenco.jpeg.asset.json";
-import rosaCerrarEtapa from "@/assets/rosa-meditando-sala.jpg.asset.json";
-import rosaYogaSala from "@/assets/rosa-yoga-sala.jpeg.asset.json";
-import altarLuz from "@/assets/altar-luz.jpeg.asset.json";
+import rosaCuenco from "@/assets/rosa-cuenco.jpeg";
+import rosaCerrarEtapa from "@/assets/rosa-meditando-sala.jpg";
+import rosaYogaSala from "@/assets/rosa-yoga-sala.jpeg";
+import altarLuz from "@/assets/altar-luz.jpeg";
 
 export const Route = createFileRoute("/sobre-mi")({
   head: () => ({
@@ -75,7 +75,7 @@ function SobreMi() {
           <article className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-16">
             <div className="relative">
               <img
-                src={rosaCuenco.url}
+                src={rosaCuenco}
                 alt="Rosa trabajando con un cuenco en su espacio"
                 width={768}
                 height={852}
@@ -108,7 +108,7 @@ function SobreMi() {
           <article className="grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-16">
             <div className="md:order-2">
               <img
-                src={rosaYogaSala.url}
+                src={rosaYogaSala}
                 alt="Rosa practicando Yoga Kundalini en su sala luminosa"
                 width={768}
                 height={852}
@@ -163,7 +163,7 @@ function SobreMi() {
           <article className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-16">
             <div className="relative">
               <img
-                src={rosaCerrarEtapa.url}
+                src={rosaCerrarEtapa}
                 alt="Rosa meditando en su sala de yoga, con las manos juntas sobre el pecho"
                 width={1201}
                 height={1034}
@@ -269,7 +269,7 @@ function SobreMi() {
           <article className="grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-16">
             <div className="md:order-2">
               <img
-                src={altarLuz.url}
+                src={altarLuz}
                 alt="Espacio Despertar-Nos entre plantas y luz natural"
                 width={768}
                 height={852}
