@@ -42,8 +42,10 @@ function Herramientas() {
     <>
       <Section tone="cream">
         <SectionHeading
+          className="text-4xl md:text-6xl"
           eyebrow="Mis herramientas"
           title="Diferentes herramientas. Una misma intención: acompañarte a volver a ti."
+
           intro="Trabajo sin encasillar las técnicas de forma independiente. Las utilizo, fusiono, adapto o aparto según lo que percibo que necesita cada persona."
         />
       </Section>

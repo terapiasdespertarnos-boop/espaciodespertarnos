@@ -63,8 +63,10 @@ function ComoPuedoAcompanarte() {
     <>
       <Section tone="cream">
         <SectionHeading
+          className="text-4xl md:text-6xl"
           eyebrow="Cómo puedo acompañarte"
           title="Terapias holísticas sanadoras"
+
           intro="Cada persona es diferente y no siempre necesita la misma herramienta. Por eso, antes de decidir cómo trabajar, podemos hablar sobre lo que estás viviendo y valorar qué puede acompañarte mejor en este momento. No hace falta que llegues con un diagnóstico ni con un nombre para lo que te ocurre: basta con que me cuentes qué estás viviendo."
         />
       </Section>
