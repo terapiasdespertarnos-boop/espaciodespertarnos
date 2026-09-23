@@ -73,8 +73,10 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
     <>
       <Section tone="cream">
         <SectionHeading
+          className="text-4xl md:text-6xl"
           eyebrow="Contacto"
           title="No hace falta que lo tengas todo claro ahora mismo. Basta con que te permitas dar este primer paso y me escribas."
+
         />
         <div className="mt-9 flex flex-wrap gap-3">
           <a
