@@ -88,9 +88,10 @@ function ComoPuedoAcompanarte() {
         <article className="gold-card mt-5 p-8">
           <h2 className="text-xl leading-snug">Regresiones</h2>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-            Actualmente, de mi formación en regresiones e hipnosis, recupero aquellas herramientas
-            que considero más útiles y las integro para enriquecer otras terapias según lo que
-            requiera cada caso.
+            Una herramienta de exploración personal para mirar experiencias que la persona siente
+            que necesitan ser comprendidas. Actualmente, de mi formación en regresiones e hipnosis,
+            recupero aquellas herramientas que considero más útiles y las integro para enriquecer
+            otras terapias según lo que requiera cada caso.
           </p>
         </article>
 
