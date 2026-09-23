@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
-import { navItems, whatsappUrl } from "@/lib/site";
+import { navItems } from "@/lib/site";
 import logoAsset from "@/assets/logo-espacio-despertarnos.jpeg";
 
 export function Header() {

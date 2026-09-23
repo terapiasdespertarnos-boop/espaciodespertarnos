@@ -5,7 +5,7 @@ import { Section } from "./Section";
 export function CtaBand({
   title = "Sé que da respeto empezar, pero créeme, dar el primer paso ya es una victoria.",
   text,
-  buttonLabel = "Compartir con Rosa",
+  buttonLabel,
 }: {
   title?: string;
   text?: string;
