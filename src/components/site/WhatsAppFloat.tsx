@@ -16,11 +16,11 @@ export function WhatsAppFloat() {
       )}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Escríbeme por WhatsApp"
-      className="fixed right-4 bottom-4 z-50 inline-flex items-center gap-2.5 rounded-full bg-[#25D366] py-3.5 pr-5 pl-4 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition-transform duration-300 hover:scale-105 md:right-6 md:bottom-6"
+      aria-label="Compartir con Rosa por WhatsApp"
+      className="fixed right-4 bottom-4 z-50 inline-flex items-center gap-2.5 rounded-full bg-primary py-3.5 pr-5 pl-4 text-sm font-semibold text-primary-foreground shadow-[0_10px_28px_oklch(0.56_0.105_210/0.45)] transition-transform duration-300 hover:scale-105 md:right-6 md:bottom-6"
     >
-      <WhatsAppIcon className="size-6" />
-      <span className="hidden sm:inline">Escríbeme por WhatsApp</span>
+      <WhatsAppIcon className="size-5 shrink-0" />
+      <span>Compartir con Rosa</span>
     </a>
   );
 }
