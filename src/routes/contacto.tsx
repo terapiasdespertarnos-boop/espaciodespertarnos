@@ -92,19 +92,6 @@ Email: ${data.get("email")} · Teléfono: ${data.get("telefono")}`;
             Escribir un email
           </a>
         </div>
-        <figure className="mt-10 max-w-xs">
-          <img
-            src={rosaDespedida.url}
-            alt="Rosa, de Espacio Despertar-Nos, con su turbante blanco y flores a su lado"
-            width={880}
-            height={1160}
-            loading="lazy"
-            className="w-full rounded-[1.75rem] object-cover shadow-[0_24px_48px_-24px_rgba(0,0,0,0.25)] ring-1 ring-gold/40"
-          />
-          <figcaption className="mt-5 text-sm tracking-[0.14em] text-muted-foreground uppercase">
-            Nos vemos al otro lado
-          </figcaption>
-        </figure>
       </Section>
 
       <Section>
