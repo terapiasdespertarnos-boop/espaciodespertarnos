@@ -63,7 +63,7 @@ function ComoPuedoAcompanarte() {
     <>
       <Section tone="cream">
         <SectionHeading
-          className="text-4xl md:text-6xl"
+          eyebrowClassName="text-2xl! md:text-3xl!"
           eyebrow="Cómo puedo acompañarte"
           title="Terapias holísticas sanadoras"
 

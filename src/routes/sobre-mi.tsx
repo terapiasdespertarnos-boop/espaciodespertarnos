@@ -39,8 +39,8 @@ function SobreMi() {
       <section className="relative isolate overflow-hidden bg-cream">
         <div className="container-prose relative grid items-center gap-10 px-6 py-24 md:grid-cols-2 md:py-32">
           <div className="max-w-xl fade-up">
-            <p className="eyebrow">Soy Rosa</p>
-            <h1 className="mt-6 font-display text-5xl leading-[1.1] md:text-6xl lg:text-7xl">
+            <p className="eyebrow text-2xl! md:text-3xl!">Soy Rosa</p>
+            <h1 className="mt-6 font-display text-4xl leading-[1.1] md:text-5xl lg:text-6xl">
               El renacer comienza cuando te miras con amor
             </h1>
             <span className="rule-line mt-6" />
