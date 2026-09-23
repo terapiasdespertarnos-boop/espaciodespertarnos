@@ -44,14 +44,6 @@ export function Footer() {
           ) : null}
           <p className="mt-8 text-sm tracking-[0.2em] uppercase">Espacio Despertar-Nos</p>
           <p className="mt-1 text-sm text-muted-foreground">{site.tagline}</p>
-          <a
-            href={whatsappUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-7 inline-flex rounded-full bg-primary px-6 py-3 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
-          >
-            Compartir con Rosa
-          </a>
         </div>
 
         <div className="mt-14 grid gap-8 border-t border-border pt-10 md:grid-cols-3">

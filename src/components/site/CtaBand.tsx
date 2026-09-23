@@ -5,7 +5,7 @@ import { Section } from "./Section";
 export function CtaBand({
   title = "Sé que da respeto empezar, pero créeme, dar el primer paso ya es una victoria.",
   text,
-  buttonLabel = "Compartir con Rosa",
+  buttonLabel,
 }: {
   title?: string;
   text?: string;
@@ -23,14 +23,16 @@ export function CtaBand({
           </p>
         ) : null}
         <div className="mt-9 flex flex-wrap gap-3">
-          <a
-            href={whatsappUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-primary-foreground px-7 py-3.5 text-xs tracking-[0.14em] text-sage-deep uppercase transition-opacity hover:opacity-90"
-          >
-            {buttonLabel}
-          </a>
+          {buttonLabel ? (
+            <a
+              href={whatsappUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-primary-foreground px-7 py-3.5 text-xs tracking-[0.14em] text-sage-deep uppercase transition-opacity hover:opacity-90"
+            >
+              {buttonLabel}
+            </a>
+          ) : null}
           <Link
             to="/contacto"
             className="rounded-full border border-primary-foreground/40 px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-colors hover:bg-primary-foreground/10"

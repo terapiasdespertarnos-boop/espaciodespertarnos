@@ -98,14 +98,6 @@ function Contacto() {
         />
         <div className="mt-9 flex flex-wrap gap-3">
           <a
-            href={whatsappUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-primary px-7 py-3.5 text-xs tracking-[0.14em] text-primary-foreground uppercase"
-          >
-            Compartir con Rosa
-          </a>
-          <a
             href={`mailto:${site.email}`}
             className="rounded-full border border-earth/30 px-7 py-3.5 text-xs tracking-[0.14em] uppercase"
           >
