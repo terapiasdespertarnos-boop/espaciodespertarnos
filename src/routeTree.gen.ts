@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AvisoLegalRouteImport } from './routes/aviso-legal'
+import { Route as CoachingOntologicoRouteImport } from './routes/coaching-ontologico'
 import { Route as ComoPuedoAcompanarteRouteImport } from './routes/como-puedo-acompanarte'
 import { Route as ConstelacionesFamiliaresRouteImport } from './routes/constelaciones-familiares'
 import { Route as ContactoRouteImport } from './routes/contacto'
@@ -31,6 +32,11 @@ const IndexRoute = IndexRouteImport.update({
 const AvisoLegalRoute = AvisoLegalRouteImport.update({
   id: '/aviso-legal',
   path: '/aviso-legal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoachingOntologicoRoute = CoachingOntologicoRouteImport.update({
+  id: '/coaching-ontologico',
+  path: '/coaching-ontologico',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ComoPuedoAcompanarteRoute = ComoPuedoAcompanarteRouteImport.update({
@@ -93,6 +99,7 @@ const YogaRoute = YogaRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/aviso-legal': typeof AvisoLegalRoute
+  '/coaching-ontologico': typeof CoachingOntologicoRoute
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/constelaciones-familiares': typeof ConstelacionesFamiliaresRoute
   '/contacto': typeof ContactoRoute
@@ -108,6 +115,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/aviso-legal': typeof AvisoLegalRoute
+  '/coaching-ontologico': typeof CoachingOntologicoRoute
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/constelaciones-familiares': typeof ConstelacionesFamiliaresRoute
   '/contacto': typeof ContactoRoute
@@ -124,6 +132,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/aviso-legal': typeof AvisoLegalRoute
+  '/coaching-ontologico': typeof CoachingOntologicoRoute
   '/como-puedo-acompanarte': typeof ComoPuedoAcompanarteRoute
   '/constelaciones-familiares': typeof ConstelacionesFamiliaresRoute
   '/contacto': typeof ContactoRoute
@@ -141,6 +150,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/aviso-legal'
+    | '/coaching-ontologico'
     | '/como-puedo-acompanarte'
     | '/constelaciones-familiares'
     | '/contacto'
@@ -156,6 +166,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/aviso-legal'
+    | '/coaching-ontologico'
     | '/como-puedo-acompanarte'
     | '/constelaciones-familiares'
     | '/contacto'
@@ -171,6 +182,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/aviso-legal'
+    | '/coaching-ontologico'
     | '/como-puedo-acompanarte'
     | '/constelaciones-familiares'
     | '/contacto'
@@ -187,6 +199,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AvisoLegalRoute: typeof AvisoLegalRoute
+  CoachingOntologicoRoute: typeof CoachingOntologicoRoute
   ComoPuedoAcompanarteRoute: typeof ComoPuedoAcompanarteRoute
   ConstelacionesFamiliaresRoute: typeof ConstelacionesFamiliaresRoute
   ContactoRoute: typeof ContactoRoute
@@ -214,6 +227,13 @@ declare module '@tanstack/react-router' {
       path: '/aviso-legal'
       fullPath: '/aviso-legal'
       preLoaderRoute: typeof AvisoLegalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/coaching-ontologico': {
+      id: '/coaching-ontologico'
+      path: '/coaching-ontologico'
+      fullPath: '/coaching-ontologico'
+      preLoaderRoute: typeof CoachingOntologicoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/como-puedo-acompanarte': {
@@ -299,6 +319,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AvisoLegalRoute: AvisoLegalRoute,
+  CoachingOntologicoRoute: CoachingOntologicoRoute,
   ComoPuedoAcompanarteRoute: ComoPuedoAcompanarteRoute,
   ConstelacionesFamiliaresRoute: ConstelacionesFamiliaresRoute,
   ContactoRoute: ContactoRoute,
