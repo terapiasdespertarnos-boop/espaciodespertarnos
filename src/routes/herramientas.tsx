@@ -152,9 +152,9 @@ function Herramientas() {
             <h2 className="mt-3 text-3xl">Regresiones</h2>
             <p className="mt-5 leading-relaxed text-muted-foreground">
               Una herramienta de exploración personal para mirar experiencias y contenidos que la
-              persona siente que necesitan ser comprendidos. No afirmo que lo que aparece sean
-              recuerdos objetivamente verdaderos: lo importante es el sentido que tiene para ti y
-              lo que te permite comprender.
+              persona siente que necesitan ser comprendidos. Actualmente, de mi formación en
+              regresiones e hipnosis, recupero aquellas herramientas que considero más útiles y las
+              integro para enriquecer otras terapias según lo que requiera cada caso.
             </p>
           </article>
           <article>
