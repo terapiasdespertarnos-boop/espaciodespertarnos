@@ -50,7 +50,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="mt-7 inline-flex rounded-full bg-primary px-6 py-3 text-xs tracking-[0.14em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
           >
-            Empezar a compartir con Rosa
+            Compartir con Rosa
           </a>
         </div>
 
