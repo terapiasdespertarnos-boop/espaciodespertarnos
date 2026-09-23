@@ -76,7 +76,7 @@ function CoachingOntologico() {
         <Quote>Te escucho. Te miro. Percibo. Y juntas/os buscamos qué necesitas.</Quote>
       </Section>
 
-      <CtaBand />
+      <CtaBand title="Empezar puede dar respeto, pero también es el primer acto de cuidado hacia ti misma/o." />
     </>
   );
 }
