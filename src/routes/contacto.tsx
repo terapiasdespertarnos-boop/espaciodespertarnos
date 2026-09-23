@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { site, whatsappUrl } from "@/lib/site";
+import rosaDespedida from "@/assets/rosa-despedida.jpg.asset.json";
 
 export const Route = createFileRoute("/contacto")({
   head: () => ({
