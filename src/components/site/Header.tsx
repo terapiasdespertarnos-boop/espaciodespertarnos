@@ -44,14 +44,6 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <a
-            href={whatsappUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-primary px-4 py-2 text-[0.75rem] tracking-[0.12em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
-          >
-            Compartir con Rosa
-          </a>
         </nav>
 
         <button
